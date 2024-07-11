@@ -1,0 +1,385 @@
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d13" for="edge" attr.name="level" attr.type="long" />
+  <key id="d12" for="edge" attr.name="human_readable_id" attr.type="long" />
+  <key id="d11" for="edge" attr.name="id" attr.type="string" />
+  <key id="d10" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d9" for="edge" attr.name="description" attr.type="string" />
+  <key id="d8" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d7" for="node" attr.name="level" attr.type="long" />
+  <key id="d6" for="node" attr.name="cluster" attr.type="string" />
+  <key id="d5" for="node" attr.name="id" attr.type="string" />
+  <key id="d4" for="node" attr.name="human_readable_id" attr.type="long" />
+  <key id="d3" for="node" attr.name="degree" attr.type="long" />
+  <key id="d2" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="description" attr.type="string" />
+  <key id="d0" for="node" attr.name="type" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="&quot;HEZBOLLAH&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">Hezbollah is a militant group with ties to North Korea, from which it may learn about hybrid warfare tactics.  During the Second Lebanon War in 2006, Hezbollah engaged in conflict with Israel and employed hybrid warfare strategies against them. This campaign serves as a potential example for North Korea, highlighting Hezbollah's successful application of these tactics. 
+
+
+</data>
+      <data key="d2">1bc36ba9b4e3d6d121fa33f379c0cb21,397c2c301de22302ff968c8143a9915a,6567486779c622d21b3ec663d3196c8e,8ddf823bc63db4b89282d546707b158a</data>
+      <data key="d3">1</data>
+      <data key="d4">0</data>
+      <data key="d5">b45241d70f0e43fca764df95b2b81f77</data>
+    </node>
+    <node id="&quot;RUSSIA&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">Russia is a nation-state that has used hybrid warfare tactics, such as those employed in Ukraine in 2014, to achieve political goals.  This makes Russia a potential adversary that the Multi-Domain Operations (MDO) seeks to deter and defeat.  North Korea has ties to Russia and may be learning about hybrid warfare from them.  
+</data>
+      <data key="d2">1bc36ba9b4e3d6d121fa33f379c0cb21,397c2c301de22302ff968c8143a9915a,460e89048add2d623c075a537acde8a1,8ddf823bc63db4b89282d546707b158a,e51744dbe945afec8366e3592f377c5a</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d3">2</data>
+      <data key="d4">1</data>
+      <data key="d5">4119fd06010c494caa07f439b333f4c5</data>
+    </node>
+    <node id="&quot;MULTI-DOMAIN OPERATIONS (MDO)&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"MDO is the US Army's future war concept, aiming to deter and defeat adversaries like Russia, China, Iran, and North Korea."</data>
+      <data key="d2">8ddf823bc63db4b89282d546707b158a</data>
+      <data key="d3">0</data>
+      <data key="d4">2</data>
+      <data key="d5">d3835bf3dda84ead99deadbeac5d0d7d</data>
+    </node>
+    <node id="&quot;REPUBLIC OF KOREA MILITARY (ROK MILITARY)&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"The ROK military is the subject of the thesis, examining the viability of MDO in countering North Korean hybrid warfare."</data>
+      <data key="d2">8ddf823bc63db4b89282d546707b158a</data>
+      <data key="d3">0</data>
+      <data key="d4">3</data>
+      <data key="d5">077d2820ae1845bcbb1803379a3d1eae</data>
+    </node>
+    <node id="&quot;CHINA&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"China is mentioned as a potential adversary that MDO seeks to deter and defeat."</data>
+      <data key="d2">e51744dbe945afec8366e3592f377c5a</data>
+      <data key="d3">0</data>
+      <data key="d4">4</data>
+      <data key="d5">3671ea0dd4e84c1a9b02c5ab2c8f4bac</data>
+    </node>
+    <node id="&quot;IRAN&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"Iran is mentioned as a potential adversary that MDO seeks to deter and defeat."</data>
+      <data key="d2">e51744dbe945afec8366e3592f377c5a</data>
+      <data key="d3">0</data>
+      <data key="d4">5</data>
+      <data key="d5">19a7f254a5d64566ab5cc15472df02de</data>
+    </node>
+    <node id="&quot;NORTH KOREA&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">North Korea is a nation that employs hybrid warfare as its primary military strategy.  The country is considered a potential adversary by the Multi-Domain Operations (MDO) initiative, which aims to deter and defeat North Korean aggression through countermeasures against hybrid warfare tactics. Historically, North Korea was under Soviet trusteeship following World War II and received significant support from the Soviet Union during the Korean War. 
+
+
+</data>
+      <data key="d2">460e89048add2d623c075a537acde8a1,ae9e4cfaa5794a52aa4679cb71cd550e,e51744dbe945afec8366e3592f377c5a</data>
+      <data key="d6">1</data>
+      <data key="d7">0</data>
+      <data key="d3">2</data>
+      <data key="d4">6</data>
+      <data key="d5">e7ffaee9d31d4d3c96e04f911d0a8f9e</data>
+    </node>
+    <node id="&quot;ROK MILITARY&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"The ROK military is the focus of the thesis, examining the viability of MDO for countering North Korean threats."</data>
+      <data key="d2">e51744dbe945afec8366e3592f377c5a</data>
+      <data key="d3">0</data>
+      <data key="d4">7</data>
+      <data key="d5">f7e11b0e297a44a896dc67928368f600</data>
+    </node>
+    <node id="&quot;US ARMY&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"The US Army is mentioned as the originator of the MDO concept."</data>
+      <data key="d2">e51744dbe945afec8366e3592f377c5a</data>
+      <data key="d3">0</data>
+      <data key="d4">8</data>
+      <data key="d5">1fd3fa8bb5a2408790042ab9573779ee</data>
+    </node>
+    <node id="&quot;EUNJU LEE&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">Eunju Lee is the wife of the author and provided significant support during his thesis writing process. She is acknowledged as a source of support by the author. 
+
+
+</data>
+      <data key="d2">6567486779c622d21b3ec663d3196c8e,e51744dbe945afec8366e3592f377c5a</data>
+      <data key="d3">0</data>
+      <data key="d4">9</data>
+      <data key="d5">27f9fbe6ad8c4a8b9acee0d3596ed57c</data>
+    </node>
+    <node id="&quot;ROK&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">ROK (Republic of Korea) is a nation that faces challenges in preparing for future conflicts, particularly those involving evolving North Korean hybrid warfare tactics.  To address these threats, ROK is actively pursuing integrated operations across multiple domains. 
+</data>
+      <data key="d2">1bc36ba9b4e3d6d121fa33f379c0cb21,6567486779c622d21b3ec663d3196c8e</data>
+      <data key="d3">0</data>
+      <data key="d4">10</data>
+      <data key="d5">e1fd0e904a53409aada44442f23a51cb</data>
+    </node>
+    <node id="&quot;JOSEPH DONALBAIN&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"Joseph Donalbain is a member of the author's thesis committee, providing advice on the structure and logic of the thesis."</data>
+      <data key="d2">6567486779c622d21b3ec663d3196c8e</data>
+      <data key="d3">0</data>
+      <data key="d4">11</data>
+      <data key="d5">de988724cfdf45cebfba3b13c43ceede</data>
+    </node>
+    <node id="&quot;JOHN MODINGER&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"John Modinger is a member of the author's thesis committee, offering guidance on the thesis."</data>
+      <data key="d2">6567486779c622d21b3ec663d3196c8e</data>
+      <data key="d3">0</data>
+      <data key="d4">12</data>
+      <data key="d5">96aad7cb4b7d40e9b7e13b94a67af206</data>
+    </node>
+    <node id="&quot;LTC MICHAEL THORPE&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"LTC Michael Thorpe is a member of the author's thesis committee, contributing to the thesis's direction."</data>
+      <data key="d2">6567486779c622d21b3ec663d3196c8e</data>
+      <data key="d3">0</data>
+      <data key="d4">13</data>
+      <data key="d5">c9632a35146940c2a86167c7726d35e9</data>
+    </node>
+    <node id="&quot;DEAN NOWOWIEJSKI&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"Dean Nowowiejski is the Ike Skelton Chair at CGSC and guided Art of War scholars in providing insights for the thesis."</data>
+      <data key="d2">6567486779c622d21b3ec663d3196c8e</data>
+      <data key="d3">0</data>
+      <data key="d4">14</data>
+      <data key="d5">9646481f66ce4fd2b08c2eddda42fc82</data>
+    </node>
+    <node id="&quot;ISRAEL&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">Israel is a nation-state that launched an attack into Lebanese territory in 2006. This attack, known as the Second Lebanon War, resulted in significant conflict between Israel and Hezbollah forces.  
+</data>
+      <data key="d2">397c2c301de22302ff968c8143a9915a,6567486779c622d21b3ec663d3196c8e</data>
+      <data key="d3">1</data>
+      <data key="d4">15</data>
+      <data key="d5">d91a266f766b4737a06b0fda588ba40b</data>
+    </node>
+    <node id="&quot;SECOND LEBANON WAR&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">The Second Lebanon War was a military conflict between Israel and Hezbollah that took place in 2006.  
+</data>
+      <data key="d2">397c2c301de22302ff968c8143a9915a,6567486779c622d21b3ec663d3196c8e</data>
+      <data key="d3">2</data>
+      <data key="d4">16</data>
+      <data key="d5">bc0e3f075a4c4ebbb7c7b152b65a5625</data>
+    </node>
+    <node id="&quot;UKRAINE&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">Ukraine is a country that has been targeted by hybrid warfare, specifically since 2014.  Russia has employed hybrid warfare tactics against Ukraine. 
+</data>
+      <data key="d2">397c2c301de22302ff968c8143a9915a,460e89048add2d623c075a537acde8a1</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d3">2</data>
+      <data key="d4">17</data>
+      <data key="d5">254770028d7a4fa9877da4ba0ad5ad21</data>
+    </node>
+    <node id="&quot;SEAN MONAGHAN&quot;">
+      <data key="d0" />
+      <data key="d1">Sean Monaghan is a strategic analyst in the UK Ministry of Defense (MOD). He is known for defining hybrid warfare.  
+</data>
+      <data key="d2">397c2c301de22302ff968c8143a9915a,460e89048add2d623c075a537acde8a1</data>
+      <data key="d6">2</data>
+      <data key="d7">0</data>
+      <data key="d3">2</data>
+      <data key="d4">18</data>
+      <data key="d5">4a67211867e5464ba45126315a122a8a</data>
+    </node>
+    <node id="&quot;UK MINISTRY OF DEFENSE (MOD)&quot;">
+      <data key="d0" />
+      <data key="d1">The UK Ministry of Defense (MOD) is a government department responsible for the defense of the United Kingdom. It employs Sean Monaghan as a strategic analyst.  
+</data>
+      <data key="d2">397c2c301de22302ff968c8143a9915a,460e89048add2d623c075a537acde8a1</data>
+      <data key="d6">2</data>
+      <data key="d7">0</data>
+      <data key="d3">1</data>
+      <data key="d4">19</data>
+      <data key="d5">04dbbb2283b845baaeac0eaf0c34c9da</data>
+    </node>
+    <node id="&quot;HYBRID WARFARE&quot;">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">397c2c301de22302ff968c8143a9915a,460e89048add2d623c075a537acde8a1</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d3">6</data>
+      <data key="d4">20</data>
+      <data key="d5">1943f245ee4243bdbfbd2fd619ae824a</data>
+    </node>
+    <node id="&quot;POLITICAL PURPOSE&quot;">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">397c2c301de22302ff968c8143a9915a</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d3">1</data>
+      <data key="d4">21</data>
+      <data key="d5">273daeec8cad41e6b3e450447db58ee7</data>
+    </node>
+    <node id="&quot;LEBANON&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"Lebanon is mentioned as an example of a country where hybrid warfare was used to achieve political goals."</data>
+      <data key="d2">460e89048add2d623c075a537acde8a1</data>
+      <data key="d6">0</data>
+      <data key="d7">0</data>
+      <data key="d3">1</data>
+      <data key="d4">22</data>
+      <data key="d5">e69dc259edb944ea9ea41264b9fcfe59</data>
+    </node>
+    <node id="&quot;SOUTH KOREA&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"The South is a geographical location where North Korea aims to quickly overwhelm before US reinforcements arrive."</data>
+      <data key="d2">1bc36ba9b4e3d6d121fa33f379c0cb21</data>
+      <data key="d3">0</data>
+      <data key="d4">23</data>
+      <data key="d5">e2f5735c7d714423a2c4f61ca2644626</data>
+    </node>
+    <node id="&quot;SOVIET UNION&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"The Soviet Union was involved in post-World War II administration of North Korea, provided support during the Korean War, and significantly influenced the development of the North Korean military."</data>
+      <data key="d2">ae9e4cfaa5794a52aa4679cb71cd550e</data>
+      <data key="d6">1</data>
+      <data key="d7">0</data>
+      <data key="d3">3</data>
+      <data key="d4">24</data>
+      <data key="d5">deece7e64b2a4628850d4bb6e394a9c3</data>
+    </node>
+    <node id="&quot;KIM IL-SUNG&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"Kim Il-Sung was the leader of North Korea who planned the invasion of South Korea with Soviet support."</data>
+      <data key="d2">ae9e4cfaa5794a52aa4679cb71cd550e</data>
+      <data key="d6">1</data>
+      <data key="d7">0</data>
+      <data key="d3">2</data>
+      <data key="d4">25</data>
+      <data key="d5">e657b5121ff8456b9a610cfaead8e0cb</data>
+    </node>
+    <node id="&quot;KOREAN WAR&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"The Korean War involved the Soviet Union supporting North Korea against South Korea."</data>
+      <data key="d2">ae9e4cfaa5794a52aa4679cb71cd550e</data>
+      <data key="d6">1</data>
+      <data key="d7">0</data>
+      <data key="d3">2</data>
+      <data key="d4">26</data>
+      <data key="d5">bf4e255cdac94ccc83a56435a5e4b075</data>
+    </node>
+    <edge source="&quot;HEZBOLLAH&quot;" target="&quot;SECOND LEBANON WAR&quot;">
+      <data key="d8">1.0</data>
+      <data key="d9">"Hezbollah engaged in conflict with Israel during the Second Lebanon War."</data>
+      <data key="d10">397c2c301de22302ff968c8143a9915a</data>
+      <data key="d11">3b040bcc19f14e04880ae52881a89c1c</data>
+      <data key="d12">0</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="&quot;RUSSIA&quot;" target="&quot;UKRAINE&quot;">
+      <data key="d8">1.0</data>
+      <data key="d9">"Russia has used hybrid warfare tactics against Ukraine."</data>
+      <data key="d10">397c2c301de22302ff968c8143a9915a</data>
+      <data key="d11">3d6b216c14354332b1bf1927ba168986</data>
+      <data key="d12">1</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="&quot;RUSSIA&quot;" target="&quot;HYBRID WARFARE&quot;">
+      <data key="d8">1.0</data>
+      <data key="d9">"Russia is presented as a country that employed hybrid warfare tactics to fulfill its political goals."</data>
+      <data key="d10">460e89048add2d623c075a537acde8a1</data>
+      <data key="d11">1c109cfdc370463eb6d537e5b7b382fb</data>
+      <data key="d12">2</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="&quot;NORTH KOREA&quot;" target="&quot;HYBRID WARFARE&quot;">
+      <data key="d8">1.0</data>
+      <data key="d9">"North Korea's central war strategy is based on hybrid warfare, as defined by Monaghan."</data>
+      <data key="d10">460e89048add2d623c075a537acde8a1</data>
+      <data key="d11">3d0dcbc8971b415ea18065edc4d8c8ef</data>
+      <data key="d12">3</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="&quot;NORTH KOREA&quot;" target="&quot;SOVIET UNION&quot;">
+      <data key="d8">1.0</data>
+      <data key="d9">"The Soviet Union administered North Korea after World War II and provided support during the Korean War."</data>
+      <data key="d10">ae9e4cfaa5794a52aa4679cb71cd550e</data>
+      <data key="d11">68105770b523412388424d984e711917</data>
+      <data key="d12">4</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="&quot;ISRAEL&quot;" target="&quot;SECOND LEBANON WAR&quot;">
+      <data key="d8">1.0</data>
+      <data key="d9">"Israel launched an attack into Lebanon, initiating the Second Lebanon War."</data>
+      <data key="d10">397c2c301de22302ff968c8143a9915a</data>
+      <data key="d11">85c79fd84f5e4f918471c386852204c5</data>
+      <data key="d12">5</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="&quot;UKRAINE&quot;" target="&quot;HYBRID WARFARE&quot;">
+      <data key="d8">1.0</data>
+      <data key="d9">"Ukraine experienced the use of hybrid warfare in 2014, highlighting its contemporary relevance."</data>
+      <data key="d10">460e89048add2d623c075a537acde8a1</data>
+      <data key="d11">eae4259b19a741ab9f9f6af18c4a0470</data>
+      <data key="d12">6</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="&quot;SEAN MONAGHAN&quot;" target="&quot;UK MINISTRY OF DEFENSE (MOD)&quot;">
+      <data key="d8">2.0</data>
+      <data key="d9">Sean Monaghan is a strategic analyst who works for the UK Ministry of Defense (MOD).  
+</data>
+      <data key="d10">397c2c301de22302ff968c8143a9915a,460e89048add2d623c075a537acde8a1</data>
+      <data key="d11">3138f39f2bcd43a69e0697cd3b05bc4d</data>
+      <data key="d12">7</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="&quot;SEAN MONAGHAN&quot;" target="&quot;HYBRID WARFARE&quot;">
+      <data key="d8">1.0</data>
+      <data key="d9">"Sean Monaghan defines hybrid warfare as the combination of different types of warfare and non-military means to neutralize conventional military power."</data>
+      <data key="d10">460e89048add2d623c075a537acde8a1</data>
+      <data key="d11">dde131ab575d44dbb55289a6972be18f</data>
+      <data key="d12">8</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="&quot;HYBRID WARFARE&quot;" target="&quot;POLITICAL PURPOSE&quot;">
+      <data key="d8">1.0</data>
+      <data key="d9">"Hybrid warfare has been used by nations like Israel and Russia to achieve their political objectives."</data>
+      <data key="d10">397c2c301de22302ff968c8143a9915a</data>
+      <data key="d11">de9e343f2e334d88a8ac7f8813a915e5</data>
+      <data key="d12">9</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="&quot;HYBRID WARFARE&quot;" target="&quot;LEBANON&quot;">
+      <data key="d8">1.0</data>
+      <data key="d9">"Lebanon is cited as an example where hybrid warfare was successfully used to achieve political objectives."</data>
+      <data key="d10">460e89048add2d623c075a537acde8a1</data>
+      <data key="d11">e2bf260115514fb3b252fd879fb3e7be</data>
+      <data key="d12">10</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="&quot;SOVIET UNION&quot;" target="&quot;KIM IL-SUNG&quot;">
+      <data key="d8">1.0</data>
+      <data key="d9">"The Soviet Union supported Kim Il-Sung's plan to invade South Korea during the Korean War."</data>
+      <data key="d10">ae9e4cfaa5794a52aa4679cb71cd550e</data>
+      <data key="d11">b462b94ce47a4b8c8fffa33f7242acec</data>
+      <data key="d12">11</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="&quot;SOVIET UNION&quot;" target="&quot;KOREAN WAR&quot;">
+      <data key="d8">1.0</data>
+      <data key="d9">"The Soviet Union provided support to North Korea during the Korean War."</data>
+      <data key="d10">ae9e4cfaa5794a52aa4679cb71cd550e</data>
+      <data key="d11">17ed1d92075643579a712cc6c29e8ddb</data>
+      <data key="d12">12</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="&quot;KIM IL-SUNG&quot;" target="&quot;KOREAN WAR&quot;">
+      <data key="d8">1.0</data>
+      <data key="d9">"Kim Il-Sung planned the invasion of South Korea during the Korean War."</data>
+      <data key="d10">ae9e4cfaa5794a52aa4679cb71cd550e</data>
+      <data key="d11">3ce7c210a21b4deebad7cc9308148d86</data>
+      <data key="d12">13</data>
+      <data key="d13">0</data>
+    </edge>
+  </graph>
+</graphml>

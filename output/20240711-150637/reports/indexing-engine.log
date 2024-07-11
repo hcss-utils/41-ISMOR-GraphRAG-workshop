@@ -1,0 +1,473 @@
+15:06:37,163 graphrag.config.read_dotenv INFO Loading pipeline .env file
+15:06:37,169 graphrag.index.cli INFO using default configuration: {
+    "llm": {
+        "api_key": "REDACTED, length 6",
+        "type": "openai_chat",
+        "model": "gemma2",
+        "max_tokens": 4000,
+        "request_timeout": 180.0,
+        "api_base": "http://localhost:11434/v1",
+        "api_version": null,
+        "proxy": null,
+        "cognitive_services_endpoint": null,
+        "deployment_name": null,
+        "model_supports_json": true,
+        "tokens_per_minute": 0,
+        "requests_per_minute": 0,
+        "max_retries": 10,
+        "max_retry_wait": 10.0,
+        "sleep_on_rate_limit_recommendation": true,
+        "concurrent_requests": 25
+    },
+    "parallelization": {
+        "stagger": 0.3,
+        "num_threads": 50
+    },
+    "async_mode": "threaded",
+    "root_dir": ".",
+    "reporting": {
+        "type": "file",
+        "base_dir": "output/${timestamp}/reports",
+        "storage_account_blob_url": null
+    },
+    "storage": {
+        "type": "file",
+        "base_dir": "output/${timestamp}/artifacts",
+        "storage_account_blob_url": null
+    },
+    "cache": {
+        "type": "file",
+        "base_dir": "cache",
+        "storage_account_blob_url": null
+    },
+    "input": {
+        "type": "file",
+        "file_type": "text",
+        "base_dir": "input",
+        "storage_account_blob_url": null,
+        "encoding": "utf-8",
+        "file_pattern": ".*\\.md$",
+        "file_filter": null,
+        "source_column": null,
+        "timestamp_column": null,
+        "timestamp_format": null,
+        "text_column": "text",
+        "title_column": null,
+        "document_attribute_columns": []
+    },
+    "embed_graph": {
+        "enabled": false,
+        "num_walks": 10,
+        "walk_length": 40,
+        "window_size": 2,
+        "iterations": 3,
+        "random_seed": 597832,
+        "strategy": null
+    },
+    "embeddings": {
+        "llm": {
+            "api_key": "REDACTED, length 6",
+            "type": "openai_embedding",
+            "model": "nomic_embed_text",
+            "max_tokens": 4000,
+            "request_timeout": 180.0,
+            "api_base": "http://localhost:11434/api/embeddings",
+            "api_version": null,
+            "proxy": null,
+            "cognitive_services_endpoint": null,
+            "deployment_name": null,
+            "model_supports_json": null,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "max_retries": 10,
+            "max_retry_wait": 10.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 25
+        },
+        "parallelization": {
+            "stagger": 0.3,
+            "num_threads": 50
+        },
+        "async_mode": "threaded",
+        "batch_size": 16,
+        "batch_max_tokens": 8191,
+        "target": "required",
+        "skip": [],
+        "vector_store": null,
+        "strategy": null
+    },
+    "chunks": {
+        "size": 300,
+        "overlap": 100,
+        "group_by_columns": [
+            "id"
+        ],
+        "strategy": null
+    },
+    "snapshots": {
+        "graphml": true,
+        "raw_entities": true,
+        "top_level_nodes": true
+    },
+    "entity_extraction": {
+        "llm": {
+            "api_key": "REDACTED, length 6",
+            "type": "openai_chat",
+            "model": "gemma2",
+            "max_tokens": 4000,
+            "request_timeout": 180.0,
+            "api_base": "http://localhost:11434/v1",
+            "api_version": null,
+            "proxy": null,
+            "cognitive_services_endpoint": null,
+            "deployment_name": null,
+            "model_supports_json": true,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "max_retries": 10,
+            "max_retry_wait": 10.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 25
+        },
+        "parallelization": {
+            "stagger": 0.3,
+            "num_threads": 50
+        },
+        "async_mode": "threaded",
+        "prompt": "prompts/entity_extraction.txt",
+        "entity_types": [
+            "organization",
+            "person",
+            "geo",
+            "event"
+        ],
+        "max_gleanings": 0,
+        "strategy": null
+    },
+    "summarize_descriptions": {
+        "llm": {
+            "api_key": "REDACTED, length 6",
+            "type": "openai_chat",
+            "model": "gemma2",
+            "max_tokens": 4000,
+            "request_timeout": 180.0,
+            "api_base": "http://localhost:11434/v1",
+            "api_version": null,
+            "proxy": null,
+            "cognitive_services_endpoint": null,
+            "deployment_name": null,
+            "model_supports_json": true,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "max_retries": 10,
+            "max_retry_wait": 10.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 25
+        },
+        "parallelization": {
+            "stagger": 0.3,
+            "num_threads": 50
+        },
+        "async_mode": "threaded",
+        "prompt": "prompts/summarize_descriptions.txt",
+        "max_length": 500,
+        "strategy": null
+    },
+    "community_reports": {
+        "llm": {
+            "api_key": "REDACTED, length 6",
+            "type": "openai_chat",
+            "model": "gemma2",
+            "max_tokens": 4000,
+            "request_timeout": 180.0,
+            "api_base": "http://localhost:11434/v1",
+            "api_version": null,
+            "proxy": null,
+            "cognitive_services_endpoint": null,
+            "deployment_name": null,
+            "model_supports_json": true,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "max_retries": 10,
+            "max_retry_wait": 10.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 25
+        },
+        "parallelization": {
+            "stagger": 0.3,
+            "num_threads": 50
+        },
+        "async_mode": "threaded",
+        "prompt": null,
+        "max_length": 2000,
+        "max_input_length": 8000,
+        "strategy": null
+    },
+    "claim_extraction": {
+        "llm": {
+            "api_key": "REDACTED, length 6",
+            "type": "openai_chat",
+            "model": "gemma2",
+            "max_tokens": 4000,
+            "request_timeout": 180.0,
+            "api_base": "http://localhost:11434/v1",
+            "api_version": null,
+            "proxy": null,
+            "cognitive_services_endpoint": null,
+            "deployment_name": null,
+            "model_supports_json": true,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "max_retries": 10,
+            "max_retry_wait": 10.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 25
+        },
+        "parallelization": {
+            "stagger": 0.3,
+            "num_threads": 50
+        },
+        "async_mode": "threaded",
+        "enabled": false,
+        "prompt": "prompts/claim_extraction.txt",
+        "description": "Any claims or facts that could be relevant to information discovery.",
+        "max_gleanings": 0,
+        "strategy": null
+    },
+    "cluster_graph": {
+        "max_cluster_size": 10,
+        "strategy": null
+    },
+    "umap": {
+        "enabled": false
+    },
+    "local_search": {
+        "text_unit_prop": 0.5,
+        "community_prop": 0.1,
+        "conversation_history_max_turns": 5,
+        "top_k_entities": 10,
+        "top_k_relationships": 10,
+        "max_tokens": 12000,
+        "llm_max_tokens": 2000
+    },
+    "global_search": {
+        "max_tokens": 12000,
+        "data_max_tokens": 12000,
+        "map_max_tokens": 1000,
+        "reduce_max_tokens": 2000,
+        "concurrency": 32
+    },
+    "encoding_model": "cl100k_base",
+    "skip_workflows": []
+}
+15:06:37,175 graphrag.index.create_pipeline_config INFO skipping workflows 
+15:06:37,202 graphrag.index.run INFO Running pipeline
+15:06:37,202 graphrag.index.storage.file_pipeline_storage INFO Creating file storage at output/20240711-150637/artifacts
+15:06:37,202 graphrag.index.input.load_input INFO loading input from root_dir=input
+15:06:37,203 graphrag.index.input.load_input INFO using file storage for input
+15:06:37,204 graphrag.index.storage.file_pipeline_storage INFO search input for files matching .*\.md$
+15:06:37,204 graphrag.index.input.text INFO found text files from input, found [('77b1a662a07b4f19b66c36b63b1e6c01.md', {})]
+15:06:37,209 graphrag.index.workflows.load INFO Workflow Run Order: ['create_base_text_units', 'create_base_extracted_entities', 'create_summarized_entities', 'create_base_entity_graph', 'create_final_entities', 'create_final_nodes', 'create_final_communities', 'join_text_units_to_entity_ids', 'create_final_relationships', 'join_text_units_to_relationship_ids', 'create_final_community_reports', 'create_final_text_units', 'create_base_documents', 'create_final_documents']
+15:06:37,210 graphrag.index.run INFO Final # of rows loaded: 1
+15:06:37,616 graphrag.index.run INFO Running workflow: create_base_text_units...
+15:06:37,616 graphrag.index.run INFO dependencies for create_base_text_units: []
+15:06:37,623 datashaper.workflow.workflow INFO executing verb orderby
+15:06:37,627 datashaper.workflow.workflow INFO executing verb zip
+15:06:37,631 datashaper.workflow.workflow INFO executing verb aggregate_override
+15:06:37,640 datashaper.workflow.workflow INFO executing verb chunk
+15:06:38,851 datashaper.workflow.workflow INFO executing verb select
+15:06:38,857 datashaper.workflow.workflow INFO executing verb unroll
+15:06:38,865 datashaper.workflow.workflow INFO executing verb rename
+15:06:38,871 datashaper.workflow.workflow INFO executing verb genid
+15:06:38,877 datashaper.workflow.workflow INFO executing verb unzip
+15:06:38,884 datashaper.workflow.workflow INFO executing verb copy
+15:06:38,891 datashaper.workflow.workflow INFO executing verb filter
+15:06:38,907 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_base_text_units.parquet
+15:06:39,368 graphrag.index.run INFO Running workflow: create_base_extracted_entities...
+15:06:39,368 graphrag.index.run INFO dependencies for create_base_extracted_entities: ['create_base_text_units']
+15:06:39,371 graphrag.index.run INFO read table from storage: create_base_text_units.parquet
+15:06:39,424 datashaper.workflow.workflow INFO executing verb entity_extract
+15:06:39,427 graphrag.llm.openai.create_openai_client INFO Creating OpenAI client base_url=http://localhost:11434/v1
+15:06:39,482 graphrag.index.llm.load_llm INFO create TPM/RPM limiter for gemma2: TPM=0, RPM=0
+15:06:39,482 graphrag.index.llm.load_llm INFO create concurrency limiter for gemma2: 25
+15:07:50,294 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+15:07:50,312 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 70.78100000000006. input_tokens=2010, output_tokens=321
+15:07:55,210 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+15:07:55,212 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 75.69899999999996. input_tokens=2234, output_tokens=338
+15:08:00,484 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+15:08:00,489 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 80.96500000000003. input_tokens=2210, output_tokens=370
+15:08:07,836 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+15:08:07,842 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 88.35299999999995. input_tokens=2234, output_tokens=394
+15:08:34,452 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+15:08:34,459 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 114.95299999999997. input_tokens=2233, output_tokens=364
+15:08:41,469 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+15:08:41,471 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 121.95299999999997. input_tokens=2234, output_tokens=453
+15:08:47,775 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+15:08:47,778 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 128.26999999999998. input_tokens=2234, output_tokens=603
+15:08:47,830 datashaper.workflow.workflow INFO executing verb snapshot
+15:08:47,853 datashaper.workflow.workflow INFO executing verb merge_graphs
+15:08:47,886 datashaper.workflow.workflow INFO executing verb snapshot_rows
+15:08:47,890 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_base_extracted_entities.parquet
+15:08:48,428 graphrag.index.run INFO Running workflow: create_summarized_entities...
+15:08:48,429 graphrag.index.run INFO dependencies for create_summarized_entities: ['create_base_extracted_entities']
+15:08:48,429 graphrag.index.run INFO read table from storage: create_base_extracted_entities.parquet
+15:08:48,463 datashaper.workflow.workflow INFO executing verb summarize_descriptions
+15:08:52,981 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+15:08:52,982 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "summarize" with 0 retries took 4.451999999999998. input_tokens=163, output_tokens=21
+15:08:54,689 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+15:08:54,691 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "summarize" with 0 retries took 6.168000000000006. input_tokens=162, output_tokens=38
+15:08:55,595 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+15:08:55,597 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "summarize" with 0 retries took 7.052999999999997. input_tokens=150, output_tokens=25
+15:08:57,658 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+15:08:57,660 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "summarize" with 0 retries took 9.166000000000054. input_tokens=222, output_tokens=69
+15:08:58,246 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+15:08:58,254 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "summarize" with 0 retries took 9.752999999999929. input_tokens=198, output_tokens=81
+15:08:59,14 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+15:08:59,22 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "summarize" with 0 retries took 10.485000000000014. input_tokens=160, output_tokens=30
+15:09:01,366 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+15:09:01,368 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "summarize" with 0 retries took 12.860000000000014. input_tokens=170, output_tokens=33
+15:09:02,22 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+15:09:02,25 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "summarize" with 0 retries took 13.47300000000007. input_tokens=149, output_tokens=32
+15:09:02,549 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+15:09:02,552 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "summarize" with 0 retries took 14.063999999999965. input_tokens=214, output_tokens=68
+15:09:03,409 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+15:09:03,412 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "summarize" with 0 retries took 14.851999999999975. input_tokens=172, output_tokens=19
+15:09:03,671 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+15:09:03,673 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "summarize" with 0 retries took 15.157999999999902. input_tokens=171, output_tokens=47
+15:09:03,713 datashaper.workflow.workflow INFO executing verb snapshot_rows
+15:09:03,716 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_summarized_entities.parquet
+15:09:04,216 graphrag.index.run INFO Running workflow: create_base_entity_graph...
+15:09:04,216 graphrag.index.run INFO dependencies for create_base_entity_graph: ['create_summarized_entities']
+15:09:04,221 graphrag.index.run INFO read table from storage: create_summarized_entities.parquet
+15:09:04,252 datashaper.workflow.workflow INFO executing verb cluster_graph
+15:09:04,290 datashaper.workflow.workflow INFO executing verb snapshot_rows
+15:09:04,306 datashaper.workflow.workflow INFO executing verb snapshot_rows
+15:09:04,324 datashaper.workflow.workflow INFO executing verb select
+15:09:04,327 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_base_entity_graph.parquet
+15:09:04,798 graphrag.index.run INFO Running workflow: create_final_entities...
+15:09:04,798 graphrag.index.run INFO dependencies for create_final_entities: ['create_base_entity_graph']
+15:09:04,798 graphrag.index.run INFO read table from storage: create_base_entity_graph.parquet
+15:09:04,837 datashaper.workflow.workflow INFO executing verb unpack_graph
+15:09:04,857 datashaper.workflow.workflow INFO executing verb rename
+15:09:04,879 datashaper.workflow.workflow INFO executing verb select
+15:09:04,900 datashaper.workflow.workflow INFO executing verb dedupe
+15:09:04,926 datashaper.workflow.workflow INFO executing verb rename
+15:09:04,950 datashaper.workflow.workflow INFO executing verb filter
+15:09:04,996 datashaper.workflow.workflow INFO executing verb text_split
+15:09:05,18 datashaper.workflow.workflow INFO executing verb drop
+15:09:05,38 datashaper.workflow.workflow INFO executing verb merge
+15:09:05,69 datashaper.workflow.workflow INFO executing verb text_embed
+15:09:05,72 graphrag.llm.openai.create_openai_client INFO Creating OpenAI client base_url=http://localhost:11434/api/embeddings
+15:09:05,162 graphrag.index.llm.load_llm INFO create TPM/RPM limiter for nomic_embed_text: TPM=0, RPM=0
+15:09:05,162 graphrag.index.llm.load_llm INFO create concurrency limiter for nomic_embed_text: 25
+15:09:05,166 graphrag.index.verbs.text.embed.strategies.openai INFO embedding 27 inputs via 27 snippets using 2 batches. max_batch_size=16, max_tokens=8191
+15:09:05,178 httpx INFO HTTP Request: POST http://localhost:11434/api/embeddings/embeddings "HTTP/1.1 404 Not Found"
+15:09:05,190 graphrag.index.reporting.file_workflow_callbacks INFO Error Invoking LLM details={'input': ['"HEZBOLLAH":Hezbollah is a militant group with ties to North Korea, from which it may learn about hybrid warfare tactics.  During the Second Lebanon War in 2006, Hezbollah engaged in conflict with Israel and employed hybrid warfare strategies against them. This campaign serves as a potential example for North Korea, highlighting Hezbollah\'s successful application of these tactics. \n\n\n', '"RUSSIA":Russia is a nation-state that has used hybrid warfare tactics, such as those employed in Ukraine in 2014, to achieve political goals.  This makes Russia a potential adversary that the Multi-Domain Operations (MDO) seeks to deter and defeat.  North Korea has ties to Russia and may be learning about hybrid warfare from them.  \n', '"MULTI-DOMAIN OPERATIONS (MDO)":"MDO is the US Army\'s future war concept, aiming to deter and defeat adversaries like Russia, China, Iran, and North Korea."', '"REPUBLIC OF KOREA MILITARY (ROK MILITARY)":"The ROK military is the subject of the thesis, examining the viability of MDO in countering North Korean hybrid warfare."', '"CHINA":"China is mentioned as a potential adversary that MDO seeks to deter and defeat."', '"IRAN":"Iran is mentioned as a potential adversary that MDO seeks to deter and defeat."', '"NORTH KOREA":North Korea is a nation that employs hybrid warfare as its primary military strategy.  The country is considered a potential adversary by the Multi-Domain Operations (MDO) initiative, which aims to deter and defeat North Korean aggression through countermeasures against hybrid warfare tactics. Historically, North Korea was under Soviet trusteeship following World War II and received significant support from the Soviet Union during the Korean War. \n\n\n', '"ROK MILITARY":"The ROK military is the focus of the thesis, examining the viability of MDO for countering North Korean threats."', '"US ARMY":"The US Army is mentioned as the originator of the MDO concept."', '"EUNJU LEE":Eunju Lee is the wife of the author and provided significant support during his thesis writing process. She is acknowledged as a source of support by the author. \n\n\n', '"ROK":ROK (Republic of Korea) is a nation that faces challenges in preparing for future conflicts, particularly those involving evolving North Korean hybrid warfare tactics.  To address these threats, ROK is actively pursuing integrated operations across multiple domains. \n', '"JOSEPH DONALBAIN":"Joseph Donalbain is a member of the author\'s thesis committee, providing advice on the structure and logic of the thesis."', '"JOHN MODINGER":"John Modinger is a member of the author\'s thesis committee, offering guidance on the thesis."', '"LTC MICHAEL THORPE":"LTC Michael Thorpe is a member of the author\'s thesis committee, contributing to the thesis\'s direction."', '"DEAN NOWOWIEJSKI":"Dean Nowowiejski is the Ike Skelton Chair at CGSC and guided Art of War scholars in providing insights for the thesis."', '"ISRAEL":Israel is a nation-state that launched an attack into Lebanese territory in 2006. This attack, known as the Second Lebanon War, resulted in significant conflict between Israel and Hezbollah forces.  \n']}
+15:09:05,190 datashaper.workflow.workflow ERROR Error executing verb "text_embed" in create_final_entities: 404 page not found
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/datashaper/workflow/workflow.py", line 415, in _execute_verb
+    result = await result
+  File "/usr/local/lib/python3.10/dist-packages/graphrag/index/verbs/text/embed/text_embed.py", line 105, in text_embed
+    return await _text_embed_in_memory(
+  File "/usr/local/lib/python3.10/dist-packages/graphrag/index/verbs/text/embed/text_embed.py", line 130, in _text_embed_in_memory
+    result = await strategy_exec(texts, callbacks, cache, strategy_args)
+  File "/usr/local/lib/python3.10/dist-packages/graphrag/index/verbs/text/embed/strategies/openai.py", line 61, in run
+    embeddings = await _execute(llm, text_batches, ticker, semaphore)
+  File "/usr/local/lib/python3.10/dist-packages/graphrag/index/verbs/text/embed/strategies/openai.py", line 105, in _execute
+    results = await asyncio.gather(*futures)
+  File "/usr/local/lib/python3.10/dist-packages/graphrag/index/verbs/text/embed/strategies/openai.py", line 99, in embed
+    chunk_embeddings = await llm(chunk)
+  File "/usr/local/lib/python3.10/dist-packages/graphrag/llm/base/caching_llm.py", line 104, in __call__
+    result = await self._delegate(input, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/graphrag/llm/base/rate_limiting_llm.py", line 177, in __call__
+    result, start = await execute_with_retry()
+  File "/usr/local/lib/python3.10/dist-packages/graphrag/llm/base/rate_limiting_llm.py", line 159, in execute_with_retry
+    async for attempt in retryer:
+  File "/usr/local/lib/python3.10/dist-packages/tenacity/asyncio/__init__.py", line 166, in __anext__
+    do = await self.iter(retry_state=self._retry_state)
+  File "/usr/local/lib/python3.10/dist-packages/tenacity/asyncio/__init__.py", line 153, in iter
+    result = await action(retry_state)
+  File "/usr/local/lib/python3.10/dist-packages/tenacity/_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/tenacity/__init__.py", line 398, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/usr/local/lib/python3.10/dist-packages/graphrag/llm/base/rate_limiting_llm.py", line 165, in execute_with_retry
+    return await do_attempt(), start
+  File "/usr/local/lib/python3.10/dist-packages/graphrag/llm/base/rate_limiting_llm.py", line 147, in do_attempt
+    return await self._delegate(input, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/graphrag/llm/base/base_llm.py", line 49, in __call__
+    return await self._invoke(input, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/graphrag/llm/base/base_llm.py", line 53, in _invoke
+    output = await self._execute_llm(input, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/graphrag/llm/openai/openai_embeddings_llm.py", line 36, in _execute_llm
+    embedding = await self.client.embeddings.create(
+  File "/usr/local/lib/python3.10/dist-packages/openai/resources/embeddings.py", line 215, in create
+    return await self._post(
+  File "/usr/local/lib/python3.10/dist-packages/openai/_base_client.py", line 1826, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+  File "/usr/local/lib/python3.10/dist-packages/openai/_base_client.py", line 1519, in request
+    return await self._request(
+  File "/usr/local/lib/python3.10/dist-packages/openai/_base_client.py", line 1620, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.NotFoundError: 404 page not found
+15:09:05,204 graphrag.index.reporting.file_workflow_callbacks INFO Error executing verb "text_embed" in create_final_entities: 404 page not found details=None
+15:09:05,225 graphrag.index.run ERROR error running workflow create_final_entities
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/graphrag/index/run.py", line 323, in run_pipeline
+    result = await workflow.run(context, callbacks)
+  File "/usr/local/lib/python3.10/dist-packages/datashaper/workflow/workflow.py", line 369, in run
+    timing = await self._execute_verb(node, context, callbacks)
+  File "/usr/local/lib/python3.10/dist-packages/datashaper/workflow/workflow.py", line 415, in _execute_verb
+    result = await result
+  File "/usr/local/lib/python3.10/dist-packages/graphrag/index/verbs/text/embed/text_embed.py", line 105, in text_embed
+    return await _text_embed_in_memory(
+  File "/usr/local/lib/python3.10/dist-packages/graphrag/index/verbs/text/embed/text_embed.py", line 130, in _text_embed_in_memory
+    result = await strategy_exec(texts, callbacks, cache, strategy_args)
+  File "/usr/local/lib/python3.10/dist-packages/graphrag/index/verbs/text/embed/strategies/openai.py", line 61, in run
+    embeddings = await _execute(llm, text_batches, ticker, semaphore)
+  File "/usr/local/lib/python3.10/dist-packages/graphrag/index/verbs/text/embed/strategies/openai.py", line 105, in _execute
+    results = await asyncio.gather(*futures)
+  File "/usr/local/lib/python3.10/dist-packages/graphrag/index/verbs/text/embed/strategies/openai.py", line 99, in embed
+    chunk_embeddings = await llm(chunk)
+  File "/usr/local/lib/python3.10/dist-packages/graphrag/llm/base/caching_llm.py", line 104, in __call__
+    result = await self._delegate(input, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/graphrag/llm/base/rate_limiting_llm.py", line 177, in __call__
+    result, start = await execute_with_retry()
+  File "/usr/local/lib/python3.10/dist-packages/graphrag/llm/base/rate_limiting_llm.py", line 159, in execute_with_retry
+    async for attempt in retryer:
+  File "/usr/local/lib/python3.10/dist-packages/tenacity/asyncio/__init__.py", line 166, in __anext__
+    do = await self.iter(retry_state=self._retry_state)
+  File "/usr/local/lib/python3.10/dist-packages/tenacity/asyncio/__init__.py", line 153, in iter
+    result = await action(retry_state)
+  File "/usr/local/lib/python3.10/dist-packages/tenacity/_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/tenacity/__init__.py", line 398, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/usr/local/lib/python3.10/dist-packages/graphrag/llm/base/rate_limiting_llm.py", line 165, in execute_with_retry
+    return await do_attempt(), start
+  File "/usr/local/lib/python3.10/dist-packages/graphrag/llm/base/rate_limiting_llm.py", line 147, in do_attempt
+    return await self._delegate(input, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/graphrag/llm/base/base_llm.py", line 49, in __call__
+    return await self._invoke(input, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/graphrag/llm/base/base_llm.py", line 53, in _invoke
+    output = await self._execute_llm(input, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/graphrag/llm/openai/openai_embeddings_llm.py", line 36, in _execute_llm
+    embedding = await self.client.embeddings.create(
+  File "/usr/local/lib/python3.10/dist-packages/openai/resources/embeddings.py", line 215, in create
+    return await self._post(
+  File "/usr/local/lib/python3.10/dist-packages/openai/_base_client.py", line 1826, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+  File "/usr/local/lib/python3.10/dist-packages/openai/_base_client.py", line 1519, in request
+    return await self._request(
+  File "/usr/local/lib/python3.10/dist-packages/openai/_base_client.py", line 1620, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.NotFoundError: 404 page not found
+15:09:05,237 graphrag.index.reporting.file_workflow_callbacks INFO Error running pipeline! details=None
