@@ -19,7 +19,7 @@ if __name__ == "__main__":
     subset = documents.loc[
         documents["document_id"].isin(sentences["document_id"])
     ].copy()
-    for record in subset.sample(10, random_state=10).to_dict(orient="records"):
+    for record in subset.to_dict(orient="records"):
         filename = record["document_id"] + ".md"
         contents = (
             f"# ID: {record['document_id']}\n"
