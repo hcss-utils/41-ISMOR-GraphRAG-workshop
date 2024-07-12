@@ -7,7 +7,7 @@ llm:
   model: gemma2
   model_supports_json: true # recommended if this is available for your model.
   # max_tokens: 4000
-  request_timeout: 300.0
+  request_timeout: 600.0
   api_base: http://localhost:11434/v1
   # api_version: 2024-02-15-preview
   # organization: <organization_id>
