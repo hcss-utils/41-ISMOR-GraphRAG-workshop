@@ -7,7 +7,7 @@ llm:
   model: gemma2
   model_supports_json: true # recommended if this is available for your model.
   # max_tokens: 4000
-  # request_timeout: 180.0
+  request_timeout: 300.0
   api_base: http://localhost:11434/v1
   # api_version: 2024-02-15-preview
   # organization: <organization_id>
@@ -17,7 +17,7 @@ llm:
   # max_retries: 10
   # max_retry_wait: 10.0
   # sleep_on_rate_limit_recommendation: true # whether to sleep when azure suggests wait-times
-  # concurrent_requests: 1 # the number of parallel inflight requests that may be made
+  concurrent_requests: 25 # the number of parallel inflight requests that may be made
 
 parallelization:
   stagger: 0.3
