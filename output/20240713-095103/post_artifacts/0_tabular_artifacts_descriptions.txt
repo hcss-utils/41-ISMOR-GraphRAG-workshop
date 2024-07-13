@@ -8,6 +8,10 @@ file name: create_base_documents
 [{'id': '38cb62ab5bfd63bad81a0734f1e1b2a9', 'text_units': array(['645ce27900f66a0b633be93f0e5d6399',
        '2a4b75db8fdd23483fc6c4f097c7f56f'], dtype=object), 'raw_content': ' who discarded Georg Hegel\'s idealistic metaphysics (Somerville 1945, 24) . The three basic laws of dialectical materialism can be summarized as follows: "The law of strife and unity of opposites (that is, things are in a continuous process of change because they are made up of opposing forces or elements); the law of transformation of quantity to quality . . . and the law of negation of negation (each qualitative stage becomes negated by a further development)" (Somerville 1945, 24) . N. Ya. Sushko and Stefan Tiuskhevich described dialectical materialism and military thought, saying that "the appearance of new means of struggle always brings into being corresponding counter-means, which in the end also lead to changes of military operations. The \'struggle\' of tanks and antitank means, submarines and antisubmarine means, aircraft and antiaircraft defense . . . this is the axis around which revolves the development of military affairs, including the development of methods and forms of armed conflict" (Sushko and Tiuskhevich 1965, 128) .\nDialectical materialism and holism were the foundation for the scientific drive in Soviet military science. In 1917, Lenin decided that all science of war and society needed to be based on Marxism-Leninism (Thomas 2011, 77) . Against the backdrop of Lenin\'s disappointment when the', 'title': '1_Jonsson_2019_The_Russian_Understanding_of_Wa_61.txt'}]
 """
+GPT analysis:
+"""
+This file appears to define a structure for creating base documents used in the GraphRAG pipeline. It includes columns for document ID, text units (likely references to segmented text), raw content, and title. This structure is essential for organizing and processing text data efficiently within the pipeline.
+"""
 
 file name: create_base_entity_graph
 """
@@ -15,6 +19,10 @@ file name: create_base_entity_graph
 - columns: level,clustered_graph
 - sample_input:
 <graph data>
+"""
+GPT analysis:
+"""
+This file defines the structure for creating a base entity graph, indicating different levels and their corresponding clustered graph data. It is essential for organizing and visualizing the relationships between extracted entities within the GraphRAG pipeline.
 """
 
 file name: create_base_extracted_entities
@@ -24,6 +32,10 @@ file name: create_base_extracted_entities
 - sample_input:
 <graph data>
 """
+GPT analysis:
+"""
+This file defines the structure for creating a base extracted entity graph, encapsulating the relationships and properties of identified entities. It plays a key role in organizing and visualizing the extracted entities within the GraphRAG pipeline.
+"""
 
 file name: create_base_text_units
 """
@@ -31,6 +43,10 @@ file name: create_base_text_units
 - columns: id,chunk,chunk_id,document_ids,n_tokens
 - sample_input:
 [{'id': '3005c5cb5d98576847761fbbd5957ef3', 'chunk': ' military theory and policy, the terminological apparatus has been inconsistent. As a result, Russian experts among themselves, and their Western colleagues, often mean different things when using the same terms and use different terms to refer to the same things. Additional factors hamper this lack of codification even further. First, there is a linguistic issue. The Russian professional discourse uses the terms coercion, deterrence and compellence interchangeably. The Russian equivalent of the Western term deterrencesderzhivanieref', 'chunk_id': '3005c5cb5d98576847761fbbd5957ef3', 'document_ids': array(['4473e2fdc470b816d698c46662ce3700'], dtype=object), 'n_tokens': 100}]
+"""
+GPT analysis:
+"""
+This file defines the structure for creating base text units, segmenting raw text into chunks with associated metadata such as document IDs and token counts. This segmentation is critical for processing and analyzing text data within the GraphRAG pipeline.
 """
 
 file name: create_final_communities
@@ -43,6 +59,10 @@ file name: create_final_communities
        '44fa3d2247904198b1c776e060d35eb2'], dtype=object), 'text_unit_ids': array(['0d32209c44da5e7a86e294594009dc9c,342381013c3f61db48a3a2b2bc77370c,355bb2e7269c004d598030ff8348dda0,6b7d21eb26a4ec94c42acbaaf3707f2e,ad49a894ef8b75f1e79de5a63ec78b85,b1b64ef207d42a2b81118c978ce1f222,b3aa1ac66a5e25e270fce196c19d325e,e3f78e84ba947ada447e7a0b46389605',
        '355bb2e7269c004d598030ff8348dda0,e3f78e84ba947ada447e7a0b46389605'],
       dtype=object)}]
+"""
+GPT analysis:
+"""
+This file defines the structure for creating final community data, including community IDs, titles, levels, raw community identifiers, relationship IDs, and text unit IDs. It organizes and encapsulates the detected communities and their relationships within the GraphRAG pipeline.
 """
 
 file name: create_final_community_reports
@@ -57,6 +77,10 @@ file name: create_final_community_reports
        {'explanation': 'The research conducted by Gorbunov and Bogdanov specifically addresses the challenges and dynamics of armed conflict in the 21st century. They analyze contemporary conflicts, emerging technologies, and the evolving nature of warfare. [Data: Community (685, 686, 684)] This indicates a keen interest in understanding and adapting to the complexities of modern military operations.', 'summary': "Gorbunov and Bogdanov's study focuses on 21st-century armed confrontation."}],
       dtype=object), 'full_content_json': '{\n    "title": "Russian Military Thought Community",\n    "summary": "The Russian Military Thought Community centers around individuals like Putin, Gorbunov, Bogdanov, Kvachkov, Serebryannikov, and Clausewitz. This community emphasizes the study of armed conflict, drawing inspiration from historical figures like Sun Tzu while analyzing modern warfare in the 21st century.  Key themes include the nature of war, its classification, and the use of both military and nonmilitary means.",\n    "rating": 8.5,\n    "rating_explanation": "This community\'s focus on contemporary armed conflict analysis and potential influence on policy decisions warrants a high impact severity rating.",\n    "findings": [\n        {\n            "summary": "Putin aligns with Gorbunov and Bogdanov\'s views on conflict.",\n            "explanation": "Vladimir Putin\'s political ideology appears to be influenced by the writings of Russian military theorists Gorbunov and Bogdanov. This is evident in his policies and statements regarding international relations and armed conflict. [Data: Community (23)]  Further research into Putin\'s public pronouncements and policy decisions could reveal a more explicit connection to their theories."\n        },\n        {\n            "summary": "Kvachkov critiques Clausewitz\'s definition of war.",\n            "explanation": "Military theorist Kvachkov challenges the traditional understanding of war as presented by Carl von Clausewitz.  He proposes a broader definition that encompasses not only armed warfare but also nonmilitary means of achieving strategic objectives. [Data: Community (303, 18)] This suggests a shift in thinking within Russian military circles towards a more comprehensive approach to conflict."\n        },\n        {\n            "summary": "Gorbunov and Bogdanov draw upon Sun Tzu\'s ideas.",\n            "explanation": "The writings of Gorbunov and Bogdanov demonstrate a clear influence from the ancient Chinese military strategist Sun Tzu. They incorporate his principles of strategy, deception, and adaptability into their analysis of modern warfare. [Data: Community (369)] This highlights the enduring relevance of classical military thought in contemporary strategic discussions."\n        },\n        {\n            "summary": "Kvachkov and Serebryannikov share similar views on war.",\n            "explanation": "Both Kvachkov and Serebryannikov, prominent figures in Russian military thought, appear to hold similar perspectives on the nature of war. Their writings suggest a focus on the strategic use of both military and nonmilitary means to achieve national objectives. [Data: Community (339)] Further analysis of their individual works could reveal specific points of convergence and divergence in their approaches."\n        },\n        {\n            "summary": "Gorbunov and Bogdanov\'s study focuses on 21st-century armed confrontation.",\n            "explanation": "The research conducted by Gorbunov and Bogdanov specifically addresses the challenges and dynamics of armed conflict in the 21st century. They analyze contemporary conflicts, emerging technologies, and the evolving nature of warfare. [Data: Community (685, 686, 684)] This indicates a keen interest in understanding and adapting to the complexities of modern military operations."\n        }\n    ]\n}', 'id': 'c965ef34-840c-4fff-8527-6d127f7e4bc2'}]
 """
+GPT analysis:
+"""
+This file defines the structure for creating final community reports, encapsulating community details, levels, rankings, titles, explanations, summaries, findings, and full content in both text and JSON formats. It organizes comprehensive reports on detected communities, aiding in the analysis and understanding of their characteristics and relationships within the GraphRAG pipeline.
+"""
 
 file name: create_final_entities
 """
@@ -64,6 +88,10 @@ file name: create_final_entities
 - columns: id,name,type,description,human_readable_id,graph_embedding,text_unit_ids
 - sample_input:
 [{'id': '3e460d9f011d4b0b9ccaae7b6a5202de', 'name': '"CONVENTIONAL PRECISION STRIKES"', 'type': '"EVENT"', 'description': '"Conventional Precision Strikes are military actions targeting specific enemy assets with high accuracy, often used in the early stages of conflict before nuclear escalation."', 'human_readable_id': 572, 'graph_embedding': None, 'text_unit_ids': array(['343b764679f62503b91262b7cfb4249b'], dtype=object)}]
+"""
+GPT analysis:
+"""
+This file defines the structure for creating final entity data, detailing entity IDs, names, types, descriptions, human-readable IDs, graph embeddings, and associated text unit IDs. It is crucial for organizing and detailing the extracted entities within the GraphRAG pipeline.
 """
 
 file name: create_final_nodes
@@ -73,6 +101,10 @@ file name: create_final_nodes
 - sample_input:
 [{'level': 1, 'title': '"MONUMENTS"', 'type': '"GEO"', 'description': '"Monuments are structures or sites of historical significance, potentially targeted for subjective damage."', 'source_id': 'ff26a07c83518bf86bdee8bad2f2f78c', 'degree': 0, 'human_readable_id': 903, 'id': '97f98b1623104f48aa93196a1f7dede2', 'size': 0, 'graph_embedding': None, 'community': None, 'entity_type': None, 'top_level_node_id': '97f98b1623104f48aa93196a1f7dede2', 'x': 0, 'y': 0}]
 """
+GPT analysis:
+"""
+This file defines the structure for creating final nodes in the graph, detailing node attributes such as level, title, type, description, source ID, degree, human-readable ID, ID, size, graph embedding, community, entity type, top-level node ID, and coordinates (x, y). It is essential for organizing and visualizing nodes within the GraphRAG pipeline.
+"""
 
 file name: create_final_relationships
 """
@@ -81,6 +113,10 @@ file name: create_final_relationships
 - sample_input:
 [{'source': '"GENERAL STAFF"', 'target': '"YURI BALUYEVSKY"', 'weight': 2.0, 'description': 'The **General Staff** is a military organization.  **Yuri Baluyevsky** is a member of the General Staff and serves as its Chief. \n', 'text_unit_ids': array(['188d0ba736e3a2e79f8ee925efb5fc17',
        'cbad03251a174d87dc9c103d0a260763'], dtype=object), 'id': 'f99931406ffb454f990fc9a83a57568a', 'human_readable_id': '552', 'source_degree': 17, 'target_degree': 3, 'rank': 20}]
+"""
+GPT analysis:
+"""
+This file defines the structure for creating final relationship data, detailing attributes such as source, target, weight, description, text unit IDs, ID, human-readable ID, source and target degrees, and rank. It is essential for mapping and analyzing relationships between entities within the GraphRAG pipeline.
 """
 
 file name: create_final_text_units
@@ -96,6 +132,10 @@ file name: create_final_text_units
        '5f8224530d424618acb32b74a3afe2c9',
        'bb2070d133f74049b88c96510fc807ba'], dtype=object)}]
 """
+GPT analysis:
+"""
+This file defines the structure for creating final text units, which are segments of text annotated with metadata such as IDs, token counts, associated document IDs, entity IDs, and relationship IDs. This segmentation and annotation are crucial for detailed analysis and processing of text data within the GraphRAG pipeline.
+"""
 
 file name: create_summarized_entities
 """
@@ -103,6 +143,10 @@ file name: create_summarized_entities
 - columns: entity_graph
 - sample_input:
 <graph data>
+"""
+GPT analysis:
+"""
+This file defines the structure for creating summarized entity graphs, encapsulating relationships and properties of entities in a summarized form. It plays a crucial role in providing a high-level view of the extracted entities and their interconnections within the GraphRAG pipeline.
 """
 
 file name: join_text_units_to_entity_ids
@@ -114,6 +158,10 @@ file name: join_text_units_to_entity_ids
        '5d97ff82691c4482973d73d1860e4757',
        'a18f7c9f58ca49d6acf18e1ca69d3033',
        'f3c3dd44cf50495c81e362174991242e'], dtype=object), 'id': 'ba6cc1cd4e196ad5c9a6ed672f497d19'}]
+"""
+GPT analysis:
+"""
+This file defines the structure for linking text units to entity IDs. It maps text unit identifiers to corresponding entity identifiers, facilitating the connection between raw text segments and extracted entities. This mapping is crucial for analyzing relationships and understanding the context of entities within the GraphRAG pipeline.
 """
 
 file name: join_text_units_to_relationship_ids
@@ -128,6 +176,10 @@ file name: join_text_units_to_relationship_ids
        'f879674860784f9eb4289aeb91728351',
        '86b0d920fa504eba81c26cfc3f4d2b9f'], dtype=object)}]
 """
+GPT analysis:
+"""
+This file defines the structure for linking text units to relationship IDs. It maps text unit identifiers to corresponding relationship identifiers, facilitating the connection between raw text segments and extracted relationships. This mapping is essential for analyzing relationships and understanding the context within the GraphRAG pipeline.
+"""
 
 file name: raw_extracted_entities
 """
@@ -135,4 +187,8 @@ file name: raw_extracted_entities
 - columns: ['id', 'chunk', 'chunk_id', 'document_ids', 'n_tokens', 'entities', 'entity_graph']
 - sample_input:
 {'id': 'a19173a530680219eb5e0efd973893c0', 'chunk': " and Hoffman 2005) , and Freedman's (2006) argument on the importance of strategic communications in the transformation of strategic affairs.\nThe Soviet Understanding of War\nAn analysis of Soviet military publications indicates an exceptionally sophisticated level of professional understanding by the Warsaw Pact officers of Western military-technological innovations. What is even more striking is that the Soviets were able to place these innovations in a much deeper and broader context, reflecting a far more profound grasp of these developments' implications than the West itself possessed.\n-Dima Adamsky (2010, 32) M any of the particular features of Russian military thought today have roots in Soviet military thought. This is probably unsurprising since the majority of the elites in today's Russia were educated and had their early careers under the Soviet system. The influence, however, goes further. Some of the key debates in contemporary Russia regarding what war is-including the US military's MTR/RMA, which later became network-centric warfare (NCW)-originated in Soviet times. Furthermore, many of the characteristics that set Russian military thought apart from its Western equivalent, such as the reliance on holism and dialectical materialism, were also introduced during the Soviet period. Soviet military theorists and political elites had a different way of approaching military thought, and arguably it was deeper and broader than Western approaches, as the quote above emphasizes.\nThe body of military theory and authoritative views was exceptionally stable throughout the history of the Soviet Union. This was partly because the essence", 'chunk_id': 'a19173a530680219eb5e0efd973893c0', 'document_ids': ['008ed1359f69cf071d15fd6a15ee2c21'], 'n_tokens': 300, 'entities': [{'name': '"WARSAW PACT"', 'type': '"ORGANIZATION"', 'description': '"The Warsaw Pact was a military alliance of communist states, and its officers had a sophisticated understanding of Western military innovations."', 'source_id': 'a19173a530680219eb5e0efd973893c0'}, {'name': '"RUSSIA"', 'type': '"GEO"', 'description': '"Russia is the focus of the text, particularly its contemporary military thought which has roots in Soviet times."', 'source_id': 'a19173a530680219eb5e0efd973893c0'}, {'name': '"US MILITARY"', 'type': '"ORGANIZATION"', 'description': '"The US Military\'s MTR/RMA, later known as network-centric warfare (NCW), is mentioned as a point of debate in both Soviet and contemporary Russian military thought."', 'source_id': 'a19173a530680219eb5e0efd973893c0'}, {'name': '"HOFFMAN"', 'type': '"PERSON"', 'description': '"Hoffman is cited as an author who contributed to the understanding of strategic communications in transforming strategic affairs."', 'source_id': 'a19173a530680219eb5e0efd973893c0'}, {'name': '"FREEDMAN"', 'type': '"PERSON"', 'description': '"Freedman is cited as an author who emphasized the importance of strategic communications in shaping strategic affairs."', 'source_id': 'a19173a530680219eb5e0efd973893c0'}], 'entity_graph': '<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">  <key id="d2" for="node" attr.name="source_id" attr.type="string" />  <key id="d1" for="node" attr.name="description" attr.type="string" />  <key id="d0" for="node" attr.name="type" attr.type="string" />  <graph edgedefault="undirected">    <node id="&quot;WARSAW PACT&quot;">      <data key="d0">"ORGANIZATION"</data>      <data key="d1">"The Warsaw Pact was a military alliance of communist states, and its officers had a sophisticated understanding of Western military innovations."</data>      <data key="d2">a19173a530680219eb5e0efd973893c0</data>    </node>    <node id="&quot;RUSSIA&quot;">      <data key="d0">"GEO"</data>      <data key="d1">"Russia is the focus of the text, particularly its contemporary military thought which has roots in Soviet times."</data>      <data key="d2">a19173a530680219eb5e0efd973893c0</data>    </node>    <node id="&quot;US MILITARY&quot;">      <data key="d0">"ORGANIZATION"</data>      <data key="d1">"The US Military\'s MTR/RMA, later known as network-centric warfare (NCW), is mentioned as a point of debate in both Soviet and contemporary Russian military thought."</data>      <data key="d2">a19173a530680219eb5e0efd973893c0</data>    </node>    <node id="&quot;HOFFMAN&quot;">      <data key="d0">"PERSON"</data>      <data key="d1">"Hoffman is cited as an author who contributed to the understanding of strategic communications in transforming strategic affairs."</data>      <data key="d2">a19173a530680219eb5e0efd973893c0</data>    </node>    <node id="&quot;FREEDMAN&quot;">      <data key="d0">"PERSON"</data>      <data key="d1">"Freedman is cited as an author who emphasized the importance of strategic communications in shaping strategic affairs."</data>      <data key="d2">a19173a530680219eb5e0efd973893c0</data>    </node>  </graph></graphml>'}
+"""
+GPT analysis:
+"""
+This file defines the structure for storing raw extracted entities, including their attributes and relationships. It captures detailed information about identified entities, their context within text chunks, and their representation in graph format. This data is essential for understanding and processing entity relationships and characteristics within the GraphRAG pipeline.
 """
