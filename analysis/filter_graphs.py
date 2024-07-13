@@ -21,12 +21,12 @@ os.makedirs(output_file_dir, exist_ok=True)
 
 def assign_colors(G):
     node_color_map = {
-        "CONCEPT": "cyan",
-        "EVENT": "orange",
-        "ROLE": "red",
-        "ORGANIZATION": "blue",
-        "LOCATION": "green",
-        "PERSON": "magenta",
+        '"CONCEPT"': "cyan",
+        '"EVENT"': "orange",
+        '"ROLE"': "red",
+        '"ORGANIZATION"': "blue",
+        '"LOCATION"': "green",
+        '"PERSON"': "magenta",
     }
 
     for n, attr in G.nodes(data=True):
@@ -45,16 +45,6 @@ def assign_colors(G):
 
 
 if __name__ == "__main__":
-
-    # # Filter edges with weight > 1
-    # filtered_edges = [(u, v) for u, v, d in G.edges(data=True) if d.get('weight', 0) > 1]
-
-    # # Create a subgraph with filtered edges
-    # filtered_graph = G.edge_subgraph(filtered_edges).copy()
-
-    # # Save the filtered graph to a new GraphML file
-    # nx.write_graphml(filtered_graph, output_file_path)
-
     # Load GraphML file
     G = nx.read_graphml(input_file_path)
     assign_colors(G)
