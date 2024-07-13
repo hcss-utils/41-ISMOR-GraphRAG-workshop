@@ -1,0 +1,869 @@
+09:51:03,469 graphrag.config.read_dotenv INFO Loading pipeline .env file
+09:51:03,477 graphrag.index.cli INFO using default configuration: {
+    "llm": {
+        "api_key": "REDACTED, length 9",
+        "type": "openai_chat",
+        "model": "gemma2",
+        "max_tokens": 4000,
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "request_timeout": 1200.0,
+        "api_base": "http://localhost:11434/v1",
+        "api_version": null,
+        "proxy": null,
+        "cognitive_services_endpoint": null,
+        "deployment_name": null,
+        "model_supports_json": true,
+        "tokens_per_minute": 0,
+        "requests_per_minute": 0,
+        "max_retries": 10,
+        "max_retry_wait": 10.0,
+        "sleep_on_rate_limit_recommendation": true,
+        "concurrent_requests": 25
+    },
+    "parallelization": {
+        "stagger": 0.3,
+        "num_threads": 50
+    },
+    "async_mode": "threaded",
+    "root_dir": "./ragtest",
+    "reporting": {
+        "type": "file",
+        "base_dir": "output/${timestamp}/reports",
+        "storage_account_blob_url": null
+    },
+    "storage": {
+        "type": "file",
+        "base_dir": "output/${timestamp}/artifacts",
+        "storage_account_blob_url": null
+    },
+    "cache": {
+        "type": "file",
+        "base_dir": "cache",
+        "storage_account_blob_url": null
+    },
+    "input": {
+        "type": "file",
+        "file_type": "text",
+        "base_dir": "input",
+        "storage_account_blob_url": null,
+        "encoding": "utf-8",
+        "file_pattern": ".*\\.txt$",
+        "file_filter": null,
+        "source_column": null,
+        "timestamp_column": null,
+        "timestamp_format": null,
+        "text_column": "text",
+        "title_column": null,
+        "document_attribute_columns": []
+    },
+    "embed_graph": {
+        "enabled": false,
+        "num_walks": 10,
+        "walk_length": 40,
+        "window_size": 2,
+        "iterations": 3,
+        "random_seed": 597832,
+        "strategy": null
+    },
+    "embeddings": {
+        "llm": {
+            "api_key": "REDACTED, length 9",
+            "type": "openai_embedding",
+            "model": "nomic_embed_text",
+            "max_tokens": 4000,
+            "temperature": 0,
+            "top_p": 1,
+            "request_timeout": 180.0,
+            "api_base": "http://localhost:11434/api",
+            "api_version": null,
+            "proxy": null,
+            "cognitive_services_endpoint": null,
+            "deployment_name": null,
+            "model_supports_json": null,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "max_retries": 10,
+            "max_retry_wait": 10.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 25
+        },
+        "parallelization": {
+            "stagger": 0.3,
+            "num_threads": 50
+        },
+        "async_mode": "threaded",
+        "batch_size": 16,
+        "batch_max_tokens": 8191,
+        "target": "required",
+        "skip": [],
+        "vector_store": null,
+        "strategy": null
+    },
+    "chunks": {
+        "size": 300,
+        "overlap": 100,
+        "group_by_columns": [
+            "id"
+        ],
+        "strategy": null
+    },
+    "snapshots": {
+        "graphml": true,
+        "raw_entities": true,
+        "top_level_nodes": true
+    },
+    "entity_extraction": {
+        "llm": {
+            "api_key": "REDACTED, length 9",
+            "type": "openai_chat",
+            "model": "gemma2",
+            "max_tokens": 4000,
+            "temperature": 0.0,
+            "top_p": 1.0,
+            "request_timeout": 1200.0,
+            "api_base": "http://localhost:11434/v1",
+            "api_version": null,
+            "proxy": null,
+            "cognitive_services_endpoint": null,
+            "deployment_name": null,
+            "model_supports_json": true,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "max_retries": 10,
+            "max_retry_wait": 10.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 25
+        },
+        "parallelization": {
+            "stagger": 0.3,
+            "num_threads": 50
+        },
+        "async_mode": "threaded",
+        "prompt": "prompts/entity_extraction.txt",
+        "entity_types": [
+            "organization",
+            "person",
+            "geo",
+            "event"
+        ],
+        "max_gleanings": 0,
+        "strategy": null
+    },
+    "summarize_descriptions": {
+        "llm": {
+            "api_key": "REDACTED, length 9",
+            "type": "openai_chat",
+            "model": "gemma2",
+            "max_tokens": 4000,
+            "temperature": 0.0,
+            "top_p": 1.0,
+            "request_timeout": 1200.0,
+            "api_base": "http://localhost:11434/v1",
+            "api_version": null,
+            "proxy": null,
+            "cognitive_services_endpoint": null,
+            "deployment_name": null,
+            "model_supports_json": true,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "max_retries": 10,
+            "max_retry_wait": 10.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 25
+        },
+        "parallelization": {
+            "stagger": 0.3,
+            "num_threads": 50
+        },
+        "async_mode": "threaded",
+        "prompt": "prompts/summarize_descriptions.txt",
+        "max_length": 500,
+        "strategy": null
+    },
+    "community_reports": {
+        "llm": {
+            "api_key": "REDACTED, length 9",
+            "type": "openai_chat",
+            "model": "gemma2",
+            "max_tokens": 4000,
+            "temperature": 0.0,
+            "top_p": 1.0,
+            "request_timeout": 1200.0,
+            "api_base": "http://localhost:11434/v1",
+            "api_version": null,
+            "proxy": null,
+            "cognitive_services_endpoint": null,
+            "deployment_name": null,
+            "model_supports_json": true,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "max_retries": 10,
+            "max_retry_wait": 10.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 25
+        },
+        "parallelization": {
+            "stagger": 0.3,
+            "num_threads": 50
+        },
+        "async_mode": "threaded",
+        "prompt": null,
+        "max_length": 2000,
+        "max_input_length": 8000,
+        "strategy": null
+    },
+    "claim_extraction": {
+        "llm": {
+            "api_key": "REDACTED, length 9",
+            "type": "openai_chat",
+            "model": "gemma2",
+            "max_tokens": 4000,
+            "temperature": 0.0,
+            "top_p": 1.0,
+            "request_timeout": 1200.0,
+            "api_base": "http://localhost:11434/v1",
+            "api_version": null,
+            "proxy": null,
+            "cognitive_services_endpoint": null,
+            "deployment_name": null,
+            "model_supports_json": true,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "max_retries": 10,
+            "max_retry_wait": 10.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 25
+        },
+        "parallelization": {
+            "stagger": 0.3,
+            "num_threads": 50
+        },
+        "async_mode": "threaded",
+        "enabled": false,
+        "prompt": "prompts/claim_extraction.txt",
+        "description": "Any claims or facts that could be relevant to information discovery.",
+        "max_gleanings": 0,
+        "strategy": null
+    },
+    "cluster_graph": {
+        "max_cluster_size": 10,
+        "strategy": null
+    },
+    "umap": {
+        "enabled": false
+    },
+    "local_search": {
+        "text_unit_prop": 0.5,
+        "community_prop": 0.1,
+        "conversation_history_max_turns": 5,
+        "top_k_entities": 10,
+        "top_k_relationships": 10,
+        "max_tokens": 5000,
+        "llm_max_tokens": 2000
+    },
+    "global_search": {
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "max_tokens": 5000,
+        "data_max_tokens": 12000,
+        "map_max_tokens": 1000,
+        "reduce_max_tokens": 2000,
+        "concurrency": 32
+    },
+    "encoding_model": "cl100k_base",
+    "skip_workflows": []
+}
+09:51:03,479 graphrag.index.create_pipeline_config INFO skipping workflows 
+09:51:03,502 graphrag.index.run INFO Running pipeline
+09:51:03,503 graphrag.index.storage.file_pipeline_storage INFO Creating file storage at ragtest/output/20240713-095103/artifacts
+09:51:03,503 graphrag.index.input.load_input INFO loading input from root_dir=input
+09:51:03,503 graphrag.index.input.load_input INFO using file storage for input
+09:51:03,505 graphrag.index.storage.file_pipeline_storage INFO search ragtest/input for files matching .*\.txt$
+09:51:03,516 graphrag.index.input.text INFO found text files from input, found [('2_Kofman_2020_DRM_2019_U_022455_1Rev_147.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_46.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_392.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_40.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_266.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_61.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_254.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_237.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_48.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_134.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_200.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_193.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_3.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_11.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_238.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_125.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_118.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_265.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_248.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_236.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_26.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_211.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_41.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_218.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_235.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_361.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_1.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_359.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_99.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_132.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_397.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_163.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_228.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_207.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_176.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_4.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_366.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_23.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_25.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_180.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_64.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_31.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_388.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_334.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_221.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_31.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_10.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_126.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_82.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_65.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_337.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_94.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_19.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_347.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_36.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_108.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_7.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_37.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_45.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_155.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_133.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_59.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_38.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_339.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_107.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_54.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_182.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_61.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_63.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_56.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_9.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_52.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_90.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_139.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_142.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_121.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_15.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_34.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_389.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_257.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_45.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_395.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_186.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_69.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_36.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_154.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_340.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_63.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_381.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_60.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_175.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_284.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_127.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_379.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_32.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_93.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_348.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_51.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_364.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_335.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_219.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_47.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_72.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_343.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_194.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_345.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_229.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_390.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_261.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_77.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_153.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_213.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_167.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_172.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_250.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_209.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_22.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_350.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_162.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_118.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_113.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_102.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_25.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_38.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_140.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_121.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_29.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_24.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_59.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_112.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_79.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_360.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_131.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_0.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_223.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_44.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_134.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_68.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_3.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_109.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_20.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_129.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_101.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_5.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_256.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_114.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_208.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_70.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_84.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_88.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_222.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_117.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_356.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_129.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_4.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_338.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_174.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_142.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_375.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_55.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_227.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_184.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_40.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_139.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_30.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_145.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_47.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_12.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_165.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_372.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_1.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_16.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_385.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_13.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_259.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_362.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_57.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_160.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_62.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_83.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_158.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_33.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_43.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_147.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_6.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_60.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_41.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_260.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_21.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_408.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_2.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_124.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_145.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_135.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_71.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_230.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_56.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_146.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_205.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_124.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_391.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_166.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_270.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_53.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_126.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_8.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_376.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_387.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_264.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_224.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_196.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_164.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_212.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_140.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_119.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_149.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_20.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_58.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_346.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_67.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_137.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_115.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_148.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_382.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_353.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_30.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_95.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_8.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_39.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_377.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_92.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_117.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_143.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_26.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_170.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_351.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_62.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_66.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_19.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_6.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_210.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_29.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_201.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_358.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_383.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_141.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_161.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_188.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_152.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_7.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_239.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_155.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_232.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_268.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_98.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_130.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_49.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_144.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_157.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_192.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_371.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_169.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_105.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_46.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_28.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_246.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_342.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_380.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_135.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_187.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_120.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_217.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_159.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_21.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_215.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_86.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_15.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_32.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_114.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_181.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_116.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_66.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_409.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_115.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_91.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_136.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_27.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_75.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_89.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_73.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_393.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_39.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_42.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_119.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_365.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_225.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_370.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_226.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_151.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_171.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_35.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_199.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_81.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_373.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_97.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_2.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_43.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_251.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_233.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_173.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_14.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_80.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_363.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_48.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_214.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_5.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_153.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_202.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_78.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_355.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_131.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_220.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_23.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_16.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_12.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_127.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_344.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_35.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_11.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_9.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_58.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_141.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_255.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_100.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_96.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_53.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_204.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_10.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_378.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_178.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_136.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_122.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_50.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_64.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_168.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_405.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_130.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_242.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_206.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_148.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_76.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_154.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_143.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_65.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_190.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_244.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_394.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_240.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_85.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_14.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_151.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_243.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_22.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_247.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_42.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_150.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_50.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_354.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_51.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_267.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_384.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_156.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_44.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_245.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_87.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_396.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_111.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_374.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_216.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_185.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_149.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_357.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_128.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_203.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_386.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_183.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_367.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_191.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_28.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_67.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_113.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_17.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_336.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_159.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_55.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_258.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_158.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_125.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_128.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_263.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_349.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_249.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_146.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_138.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_241.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_157.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_160.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_156.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_24.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_253.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_57.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_34.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_369.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_27.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_18.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_150.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_120.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_122.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_68.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_123.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_104.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_49.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_103.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_144.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_33.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_189.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_197.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_17.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_106.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_18.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_0.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_137.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_198.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_110.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_138.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_179.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_341.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_133.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_177.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_195.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_52.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_37.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_13.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_234.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_152.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_368.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_352.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_132.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_252.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_123.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_74.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_231.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_262.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_54.txt', {})]
+09:51:03,773 graphrag.index.workflows.load INFO Workflow Run Order: ['create_base_text_units', 'create_base_extracted_entities', 'create_summarized_entities', 'create_base_entity_graph', 'create_final_entities', 'create_final_nodes', 'create_final_communities', 'join_text_units_to_entity_ids', 'create_final_relationships', 'join_text_units_to_relationship_ids', 'create_final_community_reports', 'create_final_text_units', 'create_base_documents', 'create_final_documents']
+09:51:03,773 graphrag.index.run INFO Final # of rows loaded: 454
+09:51:04,230 graphrag.index.run INFO Running workflow: create_base_text_units...
+09:51:04,230 graphrag.index.run INFO dependencies for create_base_text_units: []
+09:51:04,240 datashaper.workflow.workflow INFO executing verb orderby
+09:51:04,246 datashaper.workflow.workflow INFO executing verb zip
+09:51:04,260 datashaper.workflow.workflow INFO executing verb aggregate_override
+09:51:04,284 datashaper.workflow.workflow INFO executing verb chunk
+09:51:05,535 datashaper.workflow.workflow INFO executing verb select
+09:51:05,544 datashaper.workflow.workflow INFO executing verb unroll
+09:51:05,552 datashaper.workflow.workflow INFO executing verb rename
+09:51:05,557 datashaper.workflow.workflow INFO executing verb genid
+09:51:05,585 datashaper.workflow.workflow INFO executing verb unzip
+09:51:05,593 datashaper.workflow.workflow INFO executing verb copy
+09:51:05,600 datashaper.workflow.workflow INFO executing verb filter
+09:51:05,628 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_base_text_units.parquet
+09:51:06,64 graphrag.index.run INFO Running workflow: create_base_extracted_entities...
+09:51:06,65 graphrag.index.run INFO dependencies for create_base_extracted_entities: ['create_base_text_units']
+09:51:06,65 graphrag.index.run INFO read table from storage: create_base_text_units.parquet
+09:51:06,108 datashaper.workflow.workflow INFO executing verb entity_extract
+09:51:06,159 graphrag.llm.openai.create_openai_client INFO Creating OpenAI client base_url=http://localhost:11434/v1
+09:51:06,211 graphrag.index.llm.load_llm INFO create TPM/RPM limiter for gemma2: TPM=0, RPM=0
+09:51:06,211 graphrag.index.llm.load_llm INFO create concurrency limiter for gemma2: 25
+09:51:07,905 datashaper.workflow.workflow INFO executing verb snapshot
+09:51:07,967 datashaper.workflow.workflow INFO executing verb merge_graphs
+09:51:08,304 datashaper.workflow.workflow INFO executing verb snapshot_rows
+09:51:08,311 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_base_extracted_entities.parquet
+09:51:08,721 graphrag.index.run INFO Running workflow: create_summarized_entities...
+09:51:08,722 graphrag.index.run INFO dependencies for create_summarized_entities: ['create_base_extracted_entities']
+09:51:08,722 graphrag.index.run INFO read table from storage: create_base_extracted_entities.parquet
+09:51:08,750 datashaper.workflow.workflow INFO executing verb summarize_descriptions
+09:51:43,428 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:51:43,434 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "summarize" with 0 retries took 34.43599999999992. input_tokens=323, output_tokens=120
+09:51:43,608 datashaper.workflow.workflow INFO executing verb snapshot_rows
+09:51:43,620 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_summarized_entities.parquet
+09:51:44,141 graphrag.index.run INFO Running workflow: create_base_entity_graph...
+09:51:44,142 graphrag.index.run INFO dependencies for create_base_entity_graph: ['create_summarized_entities']
+09:51:44,142 graphrag.index.run INFO read table from storage: create_summarized_entities.parquet
+09:51:44,195 datashaper.workflow.workflow INFO executing verb cluster_graph
+09:51:45,148 datashaper.workflow.workflow INFO executing verb snapshot_rows
+09:51:45,166 datashaper.workflow.workflow INFO executing verb snapshot_rows
+09:51:45,183 datashaper.workflow.workflow INFO executing verb select
+09:51:45,188 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_base_entity_graph.parquet
+09:51:45,682 graphrag.index.run INFO Running workflow: create_final_entities...
+09:51:45,688 graphrag.index.run INFO dependencies for create_final_entities: ['create_base_entity_graph']
+09:51:45,688 graphrag.index.run INFO read table from storage: create_base_entity_graph.parquet
+09:51:45,733 datashaper.workflow.workflow INFO executing verb unpack_graph
+09:51:46,8 datashaper.workflow.workflow INFO executing verb rename
+09:51:46,30 datashaper.workflow.workflow INFO executing verb select
+09:51:46,50 datashaper.workflow.workflow INFO executing verb dedupe
+09:51:46,74 datashaper.workflow.workflow INFO executing verb rename
+09:51:46,86 datashaper.workflow.workflow INFO executing verb filter
+09:51:46,136 datashaper.workflow.workflow INFO executing verb text_split
+09:51:46,170 datashaper.workflow.workflow INFO executing verb drop
+09:51:46,184 datashaper.workflow.workflow INFO executing verb merge
+09:51:46,601 datashaper.workflow.workflow INFO executing verb text_embed
+09:51:46,605 graphrag.llm.openai.create_openai_client INFO Creating OpenAI client base_url=http://localhost:11434/api
+09:51:46,656 graphrag.index.llm.load_llm INFO create TPM/RPM limiter for nomic_embed_text: TPM=0, RPM=0
+09:51:46,656 graphrag.index.llm.load_llm INFO create concurrency limiter for nomic_embed_text: 25
+09:51:46,792 graphrag.index.verbs.text.embed.strategies.openai INFO embedding 1511 inputs via 1511 snippets using 95 batches. max_batch_size=16, max_tokens=8191
+09:51:49,518 httpx INFO HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+09:51:49,620 httpx INFO HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+09:51:49,721 httpx INFO HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+09:51:49,781 httpx INFO HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+09:51:49,922 httpx INFO HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+09:51:49,979 httpx INFO HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+09:51:50,83 httpx INFO HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+09:51:50,180 httpx INFO HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+09:51:50,241 httpx INFO HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+09:51:50,383 httpx INFO HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+09:51:50,440 httpx INFO HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+09:51:50,539 httpx INFO HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+09:51:50,636 httpx INFO HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+09:51:50,693 httpx INFO HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+09:51:50,836 httpx INFO HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+09:51:50,889 httpx INFO HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+09:51:50,890 graphrag.llm.base.rate_limiting_llm INFO perf - llm.embedding "Process" with 0 retries took 4.086000000000013. input_tokens=1090, output_tokens=0
+09:51:51,726 datashaper.workflow.workflow INFO executing verb drop
+09:51:51,742 datashaper.workflow.workflow INFO executing verb filter
+09:51:51,788 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_final_entities.parquet
+09:51:52,393 graphrag.index.run INFO Running workflow: create_final_nodes...
+09:51:52,393 graphrag.index.run INFO dependencies for create_final_nodes: ['create_base_entity_graph']
+09:51:52,393 graphrag.index.run INFO read table from storage: create_base_entity_graph.parquet
+09:51:52,444 datashaper.workflow.workflow INFO executing verb layout_graph
+09:51:53,761 datashaper.workflow.workflow INFO executing verb unpack_graph
+09:51:54,443 datashaper.workflow.workflow INFO executing verb unpack_graph
+09:51:54,703 datashaper.workflow.workflow INFO executing verb filter
+09:51:54,851 datashaper.workflow.workflow INFO executing verb drop
+09:51:54,882 datashaper.workflow.workflow INFO executing verb select
+09:51:54,914 datashaper.workflow.workflow INFO executing verb snapshot
+09:51:54,949 datashaper.workflow.workflow INFO executing verb rename
+09:51:55,18 datashaper.workflow.workflow INFO executing verb join
+09:51:55,74 datashaper.workflow.workflow INFO executing verb convert
+09:51:55,237 datashaper.workflow.workflow INFO executing verb rename
+09:51:55,247 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_final_nodes.parquet
+09:51:55,876 graphrag.index.run INFO Running workflow: create_final_communities...
+09:51:55,876 graphrag.index.run INFO dependencies for create_final_communities: ['create_base_entity_graph']
+09:51:55,881 graphrag.index.run INFO read table from storage: create_base_entity_graph.parquet
+09:51:56,6 datashaper.workflow.workflow INFO executing verb unpack_graph
+09:51:56,575 datashaper.workflow.workflow INFO executing verb unpack_graph
+09:51:57,585 datashaper.workflow.workflow INFO executing verb aggregate_override
+09:51:57,644 datashaper.workflow.workflow INFO executing verb join
+09:51:57,710 datashaper.workflow.workflow INFO executing verb join
+09:51:57,771 datashaper.workflow.workflow INFO executing verb concat
+09:51:57,828 datashaper.workflow.workflow INFO executing verb filter
+09:51:58,670 datashaper.workflow.workflow INFO executing verb aggregate_override
+09:51:58,728 datashaper.workflow.workflow INFO executing verb join
+09:51:58,774 datashaper.workflow.workflow INFO executing verb filter
+09:51:58,858 datashaper.workflow.workflow INFO executing verb fill
+09:51:58,895 datashaper.workflow.workflow INFO executing verb merge
+09:51:58,986 datashaper.workflow.workflow INFO executing verb copy
+09:51:59,30 datashaper.workflow.workflow INFO executing verb select
+09:51:59,37 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_final_communities.parquet
+09:51:59,629 graphrag.index.run INFO Running workflow: join_text_units_to_entity_ids...
+09:51:59,630 graphrag.index.run INFO dependencies for join_text_units_to_entity_ids: ['create_final_entities']
+09:51:59,641 graphrag.index.run INFO read table from storage: create_final_entities.parquet
+09:51:59,860 datashaper.workflow.workflow INFO executing verb select
+09:51:59,902 datashaper.workflow.workflow INFO executing verb unroll
+09:51:59,975 datashaper.workflow.workflow INFO executing verb aggregate_override
+09:52:00,76 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table join_text_units_to_entity_ids.parquet
+09:52:00,619 graphrag.index.run INFO Running workflow: create_final_relationships...
+09:52:00,619 graphrag.index.run INFO dependencies for create_final_relationships: ['create_final_nodes', 'create_base_entity_graph']
+09:52:00,619 graphrag.index.run INFO read table from storage: create_final_nodes.parquet
+09:52:00,634 graphrag.index.run INFO read table from storage: create_base_entity_graph.parquet
+09:52:00,765 datashaper.workflow.workflow INFO executing verb unpack_graph
+09:52:01,249 datashaper.workflow.workflow INFO executing verb filter
+09:52:01,510 datashaper.workflow.workflow INFO executing verb rename
+09:52:01,556 datashaper.workflow.workflow INFO executing verb filter
+09:52:01,738 datashaper.workflow.workflow INFO executing verb drop
+09:52:01,821 datashaper.workflow.workflow INFO executing verb compute_edge_combined_degree
+09:52:01,873 datashaper.workflow.workflow INFO executing verb convert
+09:52:01,960 datashaper.workflow.workflow INFO executing verb convert
+09:52:01,965 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_final_relationships.parquet
+09:52:02,537 graphrag.index.run INFO Running workflow: join_text_units_to_relationship_ids...
+09:52:02,537 graphrag.index.run INFO dependencies for join_text_units_to_relationship_ids: ['create_final_relationships']
+09:52:02,538 graphrag.index.run INFO read table from storage: create_final_relationships.parquet
+09:52:02,646 datashaper.workflow.workflow INFO executing verb select
+09:52:02,694 datashaper.workflow.workflow INFO executing verb unroll
+09:52:02,742 datashaper.workflow.workflow INFO executing verb aggregate_override
+09:52:02,808 datashaper.workflow.workflow INFO executing verb select
+09:52:02,838 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table join_text_units_to_relationship_ids.parquet
+09:52:03,419 graphrag.index.run INFO Running workflow: create_final_community_reports...
+09:52:03,419 graphrag.index.run INFO dependencies for create_final_community_reports: ['create_final_relationships', 'create_final_nodes']
+09:52:03,420 graphrag.index.run INFO read table from storage: create_final_relationships.parquet
+09:52:03,428 graphrag.index.run INFO read table from storage: create_final_nodes.parquet
+09:52:03,537 datashaper.workflow.workflow INFO executing verb prepare_community_reports_nodes
+09:52:03,731 datashaper.workflow.workflow INFO executing verb prepare_community_reports_edges
+09:52:03,807 datashaper.workflow.workflow INFO executing verb restore_community_hierarchy
+09:52:03,879 datashaper.workflow.workflow INFO executing verb prepare_community_reports
+09:52:03,880 graphrag.index.verbs.graph.report.prepare_community_reports INFO Number of nodes at level=2 => 1511
+09:52:04,163 graphrag.index.verbs.graph.report.prepare_community_reports INFO Number of nodes at level=1 => 1511
+09:52:04,675 graphrag.index.verbs.graph.report.prepare_community_reports INFO Number of nodes at level=0 => 1511
+09:52:05,89 datashaper.workflow.workflow INFO executing verb create_community_reports
+09:53:01,217 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:53:01,220 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 55.87600000000009. input_tokens=2201, output_tokens=423
+09:53:21,414 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:53:21,418 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 76.101. input_tokens=3503, output_tokens=548
+09:53:32,584 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:53:32,588 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 87.106. input_tokens=3323, output_tokens=647
+09:53:45,965 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:53:45,972 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 100.60900000000004. input_tokens=2893, output_tokens=727
+09:54:06,960 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:54:06,961 graphrag.llm.openai.utils ERROR error loading json, json={
+  "title": "Soviet Thought and Security Concepts",
+  "summary": "This community explores the interconnected concepts of Soviet ideology, its influence on military doctrine and national security, and how it viewed international relations, particularly with developed Western countries. Key entities include 'Soviet Ideology', 'National Security Concept', 'Military Doctrine', and 'Developed Western Countries'. The analysis reveals a framework where Soviet ideology shaped perceptions of war, security threats, and the role of Russia in the world.",
+  "rating": 7.5,
+  "rating_explanation": "The community highlights a significant historical influence on Russian thought and policy, impacting international relations and military strategy.",
+  "findings": [
+    {
+      "summary": "Soviet Ideology Defined Warfare",
+      "explanation": "Soviet ideology heavily influenced the understanding of war and its justification. The concept of 'Just and Unjust Wars' emerged as a central tenet within Soviet thought, providing a framework for categorizing conflicts based on perceived morality [Data: SOVIET IDEOLOGY (224)]. This ideological lens shaped military doctrine and national security policies, influencing how Russia viewed its role in global affairs.  The 'Soviet Way', a manifestation of this ideology, further concretized these principles into practical applications [Data: SOVIET IDEOLOGY (223)].",
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+Traceback (most recent call last):
+  File "/content/graphrag-ways-of-war/graphrag-local-ollama/graphrag/llm/openai/utils.py", line 93, in try_parse_json_object
+    result = json.loads(input)
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.10/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 25 column 1 (char 1481)
+09:54:06,965 graphrag.index.graph.extractors.community_reports.community_reports_extractor ERROR error generating community report
+Traceback (most recent call last):
+  File "/content/graphrag-ways-of-war/graphrag-local-ollama/graphrag/index/graph/extractors/community_reports/community_reports_extractor.py", line 58, in __call__
+    await self._llm(
+  File "/content/graphrag-ways-of-war/graphrag-local-ollama/graphrag/llm/openai/json_parsing_llm.py", line 34, in __call__
+    result = await self._delegate(input, **kwargs)
+  File "/content/graphrag-ways-of-war/graphrag-local-ollama/graphrag/llm/openai/openai_token_replacing_llm.py", line 37, in __call__
+    return await self._delegate(input, **kwargs)
+  File "/content/graphrag-ways-of-war/graphrag-local-ollama/graphrag/llm/openai/openai_history_tracking_llm.py", line 33, in __call__
+    output = await self._delegate(input, **kwargs)
+  File "/content/graphrag-ways-of-war/graphrag-local-ollama/graphrag/llm/base/caching_llm.py", line 104, in __call__
+    result = await self._delegate(input, **kwargs)
+  File "/content/graphrag-ways-of-war/graphrag-local-ollama/graphrag/llm/base/rate_limiting_llm.py", line 177, in __call__
+    result, start = await execute_with_retry()
+  File "/content/graphrag-ways-of-war/graphrag-local-ollama/graphrag/llm/base/rate_limiting_llm.py", line 159, in execute_with_retry
+    async for attempt in retryer:
+  File "/usr/local/lib/python3.10/dist-packages/tenacity/asyncio/__init__.py", line 166, in __anext__
+    do = await self.iter(retry_state=self._retry_state)
+  File "/usr/local/lib/python3.10/dist-packages/tenacity/asyncio/__init__.py", line 153, in iter
+    result = await action(retry_state)
+  File "/usr/local/lib/python3.10/dist-packages/tenacity/_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/tenacity/__init__.py", line 398, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/content/graphrag-ways-of-war/graphrag-local-ollama/graphrag/llm/base/rate_limiting_llm.py", line 165, in execute_with_retry
+    return await do_attempt(), start
+  File "/content/graphrag-ways-of-war/graphrag-local-ollama/graphrag/llm/base/rate_limiting_llm.py", line 147, in do_attempt
+    return await self._delegate(input, **kwargs)
+  File "/content/graphrag-ways-of-war/graphrag-local-ollama/graphrag/llm/base/base_llm.py", line 48, in __call__
+    return await self._invoke_json(input, **kwargs)
+  File "/content/graphrag-ways-of-war/graphrag-local-ollama/graphrag/llm/openai/openai_chat_llm.py", line 82, in _invoke_json
+    result = await generate()
+  File "/content/graphrag-ways-of-war/graphrag-local-ollama/graphrag/llm/openai/openai_chat_llm.py", line 74, in generate
+    await self._native_json(input, **{**kwargs, "name": call_name})
+  File "/content/graphrag-ways-of-war/graphrag-local-ollama/graphrag/llm/openai/openai_chat_llm.py", line 108, in _native_json
+    json_output = try_parse_json_object(raw_output)
+  File "/content/graphrag-ways-of-war/graphrag-local-ollama/graphrag/llm/openai/utils.py", line 93, in try_parse_json_object
+    result = json.loads(input)
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.10/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 25 column 1 (char 1481)
+09:54:06,972 graphrag.index.reporting.file_workflow_callbacks INFO Community Report Extraction Error details=None
+09:54:06,973 graphrag.index.verbs.graph.report.strategies.graph_intelligence.run_graph_intelligence WARNING No report found for community: 28
+09:54:20,300 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:54:20,304 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 135.00900000000001. input_tokens=2200, output_tokens=525
+09:54:45,190 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:54:45,193 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 159.841. input_tokens=2337, output_tokens=493
+09:55:28,380 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:55:28,383 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 203.05700000000002. input_tokens=2461, output_tokens=571
+09:55:36,463 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:55:36,477 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 211.043. input_tokens=2971, output_tokens=768
+09:55:59,212 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:55:59,215 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 233.711. input_tokens=2985, output_tokens=701
+09:56:29,161 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:56:29,164 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 263.92499999999995. input_tokens=3311, output_tokens=742
+09:57:01,730 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:57:01,735 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 296.294. input_tokens=2926, output_tokens=607
+09:57:08,127 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:57:08,130 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 302.74699999999996. input_tokens=2769, output_tokens=696
+09:57:21,455 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:57:21,459 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 316.207. input_tokens=3890, output_tokens=552
+09:57:59,123 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:57:59,126 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 353.86199999999997. input_tokens=3965, output_tokens=623
+09:58:25,752 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:58:25,759 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 380.28700000000003. input_tokens=3461, output_tokens=552
+09:58:37,666 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:58:37,669 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 392.3639999999999. input_tokens=4084, output_tokens=643
+09:58:54,368 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:58:54,371 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 408.87900000000013. input_tokens=3165, output_tokens=644
+09:59:12,250 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:59:12,253 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 426.9789999999999. input_tokens=2319, output_tokens=504
+09:59:54,515 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:59:54,519 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 469.12200000000007. input_tokens=4673, output_tokens=625
+10:00:00,871 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:00:00,874 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 475.5. input_tokens=3678, output_tokens=538
+10:00:29,612 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:00:29,616 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 504.15599999999995. input_tokens=4241, output_tokens=676
+10:00:44,719 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:00:44,723 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 519.303. input_tokens=2926, output_tokens=660
+10:01:13,495 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:01:13,497 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 548.089. input_tokens=2598, output_tokens=520
+10:01:37,371 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:01:37,378 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 572.0429999999999. input_tokens=2332, output_tokens=673
+10:01:53,493 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:01:53,497 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 512.0770000000001. input_tokens=2258, output_tokens=472
+10:02:15,973 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:02:15,978 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 510.00400000000013. input_tokens=2081, output_tokens=237
+10:02:21,876 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:02:21,880 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 560.6579999999999. input_tokens=2426, output_tokens=733
+10:02:56,506 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:02:56,511 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 563.907. input_tokens=2659, output_tokens=689
+10:03:34,231 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:03:34,236 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 567.214. input_tokens=3042, output_tokens=643
+10:03:48,915 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:03:48,918 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 568.612. input_tokens=4878, output_tokens=636
+10:04:01,263 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:04:01,266 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 556.0710000000001. input_tokens=3401, output_tokens=670
+10:04:17,592 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:04:17,598 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 529.21. input_tokens=2427, output_tokens=550
+10:05:04,793 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:05:04,796 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 568.3080000000001. input_tokens=2833, output_tokens=593
+10:05:20,275 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:05:20,278 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 531.111. input_tokens=5429, output_tokens=559
+10:05:27,680 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:05:27,683 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 568.465. input_tokens=4123, output_tokens=676
+10:05:47,2 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:05:47,6 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 525.2680000000001. input_tokens=2478, output_tokens=628
+10:06:26,654 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:06:26,658 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 558.526. input_tokens=2677, output_tokens=525
+10:06:45,889 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:06:45,893 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 500.13200000000006. input_tokens=2361, output_tokens=420
+10:06:47,432 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:06:47,435 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 565.9739999999999. input_tokens=2596, output_tokens=587
+10:06:52,353 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:06:52,357 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 533.2280000000001. input_tokens=2407, output_tokens=559
+10:07:39,756 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:07:39,760 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 542.0820000000001. input_tokens=2402, output_tokens=480
+10:07:47,621 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:07:47,624 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 515.3690000000001. input_tokens=2204, output_tokens=398
+10:08:16,201 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:08:16,204 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 501.683. input_tokens=2501, output_tokens=592
+10:08:29,779 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:08:29,784 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 575.4029999999998. input_tokens=2519, output_tokens=682
+10:08:36,33 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:08:36,36 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 486.41100000000006. input_tokens=2122, output_tokens=313
+10:09:07,336 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:09:07,338 graphrag.llm.openai.utils ERROR error loading json, json={
+  "title": "Soviet Military Thought & Ideology",
+  "summary": "This community explores the interconnectedness of Soviet military science, Marxism-Leninism, and dialectical materialism. It highlights key figures like Lenin and Vasily Sokolovsky who shaped this unique approach to warfare, emphasizing holism and scientific development of military thought.",
+  "rating": 7.5,
+  "rating_explanation": "The community delves into a significant historical period and ideology that profoundly influenced global military strategy and thinking.",
+  "findings": [
+    {
+      "summary": "Marxism-Leninism is the foundational ideology for Soviet Military Science.",
+      "explanation": "Soviet Military Science was deeply rooted in Marxist-Leninist principles. This ideological framework permeated all aspects of warfare and societal science within the Soviet Union, directly influencing military strategy and doctrine. [Data: Relationships (221)].  This influence extended beyond mere strategic planning; it shaped the very understanding of war and its relationship to society within the Soviet context. ",
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+Traceback (most recent call last):
+  File "/content/graphrag-ways-of-war/graphrag-local-ollama/graphrag/llm/openai/utils.py", line 93, in try_parse_json_object
+    result = json.loads(input)
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.10/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 25 column 1 (char 1175)
+10:09:07,339 graphrag.index.graph.extractors.community_reports.community_reports_extractor ERROR error generating community report
+Traceback (most recent call last):
+  File "/content/graphrag-ways-of-war/graphrag-local-ollama/graphrag/index/graph/extractors/community_reports/community_reports_extractor.py", line 58, in __call__
+    await self._llm(
+  File "/content/graphrag-ways-of-war/graphrag-local-ollama/graphrag/llm/openai/json_parsing_llm.py", line 34, in __call__
+    result = await self._delegate(input, **kwargs)
+  File "/content/graphrag-ways-of-war/graphrag-local-ollama/graphrag/llm/openai/openai_token_replacing_llm.py", line 37, in __call__
+    return await self._delegate(input, **kwargs)
+  File "/content/graphrag-ways-of-war/graphrag-local-ollama/graphrag/llm/openai/openai_history_tracking_llm.py", line 33, in __call__
+    output = await self._delegate(input, **kwargs)
+  File "/content/graphrag-ways-of-war/graphrag-local-ollama/graphrag/llm/base/caching_llm.py", line 104, in __call__
+    result = await self._delegate(input, **kwargs)
+  File "/content/graphrag-ways-of-war/graphrag-local-ollama/graphrag/llm/base/rate_limiting_llm.py", line 177, in __call__
+    result, start = await execute_with_retry()
+  File "/content/graphrag-ways-of-war/graphrag-local-ollama/graphrag/llm/base/rate_limiting_llm.py", line 159, in execute_with_retry
+    async for attempt in retryer:
+  File "/usr/local/lib/python3.10/dist-packages/tenacity/asyncio/__init__.py", line 166, in __anext__
+    do = await self.iter(retry_state=self._retry_state)
+  File "/usr/local/lib/python3.10/dist-packages/tenacity/asyncio/__init__.py", line 153, in iter
+    result = await action(retry_state)
+  File "/usr/local/lib/python3.10/dist-packages/tenacity/_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/tenacity/__init__.py", line 398, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/content/graphrag-ways-of-war/graphrag-local-ollama/graphrag/llm/base/rate_limiting_llm.py", line 165, in execute_with_retry
+    return await do_attempt(), start
+  File "/content/graphrag-ways-of-war/graphrag-local-ollama/graphrag/llm/base/rate_limiting_llm.py", line 147, in do_attempt
+    return await self._delegate(input, **kwargs)
+  File "/content/graphrag-ways-of-war/graphrag-local-ollama/graphrag/llm/base/base_llm.py", line 48, in __call__
+    return await self._invoke_json(input, **kwargs)
+  File "/content/graphrag-ways-of-war/graphrag-local-ollama/graphrag/llm/openai/openai_chat_llm.py", line 82, in _invoke_json
+    result = await generate()
+  File "/content/graphrag-ways-of-war/graphrag-local-ollama/graphrag/llm/openai/openai_chat_llm.py", line 74, in generate
+    await self._native_json(input, **{**kwargs, "name": call_name})
+  File "/content/graphrag-ways-of-war/graphrag-local-ollama/graphrag/llm/openai/openai_chat_llm.py", line 108, in _native_json
+    json_output = try_parse_json_object(raw_output)
+  File "/content/graphrag-ways-of-war/graphrag-local-ollama/graphrag/llm/openai/utils.py", line 93, in try_parse_json_object
+    result = json.loads(input)
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.10/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 25 column 1 (char 1175)
+10:09:07,340 graphrag.index.reporting.file_workflow_callbacks INFO Community Report Extraction Error details=None
+10:09:07,340 graphrag.index.verbs.graph.report.strategies.graph_intelligence.run_graph_intelligence WARNING No report found for community: 75
+10:09:19,165 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:09:19,173 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 558.297. input_tokens=2560, output_tokens=629
+10:09:27,897 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:09:27,905 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 470.5200000000002. input_tokens=2139, output_tokens=322
+10:09:56,533 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:09:56,536 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 551.8100000000002. input_tokens=2575, output_tokens=662
+10:10:16,809 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:10:16,813 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 503.31399999999985. input_tokens=2117, output_tokens=436
+10:10:35,628 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:10:35,637 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 493.749. input_tokens=2126, output_tokens=462
+10:11:05,887 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:11:05,891 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 529.9110000000001. input_tokens=2834, output_tokens=695
+10:11:20,535 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:11:20,544 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 504.02600000000007. input_tokens=2402, output_tokens=605
+10:11:25,712 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:11:25,716 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 471.47799999999984. input_tokens=2604, output_tokens=520
+10:11:40,900 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:11:40,903 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 471.98199999999997. input_tokens=3828, output_tokens=652
+10:13:15,360 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:13:15,364 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 94.25099999999998. input_tokens=3597, output_tokens=638
+10:13:18,505 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:13:18,508 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 97.356. input_tokens=3420, output_tokens=621
+10:13:27,657 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:13:27,661 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 106.52100000000019. input_tokens=3112, output_tokens=661
+10:13:34,374 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:13:34,377 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 113.30899999999997. input_tokens=7616, output_tokens=701
+10:14:51,126 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:14:51,152 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 190.03300000000013. input_tokens=3464, output_tokens=672
+10:15:02,804 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:15:02,811 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 201.64599999999996. input_tokens=4457, output_tokens=697
+10:15:02,868 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:15:02,871 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 201.83100000000013. input_tokens=9339, output_tokens=739
+10:15:19,66 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:15:19,71 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 217.79199999999992. input_tokens=5886, output_tokens=737
+10:16:22,482 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:16:22,486 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 281.3069999999998. input_tokens=3123, output_tokens=582
+10:16:27,79 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:16:27,89 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 285.8699999999999. input_tokens=5829, output_tokens=623
+10:16:43,399 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:16:43,412 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 302.0889999999997. input_tokens=12355, output_tokens=603
+10:16:43,705 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:16:43,709 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 302.4169999999999. input_tokens=4109, output_tokens=672
+10:17:59,147 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:17:59,150 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 377.9060000000002. input_tokens=6245, output_tokens=650
+10:18:03,295 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:18:03,298 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 382.16999999999985. input_tokens=3052, output_tokens=552
+10:18:12,22 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:18:12,26 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 390.76599999999985. input_tokens=7427, output_tokens=614
+10:18:14,320 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:18:14,325 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 393.24. input_tokens=5569, output_tokens=801
+10:18:36,373 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+10:18:36,376 graphrag.llm.openai.utils ERROR error loading json, json={
+  "title": "Russian Military Theoretical Debates Community",
+  "summary": "This community centers around Russian military theorists and their publications, primarily focusing on discussions about modern warfare. Key entities include individuals like Bruntalsky, Maltsev, Brezkun, and Korybko, along with institutions such as the Academy of the General Staff, RISS (Russian Institute for Strategic Studies), and VPK (Voyenno-Promyshlennyy Kuriyer). These entities engage in debates about the nature of war, its evolution, and strategic implications.",
+  "rating": 7.5,
+  "rating_explanation": "The community's impact is significant due to its influence on Russian military doctrine and strategy, with members holding influential positions within government and academic institutions.",
+  "findings": [
+    {
+      "summary": "Diverse Perspectives on Modern Warfare",
+      "explanation": "The community exhibits a range of viewpoints regarding the nature of modern warfare. Bruntalsky and Maltsev argue that war has transformed beyond traditional armed conflict, emphasizing factors like information warfare and economic influence. Conversely, Brezkun maintains that classical military principles remain central to contemporary warfare [Data: Warfare (103, 105, 107)]. This divergence of opinion highlights the ongoing debate within Russia about how best to conceptualize and prepare for future conflicts."
+    },
+    {
+      "summary": "Influence of Academic Institutions",
+      "explanation": "Academic institutions like the Academy of the General Staff play a crucial role in shaping military thought within the community.  ov, commandant at the Academy, exemplifies this influence [Data: OV (320)]. The academy's curriculum and research output likely contribute to the dissemination of various perspectives on warfare, potentially influencing policy decisions and training programs. Furthermore, Kuralenko, associated with the Academy, is recognized as a military expert, suggesting the institution's standing within the community [Data: ACADEMY OF THE GENERAL STAFF (323)].",
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+Traceback (most recent call last):
+  File "/content/graphrag-ways-of-war/graphrag-local-ollama/graphrag/llm/openai/utils.py", line 93, in try_parse_json_object
+    result = json.loads(input)
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.10/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 29 column 1 (char 2158)
+10:18:36,376 graphrag.index.graph.extractors.community_reports.community_reports_extractor ERROR error generating community report
+Traceback (most recent call last):
+  File "/content/graphrag-ways-of-war/graphrag-local-ollama/graphrag/index/graph/extractors/community_reports/community_reports_extractor.py", line 58, in __call__
+    await self._llm(
+  File "/content/graphrag-ways-of-war/graphrag-local-ollama/graphrag/llm/openai/json_parsing_llm.py", line 34, in __call__
+    result = await self._delegate(input, **kwargs)
+  File "/content/graphrag-ways-of-war/graphrag-local-ollama/graphrag/llm/openai/openai_token_replacing_llm.py", line 37, in __call__
+    return await self._delegate(input, **kwargs)
+  File "/content/graphrag-ways-of-war/graphrag-local-ollama/graphrag/llm/openai/openai_history_tracking_llm.py", line 33, in __call__
+    output = await self._delegate(input, **kwargs)
+  File "/content/graphrag-ways-of-war/graphrag-local-ollama/graphrag/llm/base/caching_llm.py", line 104, in __call__
+    result = await self._delegate(input, **kwargs)
+  File "/content/graphrag-ways-of-war/graphrag-local-ollama/graphrag/llm/base/rate_limiting_llm.py", line 177, in __call__
+    result, start = await execute_with_retry()
+  File "/content/graphrag-ways-of-war/graphrag-local-ollama/graphrag/llm/base/rate_limiting_llm.py", line 159, in execute_with_retry
+    async for attempt in retryer:
+  File "/usr/local/lib/python3.10/dist-packages/tenacity/asyncio/__init__.py", line 166, in __anext__
+    do = await self.iter(retry_state=self._retry_state)
+  File "/usr/local/lib/python3.10/dist-packages/tenacity/asyncio/__init__.py", line 153, in iter
+    result = await action(retry_state)
+  File "/usr/local/lib/python3.10/dist-packages/tenacity/_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/tenacity/__init__.py", line 398, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/content/graphrag-ways-of-war/graphrag-local-ollama/graphrag/llm/base/rate_limiting_llm.py", line 165, in execute_with_retry
+    return await do_attempt(), start
+  File "/content/graphrag-ways-of-war/graphrag-local-ollama/graphrag/llm/base/rate_limiting_llm.py", line 147, in do_attempt
+    return await self._delegate(input, **kwargs)
+  File "/content/graphrag-ways-of-war/graphrag-local-ollama/graphrag/llm/base/base_llm.py", line 48, in __call__
+    return await self._invoke_json(input, **kwargs)
+  File "/content/graphrag-ways-of-war/graphrag-local-ollama/graphrag/llm/openai/openai_chat_llm.py", line 82, in _invoke_json
+    result = await generate()
+  File "/content/graphrag-ways-of-war/graphrag-local-ollama/graphrag/llm/openai/openai_chat_llm.py", line 74, in generate
+    await self._native_json(input, **{**kwargs, "name": call_name})
+  File "/content/graphrag-ways-of-war/graphrag-local-ollama/graphrag/llm/openai/openai_chat_llm.py", line 108, in _native_json
+    json_output = try_parse_json_object(raw_output)
+  File "/content/graphrag-ways-of-war/graphrag-local-ollama/graphrag/llm/openai/utils.py", line 93, in try_parse_json_object
+    result = json.loads(input)
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.10/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 29 column 1 (char 2158)
+10:18:36,378 graphrag.index.reporting.file_workflow_callbacks INFO Community Report Extraction Error details=None
+10:18:36,378 graphrag.index.verbs.graph.report.strategies.graph_intelligence.run_graph_intelligence WARNING No report found for community: 3
+10:18:36,518 datashaper.workflow.workflow INFO executing verb window
+10:18:36,522 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_final_community_reports.parquet
+10:18:37,24 graphrag.index.run INFO Running workflow: create_final_text_units...
+10:18:37,24 graphrag.index.run INFO dependencies for create_final_text_units: ['create_base_text_units', 'join_text_units_to_entity_ids', 'join_text_units_to_relationship_ids']
+10:18:37,25 graphrag.index.run INFO read table from storage: create_base_text_units.parquet
+10:18:37,42 graphrag.index.run INFO read table from storage: join_text_units_to_entity_ids.parquet
+10:18:37,48 graphrag.index.run INFO read table from storage: join_text_units_to_relationship_ids.parquet
+10:18:37,121 datashaper.workflow.workflow INFO executing verb select
+10:18:37,155 datashaper.workflow.workflow INFO executing verb rename
+10:18:37,189 datashaper.workflow.workflow INFO executing verb join
+10:18:37,230 datashaper.workflow.workflow INFO executing verb join
+10:18:37,273 datashaper.workflow.workflow INFO executing verb aggregate_override
+10:18:37,315 datashaper.workflow.workflow INFO executing verb select
+10:18:37,317 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_final_text_units.parquet
+10:18:37,809 graphrag.index.run INFO Running workflow: create_base_documents...
+10:18:37,814 graphrag.index.run INFO dependencies for create_base_documents: ['create_final_text_units']
+10:18:37,839 graphrag.index.run INFO read table from storage: create_final_text_units.parquet
+10:18:37,918 datashaper.workflow.workflow INFO executing verb unroll
+10:18:37,958 datashaper.workflow.workflow INFO executing verb select
+10:18:37,997 datashaper.workflow.workflow INFO executing verb rename
+10:18:38,34 datashaper.workflow.workflow INFO executing verb join
+10:18:38,80 datashaper.workflow.workflow INFO executing verb aggregate_override
+10:18:38,146 datashaper.workflow.workflow INFO executing verb join
+10:18:38,190 datashaper.workflow.workflow INFO executing verb rename
+10:18:38,229 datashaper.workflow.workflow INFO executing verb convert
+10:18:38,339 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_base_documents.parquet
+10:18:38,886 graphrag.index.run INFO Running workflow: create_final_documents...
+10:18:38,892 graphrag.index.run INFO dependencies for create_final_documents: ['create_base_documents']
+10:18:38,918 graphrag.index.run INFO read table from storage: create_base_documents.parquet
+10:18:39,7 datashaper.workflow.workflow INFO executing verb rename
+10:18:39,9 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_final_documents.parquet
