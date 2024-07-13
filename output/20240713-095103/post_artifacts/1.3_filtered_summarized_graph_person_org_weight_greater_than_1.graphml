@@ -1,0 +1,525 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d7" for="edge" attr.name="color" attr.type="string" />
+  <key id="d6" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d5" for="edge" attr.name="description" attr.type="string" />
+  <key id="d4" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d3" for="node" attr.name="color" attr.type="string" />
+  <key id="d2" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="description" attr.type="string" />
+  <key id="d0" for="node" attr.name="type" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="&quot;SEREBRYANNIKOV&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">Serebryannikov is a military theorist and scholar whose views on war are often compared to those of Kvachkov. He emphasizes the importance of armed conflict in warfare, believing that information-psychological warfare holds significant potential for influencing citizens.  Serebryannikov's conclusions align with Kvachkov's, suggesting both scholars prioritize the role of physical violence in achieving military objectives. 
+</data>
+      <data key="d2">2ea3da30a4c11ce53e27f0d4b749018c,4640d14036dc3924713f8e3da33466d6,489aeca592784f5f7be0a754beb4f575,48e310bd8a37fd938fc512819430d5f7,57424d7973e0b0ad452fc6115605d61f,818993a678a84051e60563bfd33f106a,c4d611eafc5e900466e378a2742c03bf,e847464375c697471e8db8e76b49b6d1</data>
+      <data key="d3">grey</data>
+    </node>
+    <node id="&quot;SLIPCHENKO&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">**SLIPCHENKO** is a significant Russian military theorist who is widely recognized as a key figure in the development of concepts surrounding sixth-generation warfare.  
+
+He first introduced his ideas on generations of war in 1989, and his work has heavily influenced prominent military thinkers like Bogdanov, Chekinov, and Orekhov. Slipchenko's writings focus on the evolving nature of conventional warfare, particularly emphasizing the increasing importance of high-precision, long-range weapons and reconnaissance-strike systems. He argues that these systems hold overwhelming superiority in modern conflict. 
+
+Slipchenko is also a leading proponent of "remote/contactless war," defining it as warfare conducted through precision strikes and information manipulation, viewing information itself as a destructive weapon. His theories on non-contact warfare and information dominance have been influential in shaping Russian military doctrine.  He is considered a significant expert on military history and the concept of generations of warfare, with his work cited extensively in academic and military circles. 
+</data>
+      <data key="d2">04b87a5b565ec557540bb2b0bf38763f,068fed974175a4460923174d7ce00bbf,0ac95daa24b8448799785bd3afba6112,12575d1b6f02a59280ed0326b418f907,12ae590d68b54130fcdd8b11cda495b2,276f8550d758346b203160a32cd885b6,2d96d25d0022a1193382ea88b904435a,3ff11360ddc5bd1fa296a784da747a6e,51b868d40e3701709987e796369fbf69,5599962db5be274ac157280f1faa4590,59b16bcd3d0d008e7066303a0111b65a,6cd14cb301caba80aed605f5aad6fc2e,7be505fea57e0dbd921a3c195dd29aac,83d8321db4baeb9dd56aa1e91eb29a39,85e4e298e365df474828bb853c808db1,8b92cdcfa04a1ea8203cde59478b7bf8,8c989fc0d3fc136d27a9f97d0fe40c82,8e59b8e09a13e3b59b06fd4c22fd9a1e,988cfd2c3c636c6bc23a2455381cfe57,a1fc196183277908b1cc6e1504847875,ac08e98f560a5dcdd378a622eca69f06,b29675ce5cc82b245a129a47bcd9a3d5,b7d2323e75cae9a4221b0eb05c65b171,ba4314d7dde31a9a3de140b03d964db0,c1fde4292cf13cc0042a258ed0932fb6,cd472d2664acb377dd498e88b7ed8d58,d494718117eae6e351eff5873eca32c0,d8383d735e3d4dedd141bc4b08e3eeaa,dcdc940fd2d0b50a2cd9e38ec0d2d76f,e216e7f3ed5bf3208c1f51eaa41603b8,ee529e2d08063744d6a3cc51b8b4775b,f773883fc42cbafe5e0268d526176d80,fb8a4e3d89439bd18b6f6ecae81d6d7c</data>
+      <data key="d3">grey</data>
+    </node>
+    <node id="&quot;RUSSIAN ARMED FORCES&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">The **RUSSIAN ARMED FORCES** are the military force led by Gerasimov and are involved in military operations.  They intervened in the Syrian Civil War, conducting air strikes, deploying military advisers, special forces, and private military companies. 
+
+Following the 2008 war with Georgia, the RUSSIAN ARMED FORCES underwent significant reforms, leading to increased scrutiny of their military thought by Western observers. This period of reform has influenced Western interest in Russian military doctrine.  "ev" started his career within the ranks of the RUSSIAN ARMED FORCES. 
+</data>
+      <data key="d2">00ec4986199087f35da0fdf6a3fbe289,32d948fc460c6d1bb1d9682bfd136dd3,358c867d3a7c5e13a54f3d519fad1603,5c2f2ed6b167d0c17fcd87e51d62ab85,83073afaa1def102babae9700cd63bba,94a2bf999aec8597aae3db5d3633891d,aa748aaf378a8fb18ec3961fb9728d45,ac3935048eeae245ddfa4be2101163b4,b04e155024b2e24838d7dba80a934c81</data>
+      <data key="d3">grey</data>
+    </node>
+    <node id="&quot;GERASIMOV&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">Valery Gerasimov is a high-ranking officer in the Russian Armed Forces and the Chief of the General Staff. He is a prominent figure in Russian military theory, known for his concept of the "adaptive approach to warfare" and emphasizing non-military means.  Gerasimov argues that the nature of war has changed, with non-military means becoming as important as traditional military force. He believes the lines between war and peace are blurring due to the effectiveness of these non-military tactics, such as "color revolutions," which he views as a new form of warfare instigated by the West. 
+
+Gerasimov's writings and speeches have significantly influenced the understanding of modern warfare, particularly his concept of "hybrid warfare" which combines both military and non-military means. He is considered a key figure in expressing Russia's stance on information warfare and advocates for changes in the laws of war to reflect this evolving landscape. His ideas have been referenced by other prominent figures like Andrew Korybko and Bartles, solidifying his influence within military theory circles. 
+
+
+</data>
+      <data key="d2">0020352f5979749f81254faea53ba1dd,0130a2e44046b07aa1a2eac85562f8aa,0ac95daa24b8448799785bd3afba6112,0b053af0a82e321c5ad32e0e5014114d,0f6caa8f2e4b146cbd71b583add938f8,17ec79bdb3de589c18eab04fab860d2c,22b661e49114bda37400701e79292197,26bcdb76c6596b963d2e36a4147ef816,273d16ede7c2ef0b280a8c35ddd2ad71,29af440463776490596d1cedcfe1b068,2a095cc3e0a26865ad75d88bf966ff8e,2d96d25d0022a1193382ea88b904435a,2d9ebc26c09a31bc04991b6efe8272bf,330a15c48db3e65aec3147e6dd5632c9,358c867d3a7c5e13a54f3d519fad1603,35fa4f03c6bbb412d22ff5f494e83329,36344580abcc867bedcaf20027655b68,38bf7298856b8fd4341bb0998b803ee0,3a60589a99ac9cde8a25daf1571620f6,4988f2a5f074560f53ed5ddfe5e100b2,4a396711762b9d23dfa301a027d2737e,4f7f4f6fe9d288255da50532faa25f53,5001e715f5ba5243fcabb020b7615069,54e5f6035998ada7e8e6f4188995aec5,5bb2f411436cd9fd01cf7697e33fec75,5c79cd610c718db1aa2cf27f837d00c8,68355cf380d714ea713e77efbe44d3ac,6e050b4fa47547d59d934e304f199d4a,6e49482d37bfe8a11381f5fd9b2bf9ab,7762d8e435ee0e72467ae2468b71323e,7cc72471bf4edd02ae4d6b43dd505467,803cf3c02920d14a7bb0447fc1c76140,81610c5774616913fcb1d17e45b9c19b,83d8321db4baeb9dd56aa1e91eb29a39,84b65c4d676043766aeebfc93b776ae6,8501d99fb9d704c9315278702413ee9e,850631a820a8158d8c7bff68e8f7fea5,94a2bf999aec8597aae3db5d3633891d,988cfd2c3c636c6bc23a2455381cfe57,a1d5b70180c35b1c12fa0a5a6e0f0a8a,a3a7513f41e4fd6cb9e4f0decdbc615d,a8ab56e6e419d570a195fd2ea167899d,aa5d990b03c9214c4c3a37412d5cf0d1,ac08e98f560a5dcdd378a622eca69f06,b04e155024b2e24838d7dba80a934c81,b11c3e5c041763bf480a5b17676c7ef3,bd400dbd8e753ab71c9394fe8b1f07ce,c06a4e03818e9f2586a6cd014a2408b7,d494718117eae6e351eff5873eca32c0,d8383d735e3d4dedd141bc4b08e3eeaa,db7fc162ad9590d171cb7d6fc1ef0fc2,dd68126420b24cd563d457fdb5356a33,ddd0a3f72f4191a04998e4fe73f788b7,e0927b91be8f756165d5fca82ca84107,e422579fa9c3017302c510d218e0fc09,f6e01d03f8c01910c2d8de5e8dd3a40f,fa6f1322c861f018219ae4741df2bae1</data>
+      <data key="d3">grey</data>
+    </node>
+    <node id="&quot;UN&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">The United Nations (UN) is an international organization that is suggested as a key player in discussions surrounding the definition of war.  Vitaly Chirkin, the Russian ambassador, expressed his views on this topic at the UN.  
+
+Gareyev proposes that the UN should be involved in revising the definition of war and receive the results of any redefined concept. The UN is seen as a platform for discussing and potentially revising the definition of war, acting as a forum for international collaboration on this important issue. 
+</data>
+      <data key="d2">35fa4f03c6bbb412d22ff5f494e83329,47cbbe56d55fbd552f238ecfef64e24b,6bacaefd10a9194c28dfbec9e59620a1,bc02775c6811de9ca81bfb2af4207e24,bfbbd058526ebede84405e2e4e3f47b5,c6557d1800561000ed6c8db91857d73e,e0927b91be8f756165d5fca82ca84107</data>
+      <data key="d3">grey</data>
+    </node>
+    <node id="&quot;CLAUSEWITZ&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">## Clausewitz: A Military Theorist Whose Ideas Continue to Spark Debate
+
+Clausewitz, a Prussian general and military theorist, is widely recognized for his influential ideas on war. He is best known for his dictum, "war is merely a continuation of politics by other means," which suggests that war is an extension of political objectives pursued through violence. Clausewitz defined war as "an act of force to compel the enemy to do your will," emphasizing the use of force to achieve desired outcomes. 
+
+His work has been both praised and criticized by subsequent military theorists. While some, like Lenin and Stalin, found his emphasis on the relationship between politics and war influential, others, such as Kirshin, Kvachkov, and Orekhov, considered his definition too narrow.  Soviet theorists, while acknowledging Clausewitz's influence, often contrasted his traditional understanding of war with their own Marxist-Leninist perspectives. 
+
+Clausewitz's ideas continue to be debated and analyzed today. His work is referenced in discussions about modern warfare concepts, and his views on achieving victory in war are still considered relevant by military scholars like Gorbunov and Bogdanov. Despite the passage of time, Clausewitz remains a significant figure in military history, whose theories continue to shape our understanding of war and its relationship to politics. 
+
+
+</data>
+      <data key="d2">046f04af090c144a8bd1403c6c5879a4,08b5b9a81f792e1a63e929dc06a81d50,0b7f36c1efd528460ea8b64f4d00c6a9,11b09d5fddbfffd21c2a75e43b225a4a,135bc11aa823b69772040362565fae86,137a23ec0a6c30f2d104480a42ca716b,1b996f45c7b397759863385a53361eed,1cce175e6c7003db4a0791abde031a39,1d746c1fd3ea7d25a42568701611f772,2999e2ab9620ec881fdf22361f3bb121,2be40bedc401aa74026067cbca67b681,2f7216242ac705ab8c989c77c74d477b,3215346816955c73a119fe8038088c8e,37215a6c4810a7b385fb17417f94fbe0,38c01208da0359baa45c7640d7a2285c,3e06cb0ad46a2e027bad24715e248b03,3e6ab14e2f0c4f2a8a611ac169b8dc44,4424ff0552ddcfee2317f7caf01db070,4640d14036dc3924713f8e3da33466d6,4d3bd4beec226501211dcd3560fd6fba,4e2896fd5b6f31d006ca18e1a3299553,54841d8827acc62d9af1b1f976a8c99f,5f022b2409af8223bf100e9564e5f586,7aef3b8e0c0a9cd9f240dfbe12e02c38,82893599bbdf88d7635db30797b87987,83d8321db4baeb9dd56aa1e91eb29a39,86135dd72edc8f7cfa522d2093158942,897b3e3eedf4e832571846d6ff67fabe,962347193b87926e833cb5e1de7ff4e2,a15ef9eda68738122db496f9962d6a9f,b1b64ef207d42a2b81118c978ce1f222,bab940f0cf76af894b6edb440a57b5f8,bfa15fcd5d4a19aa65f946d1af780d5f,c4d611eafc5e900466e378a2742c03bf,cca1605d479526e189239aac472c3e7e,d1330c3cbc7e7877db9ba902371af4d9,db7fc162ad9590d171cb7d6fc1ef0fc2,e847464375c697471e8db8e76b49b6d1,f008ece3160552dbbd23842a0d13f1f7,f196fc7516d60a5e95b2a477d1f0b3f7,f1ea10917ad6f50fda3a92586fe998dc,fb8a4e3d89439bd18b6f6ecae81d6d7c</data>
+      <data key="d3">grey</data>
+    </node>
+    <node id="&quot;OV&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">OV is a commandant at the Academy of the General Staff and holds a high position within the Soviet Armed Forces.  As a speaker, OV's rhetoric reflects both established views on the nature of war and an awareness of its evolving characteristics. Additionally, OV is recognized as an author or organization that published a work in 2009. 
+
+
+</data>
+      <data key="d2">27431841e2c6fbfbbcda31bea529d948,972ad08450d40acba47394c99e434c56,9bccda96a6276236341ab0595d832858,9d078dbf3cd9f132d9d452509bd774f1,c6bceb66a3d2c04618fc4513ce73962c</data>
+      <data key="d3">grey</data>
+    </node>
+    <node id="&quot;ACADEMY OF THE GENERAL STAFF&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">The **Academy of the General Staff** is a prestigious institution within the Soviet Armed Forces. It serves as a hub for developing and sharing military expertise,  and it holds a high position of importance within the force structure. Notably, Kuralenko worked at the Academy as the chief of military art. 
+
+
+</data>
+      <data key="d2">27431841e2c6fbfbbcda31bea529d948,68e7972f85fd6fc2109534ff86630800,6e81ca9f9ef3229b5c0e79413b269e37,9bccda96a6276236341ab0595d832858,fd24a983ae975cadc842ce8fa5eea97c</data>
+      <data key="d3">grey</data>
+    </node>
+    <node id="&quot;YURI BALUYEVSKY&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">Yuri Baluyevsky is the Chief of the General Staff. He is a member of the General Staff who has written multiple articles about the changing nature of military power, recognizing that it has evolved significantly.  
+</data>
+      <data key="d2">188d0ba736e3a2e79f8ee925efb5fc17,ad3a9a7eec5a9d65028ce8f7f95ab827,cbad03251a174d87dc9c103d0a260763,d5dcc493e23a0823f088973d518e05d9</data>
+      <data key="d3">grey</data>
+    </node>
+    <node id="&quot;RASIN&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">Rasin was a Colonel Professor who corresponded with Stalin about the obsolescence of Clausewitz. He is identified as asking Stalin this very question, demonstrating his interest in military strategy and its evolution. 
+
+
+</data>
+      <data key="d2">11b09d5fddbfffd21c2a75e43b225a4a,38c01208da0359baa45c7640d7a2285c,cca1605d479526e189239aac472c3e7e</data>
+      <data key="d3">grey</data>
+    </node>
+    <node id="&quot;STALIN&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">Joseph Stalin was a key figure in Soviet military strategy whose ideas remain influential.  He dominated Soviet strategic thought due to his control of both the Communist Party and the military apparatus. Stalin viewed Clausewitz's ideas as already present in Marxist theory, and he criticized the premise that Clausewitz is obsolete, arguing for its relevance in Lenin's thought. His influence extended to the suppression of opposing viewpoints, such as those of Svechin, whose work he placed under restriction. Despite his death marking a potential shift in the relationship between military and political leadership, subordination of the military to political control persisted. Stalin's military art continues to be analyzed and discussed by historians. 
+
+
+</data>
+      <data key="d2">11b09d5fddbfffd21c2a75e43b225a4a,27431841e2c6fbfbbcda31bea529d948,38c01208da0359baa45c7640d7a2285c,9bccda96a6276236341ab0595d832858,cca1605d479526e189239aac472c3e7e,d1330c3cbc7e7877db9ba902371af4d9,ee2a956c830712b74c912b175f90afdd</data>
+      <data key="d3">grey</data>
+    </node>
+    <node id="&quot;ТУРКИН&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">Turkin is an author who has written about the role of deterrence in preventing aggression.  Their work includes contributions to articles such as "The Role of Deterrence as a Factor in Containing Aggression" and other works exploring the concept of deterrence as a factor in mitigating aggression. 
+</data>
+      <data key="d2">6c6869369e20ba61eb758094ee0cc7f8,74a6b948abf6e4cbeffa17366e046b24,cecb14f6d735cc6920fdf727bfca305d</data>
+      <data key="d3">grey</data>
+    </node>
+    <node id="&quot;US SPECIAL FORCES COMMAND&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">The US Special Forces Command is a military organization led by Gen. Joseph L. Votel.  It plays a role in understanding and navigating "gray zone" situations. 
+</data>
+      <data key="d2">c578b9de1b6d70eac152e5929def187a,d81d350aa6c9162a49b1eb526ae982b8</data>
+      <data key="d3">grey</data>
+    </node>
+    <node id="&quot;SOVIET ARMED FORCES&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">The Soviet Armed Forces are the military force of the Soviet Union.  Under the leadership of Nikita Khrushchev, they were a powerful organization where individuals like Gen. Vladimir Kurasov held top positions. 
+</data>
+      <data key="d2">2090f56414eebaeb642f4296f8762613,27431841e2c6fbfbbcda31bea529d948,5fc5a6b5aebd3d100c1491fc135bc6da,6e81ca9f9ef3229b5c0e79413b269e37,9bccda96a6276236341ab0595d832858</data>
+      <data key="d3">grey</data>
+    </node>
+    <node id="&quot;KVACHKOV&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">KVACHKOV is an author and military theorist who proposes a new conception of war, emphasizing non-military means. He presents a new classification of war that includes both military and non-military means,  differing from Clausewitz's definition while sharing similarities with Serebryannikov's views on war. 
+</data>
+      <data key="d2">1507b417cf61f29030428f95a1c2dc08,4640d14036dc3924713f8e3da33466d6,86135dd72edc8f7cfa522d2093158942,990f73c5f878701d1f0eda068b4141f2,c4d611eafc5e900466e378a2742c03bf,e847464375c697471e8db8e76b49b6d1</data>
+      <data key="d3">grey</data>
+    </node>
+    <node id="&quot;WHITES&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">The Whites were a faction in the Russian Civil War.  Evgeny Messner fought for them, indicating his political allegiance to this group. 
+</data>
+      <data key="d2">09b2675a885b57573db3341acb84875f,67553bf934dfe54e134414e61479f4a5</data>
+      <data key="d3">grey</data>
+    </node>
+    <node id="&quot;CHEKINOV&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">CHEKINOV is a military theorist and analyst who emphasizes the importance of unconventional warfare and controlled chaos in international relations. He co-authored several articles with Bogdanov, including "The Nature and Content of a New-Generation War," focusing on the nature of modern warfare and arguing that military security is intertwined with other forms of security, particularly information security. 
+
+Chekinov believes that information resources are effective weapons in modern warfare and advocates for the use of propaganda and information operations as key to victory. He also argues that nonmilitary means, such as color revolutions, should be prioritized over traditional military force.  His work explores the impact of informatization and automatization on conventional armed forces and highlights the shifting understanding of war in the contemporary world. Chekinov's ideas are influenced by Slipchenko and he is considered a relevant figure in discussions about modern warfare strategies. 
+
+
+</data>
+      <data key="d2">0f6caa8f2e4b146cbd71b583add938f8,3e06cb0ad46a2e027bad24715e248b03,3e6ab14e2f0c4f2a8a611ac169b8dc44,5599962db5be274ac157280f1faa4590,677c7a0f4f60503badb0a4d899c21d74,82893599bbdf88d7635db30797b87987,8e59b8e09a13e3b59b06fd4c22fd9a1e,988cfd2c3c636c6bc23a2455381cfe57,a3a7513f41e4fd6cb9e4f0decdbc615d,a8ab56e6e419d570a195fd2ea167899d,b45be955e924377403f02def4244bbcf,ba4314d7dde31a9a3de140b03d964db0,bd400dbd8e753ab71c9394fe8b1f07ce,d8383d735e3d4dedd141bc4b08e3eeaa,db7fc162ad9590d171cb7d6fc1ef0fc2,e216e7f3ed5bf3208c1f51eaa41603b8,fa6f1322c861f018219ae4741df2bae1</data>
+      <data key="d3">grey</data>
+    </node>
+    <node id="&quot;IMPERIAL RUSSIAN ARMY&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">The Imperial Russian Army is a historical military force.  Evgeny Messner served as an officer in the Imperial Russian Army. 
+
+
+</data>
+      <data key="d2">09b2675a885b57573db3341acb84875f,67553bf934dfe54e134414e61479f4a5</data>
+      <data key="d3">grey</data>
+    </node>
+    <node id="&quot;KORYBKO&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">Korybko is an author and analyst who specializes in hybrid warfare, unconventional warfare, and color revolutions. He is recognized as an expert on these topics, providing insights, recommendations, and analyses. Korybko proposes a new theory of warfare that encompasses both nonviolent and violent overthrow methods.  He believes color revolutions are a form of indirect warfare and sees a common framework connecting them from the "Bulldozer Revolution" in Serbia to events like the Arab Spring and EuroMaidan. His work delves into information campaigns, reflexive control, and the strategies employed in regime change. 
+
+
+</data>
+      <data key="d2">22b661e49114bda37400701e79292197,4a396711762b9d23dfa301a027d2737e,4b92e85ab4c7750d8abad2a94187df42,576201edef6effef1d8b0f7f8ab4fa70,6b82eafaf18f777bfa19dd36a0a5c327,6e050b4fa47547d59d934e304f199d4a,788b86755c01b24e39ed41a0dd120038,8c2f6d76df8b90387042bddf4655bca3,9740ecb753f750df5d967fa22f4b16c0,a66026abef50d4b6b00ca0f933f6be0f,b45be955e924377403f02def4244bbcf</data>
+      <data key="d3">grey</data>
+    </node>
+    <node id="&quot;COMMUNIST PARTY&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">The **Communist Party** held significant influence over the Soviet Union's understanding of war.  Under Stalin's control, the party shaped military theorizing based on Marxist-Leninist principles, influencing Soviet military doctrine and strategy. The Communist Party was responsible for shaping the understanding of war within the military, establishing views and ideology that served as the foundation for Soviet military science. This influence stemmed from the party's established ideology, which heavily impacted Soviet military thought and practice. 
+</data>
+      <data key="d2">39b41cfcdca61ad353853416d904417f,3cd3649d4d82b16c6d105090d8081f6e,8493f884b789159d96b7dab3a7202396,8c7cf0e88b403959479bde7eb44c8654,b4cf9c163a2ba0d0db3385c6741457ac,cc801e9b36ee6b6cbcb589ad5d6eb592,d1330c3cbc7e7877db9ba902371af4d9</data>
+      <data key="d3">grey</data>
+    </node>
+    <node id="&quot;ACADEMY OF MILITARY SCIENCE&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">The **Academy of Military Science** is a Russian military institution responsible for institutionalizing strategic thought in the officer corps.  It collaborates with the General Staff by contributing to the military journal *Voyennaya Mysl* and disseminating military-theoretical works. Notable individuals associated with the Academy include Vladimir Slipchenko, Sergei Brezkun, and Vladimir Mikryukov. In 2013, Chief of the General Staff Valery Gerasimov delivered a speech at the Academy about the changing nature of war.  
+</data>
+      <data key="d2">068fed974175a4460923174d7ce00bbf,071a706dfd6647edd4993031ec85beb9,2629bcda8b7f4f253acfd0d116bd739d,36344580abcc867bedcaf20027655b68,389e48907c50cbd0638418cda16b9938,5b098687cb656d98c6bb419d0ec6fd75,5bc1d54f3233915280db63e273e03592,5cd9f4f78cb2dfdfcb512cc36ac0202f,8501d99fb9d704c9315278702413ee9e,c2792fdb292ab4fe367f71a4089bf78c,da02795f9d537326bfadcd006a8bcc92,e0053ef676c35b3b5e2e0225190d6463</data>
+      <data key="d3">grey</data>
+    </node>
+    <node id="&quot;GEN. JOSEPH L. VOTEL&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">General Joseph L. Votel served as the head of the US Special Forces Command and is a key figure in defining the concept of "gray zone" warfare. He discussed this concept during his tenure leading the command. 
+
+
+</data>
+      <data key="d2">c578b9de1b6d70eac152e5929def187a,d81d350aa6c9162a49b1eb526ae982b8,e2a5e39382c16958dda0da6127375f20</data>
+      <data key="d3">grey</data>
+    </node>
+    <node id="&quot;ОСЕЛЕДЬКО&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">Oseledko (also spelled Оseledko) is an author who has written about the role of deterrence in preventing aggression.  Their work includes a contribution to the article "The Role of Deterrence as a Factor in Containing Aggression" and another piece focusing on the broader concept of deterrence's impact on aggression prevention. 
+</data>
+      <data key="d2">6c6869369e20ba61eb758094ee0cc7f8,74a6b948abf6e4cbeffa17366e046b24,cecb14f6d735cc6920fdf727bfca305d</data>
+      <data key="d3">grey</data>
+    </node>
+    <node id="&quot;LENIN&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">## Lenin: A Revolutionary Redefining War
+
+Lenin is a key figure in Marxist-Leninist theory, renowned for his contributions to shaping the Soviet understanding of war. He is cited as an authority on the militarization of social life under socialism and emphasized the connection between war and revolution.  Lenin viewed war as a necessary instrument for societal transformation and achieving socialism, arguing that imperialist wars are inevitable under capitalism. 
+
+He built upon the ideas of Marx and Engels, incorporating "violent" into the definition of war and defining it as the continuation of politics by violent means. This perspective, while influential, has been critiqued by scholars like Kirshin.  Lenin incorporated Clausewitz's ideas into Marxist theory, appreciating his use of dialectics and agreeing with his view that politics are superior to strategy. He also supported Svechin's similar stance on the primacy of politics over strategy. 
+
+Lenin's early writings serve as a foundational starting point for understanding Soviet military thought. His ideology emphasizes that peace is as much a continuation of politics as war, a notion further highlighted in The Soviet Military Encyclopedia.  His definition of war as an instrument of politics heavily influenced Soviet thought throughout history, even as the definition of war expanded to include non-military means. Lenin's writings on war became foundational for understanding warfare in both the Soviet Union and Russia. 
+
+
+</data>
+      <data key="d2">046f04af090c144a8bd1403c6c5879a4,11b09d5fddbfffd21c2a75e43b225a4a,137a23ec0a6c30f2d104480a42ca716b,13bea8189beda5cf3f185fddbe60600a,14442faf092eaecae58a72c1a981a33b,1b996f45c7b397759863385a53361eed,1cce175e6c7003db4a0791abde031a39,1d746c1fd3ea7d25a42568701611f772,2a4b75db8fdd23483fc6c4f097c7f56f,2be40bedc401aa74026067cbca67b681,2f7216242ac705ab8c989c77c74d477b,342381013c3f61db48a3a2b2bc77370c,38c01208da0359baa45c7640d7a2285c,3cd3649d4d82b16c6d105090d8081f6e,43cb0f2a8f89f287a9fa0308ed110a3f,4a45316e71cd0e0104c26095efef1a8b,51ed05a44ffcb6ce215b22d1c327ef23,51eee122c2ebcb8b0ffd820ac78cdc7b,62bc2728250038f93d0bc65c57c2385b,645ce27900f66a0b633be93f0e5d6399,6b7d21eb26a4ec94c42acbaaf3707f2e,82893599bbdf88d7635db30797b87987,897b3e3eedf4e832571846d6ff67fabe,9828b2e8c4e512e6982ce69d321d187b,a15ef9eda68738122db496f9962d6a9f,ad49a894ef8b75f1e79de5a63ec78b85,b161f86472b14d8aafd5240f60c4d0ea,b1b64ef207d42a2b81118c978ce1f222,b3aa1ac66a5e25e270fce196c19d325e,b8fd807f07f8a2af89aa236339a7bc45,bab940f0cf76af894b6edb440a57b5f8,beabdeed11a36088777fbee158b3a3f5,bfa15fcd5d4a19aa65f946d1af780d5f,c03cb503d15d806465177d74c09c8bbc,c4d14adb7bf6e96f2bcbd4de5958dcd8,cb8b8a24ee435442f42e5aa0feacb291,cc801e9b36ee6b6cbcb589ad5d6eb592,cca1605d479526e189239aac472c3e7e,d1330c3cbc7e7877db9ba902371af4d9,e54ed249cf4a821abfd0eec3959426c8,e90da29be1148d9844e3ed777db08bf6,f008ece3160552dbbd23842a0d13f1f7,fb8a4e3d89439bd18b6f6ecae81d6d7c,fb99597f638ca7706b382f31de64c0a7</data>
+      <data key="d3">grey</data>
+    </node>
+    <node id="&quot;BOGDANOV&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">**BOGDANOV** is a prominent Russian military theorist and strategist who has significantly contributed to the discourse surrounding modern warfare.  He is known for his co-authorship with **Chekinov** on numerous articles and studies exploring the nature of new-generation warfare, emphasizing the importance of information operations and unconventional strategies in achieving strategic goals. 
+
+Bogdanov's views have evolved over time, reflecting a shift towards recognizing the impact of informatization and automatization on conventional armed forces. He argues that nonmilitary means, such as color revolutions, can effectively address military threats, a perspective he shares with **Chekinov**.  
+
+His work has been influential in shaping Russian military theory, particularly during the 2010s when he played a key role in debates surrounding National Security Concepts and unconventional warfare. Bogdanov's research at the Center for Military-Strategic Studies further highlights his expertise in contemporary armed conflict. He is also recognized as an analyst who discusses the influence of technology on military strategies and a researcher who explores 21st-century armed confrontations.  
+
+Bogdanov's writings have been cited by other scholars, solidifying his position as a key figure in understanding the evolving landscape of warfare. His work has been influenced by **Slipchenko**, demonstrating the interconnectedness of ideas within Russian military thought.
+
+
+</data>
+      <data key="d2">0f6caa8f2e4b146cbd71b583add938f8,2a095cc3e0a26865ad75d88bf966ff8e,3e06cb0ad46a2e027bad24715e248b03,3e6ab14e2f0c4f2a8a611ac169b8dc44,5599962db5be274ac157280f1faa4590,663fcd1c899cf2232bc4bbdebe560f19,677c7a0f4f60503badb0a4d899c21d74,6e49482d37bfe8a11381f5fd9b2bf9ab,7be505fea57e0dbd921a3c195dd29aac,82893599bbdf88d7635db30797b87987,8b92cdcfa04a1ea8203cde59478b7bf8,8e59b8e09a13e3b59b06fd4c22fd9a1e,94370d1d5947827c2063332f75adfb60,988cfd2c3c636c6bc23a2455381cfe57,a3a7513f41e4fd6cb9e4f0decdbc615d,a8ab56e6e419d570a195fd2ea167899d,b45be955e924377403f02def4244bbcf,ba4314d7dde31a9a3de140b03d964db0,bd400dbd8e753ab71c9394fe8b1f07ce,d8383d735e3d4dedd141bc4b08e3eeaa,db7fc162ad9590d171cb7d6fc1ef0fc2,e216e7f3ed5bf3208c1f51eaa41603b8,e76184cff7bad45cbad7c9b1d3777f30,e89037639c79dd9077a756282d6c2a7d,ef55602335bea29d08150b6649fad897,fa6f1322c861f018219ae4741df2bae1,fc20acf548ac287cb2de74e6e1ea4d6e</data>
+      <data key="d3">grey</data>
+    </node>
+    <node id="&quot;KARTAPOLOV&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">Kartapolov is a high-ranking member of the Russian General Staff, serving as the head of the operations directorate. He is a key figure in discussions about modern warfare and military strategy, particularly regarding hybrid warfare tactics and the role of indirect means in conflict. Kartapolov advocates for the use of propaganda and information warfare as primary tools in modern combat, arguing that indirect actions constitute a new type of war alongside classical warfare. His views on modern conflict have earned him recognition as an expert on international conflicts and military strategy. He is frequently mentioned alongside other prominent figures in the Russian military, such as Gerasimov and Burenok, highlighting his significant influence in military decision-making. 
+
+
+</data>
+      <data key="d2">54e5f6035998ada7e8e6f4188995aec5,5544a73c36bca1539aa5ea6ad7f5e013,5e6fb3a3adc710bacf237b23b8de5cdb,677c7a0f4f60503badb0a4d899c21d74,803cf3c02920d14a7bb0447fc1c76140,850631a820a8158d8c7bff68e8f7fea5,875a24bb4d326ae3b9a0c46c84cca4be,a1d5b70180c35b1c12fa0a5a6e0f0a8a,a8ab56e6e419d570a195fd2ea167899d,ab85b02c7dac7ba1d7aedf091ca78d90,b3066af57efb89b0569dbadaba8b79bc,bd400dbd8e753ab71c9394fe8b1f07ce,ff779b872510c138da68523b69265b0e</data>
+      <data key="d3">grey</data>
+    </node>
+    <node id="&quot;GAREYEV&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">Mikhail Gareyev is a prominent Russian military theorist and expert on military science. He is recognized for his contributions to the understanding of war's evolution, particularly in light of modern non-military means of confrontation.  
+
+Gareyev argues for a traditional definition of war while acknowledging the increasing importance of non-military forms of struggle, such as information warfare and "soft power," which he views as threats to Russia. He emphasizes the need to reevaluate the definition of war in the 21st century due to these evolving threats.  
+
+His book, "Battles on the Military-Historical Front," endorsed by General Gerasimov, reflects Russia's perspective on information warfare. Gareyev has also written extensively about the changing nature of war, including the blurring of lines between military and non-military means, and the significance of moral superiority, technology, and doctrine in modern warfare. He is considered a leading figure in Russian military thought, comparable to Kartapolov and Gerasimov. 
+
+
+</data>
+      <data key="d2">068fed974175a4460923174d7ce00bbf,0e40df5d22db6584ec7e05b07c3d9b66,112509ae19803edd47655e5f2fc22ae1,147e97078c17806ecd33780d6451826f,26bcdb76c6596b963d2e36a4147ef816,2ed01d91a2d5804af478b65fbd4fff17,3335c606e0de431e14afc7e61f86dfa8,35f2eda2e0dde94f12831c18a3f5fa57,35fa4f03c6bbb412d22ff5f494e83329,3722261684591ed62374be49eb1b29a9,38e06a95c9c0cfb7005614fb378b4a28,3fe4dd62a032b1a281c925fbec9cbc6a,4640d14036dc3924713f8e3da33466d6,46560acff919ef6253fd1d861d00ae9c,483f10acb5879df6406474c706388bbb,4a4127fa2d140cfe4bba76e93169d035,4f7f4f6fe9d288255da50532faa25f53,518267175ed2900e7e23fd3a54bdf33f,5c79cd610c718db1aa2cf27f837d00c8,5cd9f4f78cb2dfdfcb512cc36ac0202f,62f74165e5942d3e5a65f9812140f735,651d70f1b96f83fb3e8a870528879b0f,68d539054aaa9dcc75ed59e59850468c,6bacaefd10a9194c28dfbec9e59620a1,7357dc206ba88482f202ea79850252f2,752e31eca4dc5d94da820c3cb84cf6e9,7567750cec0624c2e9f362f989d8b1bc,76afbf3e037f83e305f2431eddf52e38,803cf3c02920d14a7bb0447fc1c76140,84b65c4d676043766aeebfc93b776ae6,84fbeb27b48ec1426740369d4f5b851e,850631a820a8158d8c7bff68e8f7fea5,8beec46e554e40907188a8b4eadfb7f8,93ae7eb8b09d8dba110ee24dc8c2544c,9d9628ed6f319fa3c7a74e5a5971aad6,a8ab56e6e419d570a195fd2ea167899d,abe7dca7f715b3a56df70fa74b56aa30,ac4e19c9709c97775be647ede43818b5,b150f2af73252fedbdd595a3de157238,b561bc3a166d627669a12364a4a320b1,bbe1de76c191cb2a1148f1c4cc547644,bc02775c6811de9ca81bfb2af4207e24,bd400dbd8e753ab71c9394fe8b1f07ce,bfbbd058526ebede84405e2e4e3f47b5,c4d611eafc5e900466e378a2742c03bf,c57482161043b2c5d5a644c558fb2fa6,c6557d1800561000ed6c8db91857d73e,c8c68899e22ee8c693d6e73e47d38c9e,cdb1d6abbb222058b92413663953ef84,d67b112a958502c163b1c99c7ba13f8f,df08541749dd65fc3af06e736fdc5203,e0053ef676c35b3b5e2e0225190d6463,e0927b91be8f756165d5fca82ca84107,e847464375c697471e8db8e76b49b6d1,fa1f745b441f0a8da9c96e5184733ab7,fcf6292acd4060dcb8b6f555eeebabe3</data>
+      <data key="d3">grey</data>
+    </node>
+    <node id="&quot;EV&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">EV is a Russian military figure who served in the Second World War.  He went on to become a leading theorist in military strategy within the Russian Armed Forces. 
+</data>
+      <data key="d2">00ec4986199087f35da0fdf6a3fbe289,ac3935048eeae245ddfa4be2101163b4</data>
+      <data key="d3">grey</data>
+    </node>
+    <node id="&quot;SOVIET THEORISTS&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">Soviet theorists are a group known for holding specific views on war.  They tend to move away from the traditional definition of war as solely an armed struggle, suggesting a broader understanding of the concept. 
+
+
+</data>
+      <data key="d2">b561bc3a166d627669a12364a4a320b1,c8c68899e22ee8c693d6e73e47d38c9e</data>
+      <data key="d3">grey</data>
+    </node>
+    <node id="&quot;RUSSIAN ACADEMY OF MILITARY SCIENCE&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">The Russian Academy of Military Science is a prominent organization that emerged in 1995. It serves as a key platform for engaging in and shaping theoretical discussions within the Russian military.  General ev served as president of the academy from its inception in 1995. 
+
+
+**Note:** The description "ev was president" seems to be a typo and has been corrected to "General ev served". 
+</data>
+      <data key="d2">00ec4986199087f35da0fdf6a3fbe289,8575b5a4808a02423294125b2c1483e6,ac3935048eeae245ddfa4be2101163b4</data>
+      <data key="d3">grey</data>
+    </node>
+    <node id="&quot;EVGENY MESSNER&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">Evgeny Messner was an officer in the Imperial Russian Army who fought for the White forces during the Russian Civil War.  He was a staunch anti-communist, demonstrating his military background and political stance. 
+</data>
+      <data key="d2">09b2675a885b57573db3341acb84875f,67553bf934dfe54e134414e61479f4a5</data>
+      <data key="d3">grey</data>
+    </node>
+    <node id="&quot;GENERAL STAFF&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">The **General Staff** is the highest-ranking military body in Russia, responsible for leading and developing military strategy. It is a high-level military organization within Russia, involved in strategic planning and command.  Headed by Gerasimov, it is also described as having the leading role in developing military thought and shaping strategic thought within the officer corps. The General Staff oversees the journal *Voyennaya Mysl* and is responsible for publishing military-theoretical works. It confirms existing viewpoints on the changing nature of war and is presented as a military institution responsible for strategic planning and decision-making.  
+
+Previously, the **Center** was part of the General Staff, but it has since moved to a separate structure. Yuri Baluyevsky previously led the General Staff, and Kartapolov holds a key position within the organization. 
+
+
+</data>
+      <data key="d2">00ec4986199087f35da0fdf6a3fbe289,0d448e2ed64ced1d8c219f32dfdbf8dd,188d0ba736e3a2e79f8ee925efb5fc17,358c867d3a7c5e13a54f3d519fad1603,389e48907c50cbd0638418cda16b9938,48406587f16687aac4c95e6b442fc461,59000e6206d2f11d502e8016a145b2e4,5b098687cb656d98c6bb419d0ec6fd75,5bc1d54f3233915280db63e273e03592,5e6fb3a3adc710bacf237b23b8de5cdb,661e67c85ea1083089347a517eabb492,6a27add2f8dee21c9564401e84531dc3,6b21b5384eeb47acd3531f198f0cc8a8,803cf3c02920d14a7bb0447fc1c76140,850631a820a8158d8c7bff68e8f7fea5,8575b5a4808a02423294125b2c1483e6,8c9af93ed8ee0b5b14df8c35220e2526,94a2bf999aec8597aae3db5d3633891d,972ad08450d40acba47394c99e434c56,9d078dbf3cd9f132d9d452509bd774f1,b04e155024b2e24838d7dba80a934c81,b3066af57efb89b0569dbadaba8b79bc,bd400dbd8e753ab71c9394fe8b1f07ce,cbad03251a174d87dc9c103d0a260763,efe802c6b1c257d9a40d7035ce1fa807,f7fe50a67c52ae2fe045654d627f23e1</data>
+      <data key="d3">grey</data>
+    </node>
+    <node id="&quot;SOVIET UNION&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">The Soviet Union was a former communist state and a major geopolitical entity that existed from its establishment by Vladimir Lenin and Leon Trotsky until its dissolution in 1991. It was a key adversary of the United States during the Cold War, engaging in a nuclear arms race with NATO. The Soviet Union held a distinct understanding of war based on Marxist-Leninist ideology, which was firmly subordinated to the Communist Party. This understanding viewed war as an inevitable tool for accelerating the global communist transformation and as the continuation of class politics by violent means.  
+
+The Soviet Union believed that all wars stemmed from class struggle and that actions could be justified if they furthered the revolutionary process, differing from Western just war theory. They established control over half of Central Europe during World War II and were a major player in both World Wars. The Soviet Union's rise is linked to the revolutionary context. 
+
+The Soviet Union laid the theoretical and methodological foundation for Russian military theory, which persists today.  This foundation was shaped by internal and external threats and heavily influenced by Marxist-Leninist theories about war. The text describes the Soviet Union as the location where understanding of war originated from the Communist Party. It discusses the history and characteristics of military thought within the Soviet Union, its foundational policy and military doctrine, and the nature of war within the context of the Soviet Union.  The dissolution of the Soviet Union led to a decline in Western interest in Russian military thought. 
+
+
+</data>
+      <data key="d2">00e7336d67609903b464740eecc2da73,046f04af090c144a8bd1403c6c5879a4,0b7f36c1efd528460ea8b64f4d00c6a9,0d5bebc49e84be0b136baa2a23ad6119,14442faf092eaecae58a72c1a981a33b,1b996f45c7b397759863385a53361eed,1b9b97610a4a892ffd4aa4057f98a99d,1d1f8fd7a97b7aca3ba71380fbbaa90c,1fdbdba8c71554268a8e4cacad9c056a,2090f56414eebaeb642f4296f8762613,2ced16684237fb065035dffff5afc8b4,31d8ac7fc85d988e67da2c6480208aad,32d948fc460c6d1bb1d9682bfd136dd3,355bb2e7269c004d598030ff8348dda0,39b41cfcdca61ad353853416d904417f,3cd3649d4d82b16c6d105090d8081f6e,4014059e72ca2fb658649cccba153f5e,43cb0f2a8f89f287a9fa0308ed110a3f,4a45316e71cd0e0104c26095efef1a8b,51ed05a44ffcb6ce215b22d1c327ef23,51eee122c2ebcb8b0ffd820ac78cdc7b,5c2f2ed6b167d0c17fcd87e51d62ab85,5f022b2409af8223bf100e9564e5f586,5fe78f79b74aaf92a89687fd492be682,62bc2728250038f93d0bc65c57c2385b,65495eb1bdee1fa1abc9d070c27380fa,67553bf934dfe54e134414e61479f4a5,68e4ed89f41a580e3c58f0f98434cc33,6a43992b9c939ecec99364c660c1ac68,6b7d21eb26a4ec94c42acbaaf3707f2e,6bb6801ed3016e00efcce4b92ed4763d,6bf1c34951771fcd9f2560d72d1dec62,70ffa305d793f894aff7641666c1ab03,73e9dd59e90139f5e98a1ec5152660fd,7457059c696ee5838f2b9889b1412e1f,7496af92a71655ac8c47de41bf43bb65,74b1bd908c22c236bcd8a776ad40cc37,80e2f294b065a7a45175fb7408358c76,83073afaa1def102babae9700cd63bba,8493f884b789159d96b7dab3a7202396,8510ea40cef51fcde12bd266cbc4b6b2,882b4c6f36a621d123f340e538aff0c0,8c7cf0e88b403959479bde7eb44c8654,93d35d9e3f3e82ed3b519b494edfd9b9,9521960b1adb4fffde0f8bca2df87bcb,9e53460bbd021fbbc0a4bc6a17b4286d,9f69cc7e34d605a68963e8a8a83e003f,a15ef9eda68738122db496f9962d6a9f,ad49a894ef8b75f1e79de5a63ec78b85,b1b64ef207d42a2b81118c978ce1f222,b3aa1ac66a5e25e270fce196c19d325e,b4cf9c163a2ba0d0db3385c6741457ac,b5e3ea78bd8f6699e982039ddaf0e2f6,b6c3e0690d7a726e219124a91c516e65,b8fd807f07f8a2af89aa236339a7bc45,b90af97596777a0400f9c331a5d96a40,bab940f0cf76af894b6edb440a57b5f8,c0ae1b35d101dd5c80796ebcaaa52998,c2792fdb292ab4fe367f71a4089bf78c,c57482161043b2c5d5a644c558fb2fa6,cb8b8a24ee435442f42e5aa0feacb291,cc801e9b36ee6b6cbcb589ad5d6eb592,dcb36e1f25d08b0eeffb649bc3a7860f,e3f78e84ba947ada447e7a0b46389605,ee04ae10c40b706b74a05b7fffa01876,fb8a4e3d89439bd18b6f6ecae81d6d7c,fc20acf548ac287cb2de74e6e1ea4d6e,ff33e904e4d9308ef4fac68e0de16f71</data>
+      <data key="d3">grey</data>
+    </node>
+    <node id="&quot;INTERNATIONAL COMMUNITY&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">The **International Community** is mentioned in Gareyev's argument about defining war.  Gareyev considers the International Community a stakeholder whose interests are taken into account when defining war. 
+
+
+</data>
+      <data key="d2">7567750cec0624c2e9f362f989d8b1bc,76afbf3e037f83e305f2431eddf52e38,cdb1d6abbb222058b92413663953ef84</data>
+      <data key="d3">grey</data>
+    </node>
+    <edge source="&quot;SEREBRYANNIKOV&quot;" target="&quot;KVACHKOV&quot;">
+      <data key="d4">2.0</data>
+      <data key="d5">Kvachkov and Serebryannikov are two individuals who share similar views on the nature of war.  
+</data>
+      <data key="d6">4640d14036dc3924713f8e3da33466d6,e847464375c697471e8db8e76b49b6d1</data>
+      <data key="d7">black</data>
+    </edge>
+    <edge source="&quot;SLIPCHENKO&quot;" target="&quot;BOGDANOV&quot;">
+      <data key="d4">2.0</data>
+      <data key="d5">Both Bogdanov and Slipchenko share similar perspectives on the nature of future warfare.  Bogdanov's theories on future war are heavily influenced by, and closely align with, Slipchenko's ideas. 
+
+
+</data>
+      <data key="d6">7be505fea57e0dbd921a3c195dd29aac,8e59b8e09a13e3b59b06fd4c22fd9a1e</data>
+      <data key="d7">black</data>
+    </edge>
+    <edge source="&quot;RUSSIAN ARMED FORCES&quot;" target="&quot;GERASIMOV&quot;">
+      <data key="d4">2.0</data>
+      <data key="d5">Gerasimov is a high-ranking officer serving as the Chief of the General Staff in the Russian Armed Forces. 
+</data>
+      <data key="d6">94a2bf999aec8597aae3db5d3633891d,b04e155024b2e24838d7dba80a934c81</data>
+      <data key="d7">black</data>
+    </edge>
+    <edge source="&quot;RUSSIAN ARMED FORCES&quot;" target="&quot;EV&quot;">
+      <data key="d4">2.0</data>
+      <data key="d5">"ev served in the Russian Armed Forces."</data>
+      <data key="d6">00ec4986199087f35da0fdf6a3fbe289,ac3935048eeae245ddfa4be2101163b4</data>
+      <data key="d7">black</data>
+    </edge>
+    <edge source="&quot;GERASIMOV&quot;" target="&quot;ACADEMY OF MILITARY SCIENCE&quot;">
+      <data key="d4">2.0</data>
+      <data key="d5">In 2013, Valery Gerasimov delivered a speech at the Academy of Military Science.  
+</data>
+      <data key="d6">36344580abcc867bedcaf20027655b68,8501d99fb9d704c9315278702413ee9e</data>
+      <data key="d7">black</data>
+    </edge>
+    <edge source="&quot;GERASIMOV&quot;" target="&quot;KARTAPOLOV&quot;">
+      <data key="d4">2.0</data>
+      <data key="d5">Both Kartapolov and Gerasimov are prominent figures in Russian military theory, as identified by Thomas's study.  Their prominence within the Russian military is a key point of comparison between them. 
+</data>
+      <data key="d6">850631a820a8158d8c7bff68e8f7fea5,bd400dbd8e753ab71c9394fe8b1f07ce</data>
+      <data key="d7">black</data>
+    </edge>
+    <edge source="&quot;GERASIMOV&quot;" target="&quot;KORYBKO&quot;">
+      <data key="d4">2.0</data>
+      <data key="d5">Korybko is an analyst who focuses on the theories of  Gerasimov, particularly those concerning adaptive use of force and hybrid warfare. Korybko utilizes Gerasimov's definitions of these concepts within his own analyses and interpretations. 
+
+
+</data>
+      <data key="d6">22b661e49114bda37400701e79292197,4a396711762b9d23dfa301a027d2737e</data>
+      <data key="d7">black</data>
+    </edge>
+    <edge source="&quot;UN&quot;" target="&quot;GAREYEV&quot;">
+      <data key="d4">2.0</data>
+      <data key="d5">Gareyev believes the United Nations (UN) should play an active role in discussions regarding revisions to the definition of war. He further suggests that the outcomes of these discussions, once finalized, should be submitted to the UN for consideration.  
+</data>
+      <data key="d6">35fa4f03c6bbb412d22ff5f494e83329,bfbbd058526ebede84405e2e4e3f47b5</data>
+      <data key="d7">black</data>
+    </edge>
+    <edge source="&quot;CLAUSEWITZ&quot;" target="&quot;LENIN&quot;">
+      <data key="d4">4.0</data>
+      <data key="d5">Both **Clausewitz** and **Lenin** are prominent figures in military and political thought.  While **Lenin** acknowledged and appreciated **Clausewitz's** use of dialectics, he also criticized **Clausewitz's** definition of war for treating policy as solely the foreign policy interests of a unitary state. Despite this criticism, **Lenin** incorporated aspects of **Clausewitz's** theories into his own thinking and work. 
+</data>
+      <data key="d6">2be40bedc401aa74026067cbca67b681,38c01208da0359baa45c7640d7a2285c,b1b64ef207d42a2b81118c978ce1f222,cca1605d479526e189239aac472c3e7e</data>
+      <data key="d7">black</data>
+    </edge>
+    <edge source="&quot;OV&quot;" target="&quot;ACADEMY OF THE GENERAL STAFF&quot;">
+      <data key="d4">2.0</data>
+      <data key="d5">"ov holds the position of commandant at the Academy of the General Staff."</data>
+      <data key="d6">27431841e2c6fbfbbcda31bea529d948,9bccda96a6276236341ab0595d832858</data>
+      <data key="d7">black</data>
+    </edge>
+    <edge source="&quot;YURI BALUYEVSKY&quot;" target="&quot;GENERAL STAFF&quot;">
+      <data key="d4">2.0</data>
+      <data key="d5">The **General Staff** is a military organization.  **Yuri Baluyevsky** is a member of the General Staff and serves as its Chief. 
+</data>
+      <data key="d6">188d0ba736e3a2e79f8ee925efb5fc17,cbad03251a174d87dc9c103d0a260763</data>
+      <data key="d7">black</data>
+    </edge>
+    <edge source="&quot;RASIN&quot;" target="&quot;STALIN&quot;">
+      <data key="d4">2.0</data>
+      <data key="d5">During a conversation, Rasin inquired about the continued relevance of military theorist Carl von Clausewitz's works in the face of evolving circumstances. Stalin provided a response to Rasin's question concerning the applicability of Clausewitz's ideas in modern times. 
+
+
+</data>
+      <data key="d6">38c01208da0359baa45c7640d7a2285c,cca1605d479526e189239aac472c3e7e</data>
+      <data key="d7">black</data>
+    </edge>
+    <edge source="&quot;STALIN&quot;" target="&quot;SOVIET ARMED FORCES&quot;">
+      <data key="d4">2.0</data>
+      <data key="d5">The Soviet Armed Forces study and discuss Stalin's military art and strategy, recognizing its influence on their own practices.  
+</data>
+      <data key="d6">27431841e2c6fbfbbcda31bea529d948,9bccda96a6276236341ab0595d832858</data>
+      <data key="d7">black</data>
+    </edge>
+    <edge source="&quot;STALIN&quot;" target="&quot;LENIN&quot;">
+      <data key="d4">2.0</data>
+      <data key="d5">Both **Stalin** and **Lenin** are key figures in the history of Marxism.  
+
+**Stalin** analyzed and defended **Lenin's** use of Clausewitzian ideas within Marxist theory, integrating them into his own understanding of the subject. 
+
+
+</data>
+      <data key="d6">38c01208da0359baa45c7640d7a2285c,cca1605d479526e189239aac472c3e7e</data>
+      <data key="d7">black</data>
+    </edge>
+    <edge source="&quot;ТУРКИН&quot;" target="&quot;ОСЕЛЕДЬКО&quot;">
+      <data key="d4">2.0</data>
+      <data key="d5">TURKİ and OSELEDUK are co-authors.  They are also both Hrypyn. 
+
+
+Let me know if you have any other data you'd like me to summarize! 
+</data>
+      <data key="d6">6c6869369e20ba61eb758094ee0cc7f8,74a6b948abf6e4cbeffa17366e046b24</data>
+      <data key="d7">black</data>
+    </edge>
+    <edge source="&quot;US SPECIAL FORCES COMMAND&quot;" target="&quot;GEN. JOSEPH L. VOTEL&quot;">
+      <data key="d4">2.0</data>
+      <data key="d5">General Joseph L. Votel led the US Special Forces Command.  He previously served as the head of the command. 
+
+
+</data>
+      <data key="d6">c578b9de1b6d70eac152e5929def187a,d81d350aa6c9162a49b1eb526ae982b8</data>
+      <data key="d7">black</data>
+    </edge>
+    <edge source="&quot;WHITES&quot;" target="&quot;EVGENY MESSNER&quot;">
+      <data key="d4">2.0</data>
+      <data key="d5">Evgeny Messner was a participant in the Russian Civil War, fighting on the side of the Whites.  
+</data>
+      <data key="d6">09b2675a885b57573db3341acb84875f,67553bf934dfe54e134414e61479f4a5</data>
+      <data key="d7">black</data>
+    </edge>
+    <edge source="&quot;CHEKINOV&quot;" target="&quot;BOGDANOV&quot;">
+      <data key="d4">4.0</data>
+      <data key="d5">Chekinov and Bogdanov are academics who share a close professional relationship. They have co-authored multiple articles together, including one discussing modern warfare and another arguing for nonmilitary solutions over military ones.  
+</data>
+      <data key="d6">3e6ab14e2f0c4f2a8a611ac169b8dc44,8e59b8e09a13e3b59b06fd4c22fd9a1e,bd400dbd8e753ab71c9394fe8b1f07ce,e216e7f3ed5bf3208c1f51eaa41603b8</data>
+      <data key="d7">black</data>
+    </edge>
+    <edge source="&quot;IMPERIAL RUSSIAN ARMY&quot;" target="&quot;EVGENY MESSNER&quot;">
+      <data key="d4">2.0</data>
+      <data key="d5">Evgeny Messner served as an officer in the Imperial Russian Army, establishing his military career within this organization. 
+</data>
+      <data key="d6">09b2675a885b57573db3341acb84875f,67553bf934dfe54e134414e61479f4a5</data>
+      <data key="d7">black</data>
+    </edge>
+    <edge source="&quot;COMMUNIST PARTY&quot;" target="&quot;SOVIET UNION&quot;">
+      <data key="d4">2.0</data>
+      <data key="d5">The **Communist Party** directly influenced the understanding of war within the **Soviet Union**. This influence originated within the Soviet Union itself. 
+</data>
+      <data key="d6">3cd3649d4d82b16c6d105090d8081f6e,8493f884b789159d96b7dab3a7202396</data>
+      <data key="d7">black</data>
+    </edge>
+    <edge source="&quot;LENIN&quot;" target="&quot;SOVIET UNION&quot;">
+      <data key="d4">2.0</data>
+      <data key="d5">The Soviet Union's understanding and application of warfare throughout history were heavily influenced by Lenin's definition of war. His writings became foundational tenets for how war was perceived and conducted within the nation.  
+</data>
+      <data key="d6">1b996f45c7b397759863385a53361eed,4a45316e71cd0e0104c26095efef1a8b</data>
+      <data key="d7">black</data>
+    </edge>
+    <edge source="&quot;KARTAPOLOV&quot;" target="&quot;GAREYEV&quot;">
+      <data key="d4">2.0</data>
+      <data key="d5">Both Kartapolov and Gareyev are prominent figures in Russian military theory, as noted by Thomas's study.  Their relative prominence within the Russian military is a point of comparison explored in analyses of their work. 
+</data>
+      <data key="d6">850631a820a8158d8c7bff68e8f7fea5,bd400dbd8e753ab71c9394fe8b1f07ce</data>
+      <data key="d7">black</data>
+    </edge>
+    <edge source="&quot;KARTAPOLOV&quot;" target="&quot;GENERAL STAFF&quot;">
+      <data key="d4">4.0</data>
+      <data key="d5">Kartapolov holds a senior position within the General Staff, specifically serving as the head of the operations directorate.  
+</data>
+      <data key="d6">5e6fb3a3adc710bacf237b23b8de5cdb,803cf3c02920d14a7bb0447fc1c76140,850631a820a8158d8c7bff68e8f7fea5,bd400dbd8e753ab71c9394fe8b1f07ce</data>
+      <data key="d7">black</data>
+    </edge>
+    <edge source="&quot;GAREYEV&quot;" target="&quot;SOVIET THEORISTS&quot;">
+      <data key="d4">2.0</data>
+      <data key="d5">Gareyev aligns with the perspectives of some late Soviet theorists, who argue that war encompasses more than just armed conflict.  
+</data>
+      <data key="d6">b561bc3a166d627669a12364a4a320b1,c8c68899e22ee8c693d6e73e47d38c9e</data>
+      <data key="d7">black</data>
+    </edge>
+    <edge source="&quot;GAREYEV&quot;" target="&quot;INTERNATIONAL COMMUNITY&quot;">
+      <data key="d4">2.0</data>
+      <data key="d5">Gareyev, when defining war, takes into account the perspective and interests of the International Community.  
+</data>
+      <data key="d6">7567750cec0624c2e9f362f989d8b1bc,76afbf3e037f83e305f2431eddf52e38</data>
+      <data key="d7">black</data>
+    </edge>
+    <edge source="&quot;EV&quot;" target="&quot;RUSSIAN ACADEMY OF MILITARY SCIENCE&quot;">
+      <data key="d4">2.0</data>
+      <data key="d5">EV led the Russian Academy of Military Science from 1995.  They served as the president of the institution during this time. 
+</data>
+      <data key="d6">00ec4986199087f35da0fdf6a3fbe289,ac3935048eeae245ddfa4be2101163b4</data>
+      <data key="d7">black</data>
+    </edge>
+  </graph>
+</graphml>
