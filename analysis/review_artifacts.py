@@ -41,9 +41,14 @@ def load_data(filepath: Path) -> pd.DataFrame | typing.List[JSONLine]:
 
 def describe_input(data: pd.DataFrame | typing.List[JSONLine]) -> str:
     if isinstance(data, pd.DataFrame):
+        if "description_embedding" in data.columns:
+            data = data.drop("description_embedding", axis=1)
         size = data.shape[0]
-        sample = data.sample(1, random_state=1).to_dict(orient="records")
         columns = ",".join(data.columns.tolist())
+        if "clustered_graph" in data.columns or "entity_graph" in data.columns:
+            sample = "<graph data>"
+        else:
+            sample = data.sample(1, random_state=1).to_dict(orient="records")
     elif isinstance(data, list):
         size = len(data)
         sample = data[0]
@@ -64,7 +69,20 @@ def process(filepath: Path) -> str:
 
 if __name__ == "__main__":
     files = (
-        p.resolve() for p in inputs.glob("**/*") if p.suffix in {".json", ".parquet"}
+        "create_base_documents.parquet",
+        "create_base_entity_graph.parquet",
+        "create_base_extracted_entities.parquet",
+        "create_base_text_units.parquet",
+        "create_final_communities.parquet",
+        "create_final_community_reports.parquet",
+        "create_final_entities.parquet",
+        "create_final_nodes.parquet",
+        "create_final_relationships.parquet",
+        "create_final_text_units.parquet",
+        "create_summarized_entities.parquet",
+        "join_text_units_to_entity_ids.parquet",
+        "join_text_units_to_relationship_ids.parquet",
+        "raw_extracted_entities.json",
     )
     with open(
         outputs / "0_tabular_artifacts_descriptions.txt", "w", encoding="utf-8"
