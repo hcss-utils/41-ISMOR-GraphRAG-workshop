@@ -7,7 +7,7 @@ llm:
   model: gemma2
   model_supports_json: true # recommended if this is available for your model.
   # max_tokens: 4000
-  request_timeout: 600.0
+  request_timeout: 1200.0
   api_base: http://localhost:11434/v1
   # api_version: 2024-02-15-preview
   # organization: <organization_id>
@@ -108,7 +108,7 @@ community_report:
   ## async_mode: override the global async_mode settings for this task
   prompt: "prompts/community_report.txt"
   max_length: 2000
-  max_input_length: 8000
+  max_input_length: 5000
 
 cluster_graph:
   max_cluster_size: 10
@@ -135,10 +135,10 @@ local_search:
   # conversation_history_max_turns: 5
   # top_k_mapped_entities: 10
   # top_k_relationships: 10
-  # max_tokens: 12000
+  max_tokens: 5000
 
 global_search:
-  # max_tokens: 12000
+  max_tokens: 5000
   # data_max_tokens: 12000
   # map_max_tokens: 1000
   # reduce_max_tokens: 2000
