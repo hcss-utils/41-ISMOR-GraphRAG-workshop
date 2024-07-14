@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d5" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d4" for="edge" attr.name="description" attr.type="string" />
+  <key id="d3" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d2" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="description" attr.type="string" />
+  <key id="d0" for="node" attr.name="type" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="&quot;GERASIMOV&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"Gerasimov is a high-ranking officer in the Russian Armed Forces and the Chief of the General Staff, making him an authoritative figure in military theory."</data>
+      <data key="d2">94a2bf999aec8597aae3db5d3633891d</data>
+    </node>
+    <node id="&quot;RUSSIAN ARMED FORCES&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"The Russian Armed Forces are the military force led by Gerasimov."</data>
+      <data key="d2">94a2bf999aec8597aae3db5d3633891d</data>
+    </node>
+    <node id="&quot;GENERAL STAFF&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"The General Staff is the branch of the Russian Armed Forces responsible for military planning and strategy, headed by Gerasimov."</data>
+      <data key="d2">94a2bf999aec8597aae3db5d3633891d</data>
+    </node>
+    <node id="&quot;GREENPEACE&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"Greenpeace is an environmental organization mentioned in relation to activities in the Arctic."</data>
+      <data key="d2">94a2bf999aec8597aae3db5d3633891d</data>
+    </node>
+    <node id="&quot;SYRIA&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"Syria is a geopolitical location mentioned as a site of military activity."</data>
+      <data key="d2">94a2bf999aec8597aae3db5d3633891d</data>
+    </node>
+    <node id="&quot;UKRAINE&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"Ukraine is a geopolitical location mentioned as a site of military activity."</data>
+      <data key="d2">94a2bf999aec8597aae3db5d3633891d</data>
+    </node>
+    <node id="&quot;ARCTIC&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"The Arctic is a geopolitical location mentioned as the site of Greenpeace activities."</data>
+      <data key="d2">94a2bf999aec8597aae3db5d3633891d</data>
+    </node>
+    <edge source="&quot;GERASIMOV&quot;" target="&quot;RUSSIAN ARMED FORCES&quot;">
+      <data key="d3">1.0</data>
+      <data key="d4">"Gerasimov is the Chief of the General Staff in the Russian Armed Forces."</data>
+      <data key="d5">94a2bf999aec8597aae3db5d3633891d</data>
+    </edge>
+    <edge source="&quot;GERASIMOV&quot;" target="&quot;GENERAL STAFF&quot;">
+      <data key="d3">1.0</data>
+      <data key="d4">"Gerasimov leads the General Staff, which is responsible for military theory and planning within the Russian Armed Forces."</data>
+      <data key="d5">94a2bf999aec8597aae3db5d3633891d</data>
+    </edge>
+    <edge source="&quot;RUSSIAN ARMED FORCES&quot;" target="&quot;SYRIA&quot;">
+      <data key="d3">1.0</data>
+      <data key="d4">"The Russian Armed Forces are involved in military operations in Syria."</data>
+      <data key="d5">94a2bf999aec8597aae3db5d3633891d</data>
+    </edge>
+    <edge source="&quot;RUSSIAN ARMED FORCES&quot;" target="&quot;UKRAINE&quot;">
+      <data key="d3">1.0</data>
+      <data key="d4">"The Russian Armed Forces are involved in military operations in Ukraine."</data>
+      <data key="d5">94a2bf999aec8597aae3db5d3633891d</data>
+    </edge>
+    <edge source="&quot;GREENPEACE&quot;" target="&quot;ARCTIC&quot;">
+      <data key="d3">1.0</data>
+      <data key="d4">"Greenpeace conducts activities in the Arctic region."</data>
+      <data key="d5">94a2bf999aec8597aae3db5d3633891d</data>
+    </edge>
+  </graph>
+</graphml>
