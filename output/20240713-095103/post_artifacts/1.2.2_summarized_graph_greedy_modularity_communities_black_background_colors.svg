@@ -1,0 +1,1402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg contentScriptType="text/ecmascript" width="1127.6594"
+     xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify"
+     contentStyleType="text/css"
+     viewBox="-569.728027 -519.000000 1127.659424 1018.000000" height="1018.0"
+     preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
+     version="1.1">
+    <g id="edges">
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;HYBRID_METHODS&quot; id_&quot;GERASIMOV&quot;"
+              d="M -369.409454,295.028320 A 198.776339,198.776339 0,0 1,-343.036041,74.363953"
+              stroke="#de5fde" stroke-width="2.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;GAREYEV&quot; id_&quot;RUSSIA&quot;"
+              d="M -101.029655,31.983271 A 356.508088,356.508088 0,0 1,-38.903709,438.911194"
+              stroke="#de5fde" stroke-width="2.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;GAREYEV&quot; id_&quot;ARAB_SPRING&quot;"
+              d="M -101.438423,32.366344 A 84.312531,84.312531 0,0 1,-89.582626,116.021965"
+              stroke="#ff647f" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;GAREYEV&quot; id_&quot;COLOR_REVOLUTIONS&quot;"
+              d="M -98.559555,27.973438 A 344.818737,344.818737 0,0 1,134.854095,349.861511"
+              stroke="#de5fde" stroke-width="3.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;GAREYEV&quot; id_&quot;OTSTAIVAYA_NATSIONALNYYE_INTERESY&quot;"
+              d="M -112.552017,15.941983 A 252.203817,252.203817 0,0 1,-67.245895,-266.861725"
+              stroke="#ff647f" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;GAREYEV&quot; id_&quot;WORLD_WARS&quot;"
+              d="M -116.910072,20.207434 A 420.385293,420.385293 0,0 1,-330.582581,-418.883942"
+              stroke="#ff647f" stroke-width="3.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;GAREYEV&quot; id_&quot;ARMED_HOSTILITIES&quot;"
+              d="M -98.421326,27.510653 A 312.615369,312.615369 0,0 1,126.499718,307.250885"
+              stroke="#7f7fff" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;GAREYEV&quot; id_&quot;LARGE-SCALE_AGGRESSIONS_AGAINST_RUSSIA&quot;"
+              d="M -111.840294,15.619238 A 180.621534,180.621534 0,0 1,-66.312706,-179.561020"
+              stroke="#ff647f" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;GAREYEV&quot; id_&quot;KARTAPOLOV&quot;"
+              d="M -106.402840,15.020844 A 465.447217,465.447217 0,0 1,282.770996,-362.803070"
+              stroke="#ff00ff" stroke-width="2.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;GAREYEV&quot; id_&quot;ARMED_FORCE&quot;"
+              d="M -116.197517,19.055765 A 416.010141,416.010141 0,0 1,-267.000519,-439.871521"
+              stroke="#de5fde" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;GAREYEV&quot; id_&quot;2000S&quot;"
+              d="M -115.681572,18.396049 A 311.177076,311.177076 0,0 1,-199.815765,-328.776520"
+              stroke="#ff647f" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;GAREYEV&quot; id_&quot;SOVIET_THEORISTS&quot;"
+              d="M -110.487785,15.177838 A 457.191297,457.191297 0,0 1,91.126129,-477.678467"
+              stroke="#7f00ff" stroke-width="2.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;GAREYEV&quot; id_&quot;NUCLEAR_WEAPONS&quot;"
+              d="M -109.206390,14.945848 A 307.220599,307.220599 0,0 1,63.869827,-292.105988"
+              stroke="#de5fde" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;GAREYEV&quot; id_&quot;HIROSHIMA_AND_NAGASAKI&quot;"
+              d="M -100.541786,18.298046 A 495.593852,495.593852 0,0 1,475.954865,-30.903076"
+              stroke="#de5fde" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;GAREYEV&quot; id_&quot;ACADEMY_OF_MILITARY_SCIENCES&quot;"
+              d="M -104.901001,15.396202 A 533.644490,533.644490 0,0 1,405.242218,-344.404541"
+              stroke="#7f00ff" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;GAREYEV&quot; id_&quot;FOREIGN_MINISTRY&quot;"
+              d="M -105.251404,34.475739 A 267.803766,267.803766 0,0 1,-206.771744,322.236145"
+              stroke="#7f00ff" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;GAREYEV&quot; id_&quot;UN&quot;"
+              d="M -114.983757,32.105362 A 169.598471,169.598471 0,0 1,-298.669037,68.061356"
+              stroke="#7f00ff" stroke-width="2.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;GAREYEV&quot; id_&quot;INFORMATION_WAR&quot;"
+              d="M -98.081902,24.380833 A 234.826244,234.826244 0,0 1,125.164726,168.159286"
+              stroke="#ff647f" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;GAREYEV&quot; id_&quot;MILITARY_SCIENCE&quot;"
+              d="M -106.008965,15.095567 A 419.651625,419.651625 0,0 1,256.672119,-310.573425"
+              stroke="#7f7fff" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;GAREYEV&quot; id_&quot;INTERNATIONAL_COMMUNITY&quot;"
+              d="M -116.274193,19.164257 A 384.408554,384.408554 0,0 1,-261.256805,-401.698761"
+              stroke="#7f00ff" stroke-width="2.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;GAREYEV&quot; id_&quot;ON_DEFENSE&quot;"
+              d="M -98.539772,21.850065 A 248.523245,248.523245 0,0 1,169.536194,109.334198"
+              stroke="#de5fde" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;GAREYEV&quot; id_&quot;KIPP&quot;"
+              d="M -117.130409,20.650431 A 442.457410,442.457410 0,0 1,-364.748657,-430.701935"
+              stroke="#ff00ff" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;GAREYEV&quot; id_&quot;THREATS_TO_INTERNATIONAL_SECURITY&quot;"
+              d="M -98.396721,22.343344 A 404.494893,404.494893 0,0 1,338.314972,194.027405"
+              stroke="#de5fde" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;GAREYEV&quot; id_&quot;GEORGIA&apos;S_ROSE_REVOLUTION&quot;"
+              d="M -110.503639,34.580193 A 315.777550,315.777550 0,0 1,-388.592224,267.498077"
+              stroke="#ff647f" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;GAREYEV&quot; id_&quot;PROMINENT_FIGURES&quot;"
+              d="M -103.848312,33.946461 A 389.183563,389.183563 0,0 1,-191.160294,476.279022"
+              stroke="#de5fde" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;NUCLEAR_WAR&quot; id_&quot;NIKOLAYCHUK&quot;"
+              d="M 394.985229,479.961365 A 1060.574095,1060.574095 0,0 1,-392.984955,-498.930023"
+              stroke="#ff647f" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;UNITED_RUSSIA&quot; id_&quot;SURKOV&quot;"
+              d="M -415.902222,-325.868011 A 596.372810,596.372810 0,0 1,-426.072937,373.605408"
+              stroke="#7f00ff" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;TARGETS_OF_SIGNIFICANT_VALUE&quot; id_&quot;RUSSIA&quot;"
+              d="M 275.990814,8.009724 A 459.680615,459.680615 0,0 1,-34.013596,444.637512"
+              stroke="#5fdede" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;MILITARY_ACADEMY_OF_THE_GENERAL_STAFF&quot; id_&quot;CENTER&quot;"
+              d="M -189.339737,-59.850563 A 532.444793,532.444793 0,0 1,183.901382,438.745544"
+              stroke="#0000ff" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;INVASION_OF_UKRAINE&quot; id_&quot;RUSSIA&quot;"
+              d="M 469.394806,-175.758484 A 679.509708,679.509708 0,0 1,-33.823559,445.280853"
+              stroke="#bebebe" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;INVASION_OF_UKRAINE&quot; id_&quot;EUROMAIDAN_REVOLT&quot;"
+              d="M 460.784088,-181.513351 A 727.459332,727.459332 0,0 1,-379.121307,-351.170685"
+              stroke="#dec35f" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;NIKOLAI_BORDUZHA&quot; id_&quot;RUSSIA&quot;"
+              d="M 221.967361,-378.745148 A 730.118837,730.118837 0,0 1,-35.424515,441.897278"
+              stroke="#de5fde" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;NIKOLAI_BORDUZHA&quot; id_&quot;COLLECTIVE_SECURITY_TREATY_ORGANIZATION&quot;"
+              d="M 223.420395,-379.380310 A 283.393721,283.393721 0,0 1,180.027664,-58.437229"
+              stroke="#7f00ff" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;INFORMATION_WAR&quot; id_&quot;RUSSIA&quot;"
+              d="M 129.412598,187.442780 A 267.162974,267.162974 0,0 1,-34.211155,444.095642"
+              stroke="#dec35f" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;INFORMATION_WAR&quot; id_&quot;GERASIMOV&quot;"
+              d="M 119.621201,181.332352 A 398.415155,398.415155 0,0 1,-329.820496,74.566704"
+              stroke="#ff647f" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;INFORMATION_WAR&quot; id_&quot;WEST&quot;"
+              d="M 118.919044,178.708832 A 288.931772,288.931772 0,0 1,-170.990662,19.991756"
+              stroke="#7f647f" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;INFORMATION_WAR&quot; id_&quot;NIKOLAYCHUK&quot;"
+              d="M 119.240829,174.658539 A 718.712333,718.712333 0,0 1,-393.236084,-498.923370"
+              stroke="#ff647f" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;INFORMATION_WAR&quot; id_&quot;PUTIN&apos;S_REGIME&quot;"
+              d="M 121.151726,171.065369 A 325.625292,325.625292 0,0 1,28.858877,-191.954178"
+              stroke="#7f647f" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;INFORMATION_WAR&quot; id_&quot;ALEKSANDR_DUGIN&quot;"
+              d="M 138.783508,178.526627 A 231.028611,231.028611 0,0 1,333.465271,352.333191"
+              stroke="#ff647f" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;INFORMATION_WAR&quot; id_&quot;ALEKSANDR_MIKHAILOV&quot;"
+              d="M 138.066422,181.317276 A 175.384769,175.384769 0,0 1,241.137558,345.820435"
+              stroke="#ff647f" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;SECOND_CHECHEN_WAR&quot; id_&quot;RUSSIA&quot;"
+              d="M -380.520874,-174.658005 A 596.545590,596.545590 0,0 1,-42.202312,437.875488"
+              stroke="#dec35f" stroke-width="3.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;1993_MILITARY_DOCTRINE&quot; id_&quot;RUSSIA&quot;"
+              d="M 144.693268,-48.362007 A 448.899620,448.899620 0,0 1,-35.177612,442.251587"
+              stroke="#dec35f" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;TIMOTHY_THOMAS&quot; id_&quot;GENERAL_STAFF&quot;"
+              d="M 401.326935,-455.512360 A 770.635091,770.635091 0,0 1,-252.572632,175.457581"
+              stroke="#7f00ff" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;REGIONAL_SECURITY&quot; id_&quot;RUSSIA&quot;"
+              d="M 197.379593,-209.603668 A 590.135271,590.135271 0,0 1,-35.210918,442.201843"
+              stroke="#dec35f" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;ACADEMY_OF_MILITARY_SCIENCES&quot; id_&quot;GERASIMOV&quot;"
+              d="M 411.037964,-335.131744 A 713.895184,713.895184 0,0 1,-326.405334,68.315811"
+              stroke="#7f00ff" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;CHANGING_NATURE_OF_WAR&quot; id_&quot;GENERAL_STAFF&quot;"
+              d="M 132.647888,-308.209045 A 527.991007,527.991007 0,0 1,-252.830246,174.163803"
+              stroke="#5f5fde" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;POLITICAL_LEADERSHIP&quot; id_&quot;COLOR_REVOLUTIONS&quot;"
+              d="M -45.253059,-24.312094 A 360.276500,360.276500 0,0 1,136.602661,350.018433"
+              stroke="#5f5fde" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;INFORMATIONAL_SOVEREIGNTY&quot; id_&quot;RUSSIA&quot;"
+              d="M 227.562744,-191.208954 A 585.118080,585.118080 0,0 1,-34.942883,442.621765"
+              stroke="#bebebe" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;EUROMAIDAN_UPRISING&quot; id_&quot;KARTAPOLOV&quot;"
+              d="M 260.883484,397.032074 A 641.580175,641.580175 0,0 1,286.468994,-356.336761"
+              stroke="#ff647f" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;MILITARY_POWER&quot; id_&quot;COLOR_REVOLUTIONS&quot;"
+              d="M -325.448059,-154.932495 A 582.156654,582.156654 0,0 1,133.807602,349.914734"
+              stroke="#bebebe" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;WEST&quot; id_&quot;RUSSIA&quot;"
+              d="M -167.307312,16.991661 A 380.229045,380.229045 0,0 1,-40.193562,438.354156"
+              stroke="#5f5fde" stroke-width="2.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;WEST&quot; id_&quot;COLOR_REVOLUTIONS&quot;"
+              d="M -165.510635,13.079166 A 389.004781,389.004781 0,0 1,133.879822,349.907532"
+              stroke="#5f5fde" stroke-width="4.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;WEST&quot; id_&quot;NONMILITARY_FORCE&quot;"
+              d="M -165.549866,8.667526 A 538.677042,538.677042 0,0 1,414.280457,255.805328"
+              stroke="#5f5fde" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;RT&quot; id_&quot;RUSSIA&quot;"
+              d="M 479.380127,-284.582520 A 756.580119,756.580119 0,0 1,-34.012684,444.640259"
+              stroke="#5f5fde" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;PROMINENT_FIGURES&quot; id_&quot;GERASIMOV&quot;"
+              d="M -206.641373,477.240723 A 365.270702,365.270702 0,0 1,-339.363739,76.484406"
+              stroke="#de5fde" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;PERSSON&quot; id_&quot;RUSSIA&quot;"
+              d="M -296.275513,-2.839643 A 437.264285,437.264285 0,0 1,-42.411362,437.850281"
+              stroke="#de5fde" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;ELECTIONS_IN_RUSSIA_2011-12&quot; id_&quot;ARAB_SPRING&quot;"
+              d="M -331.701141,-406.252777 A 491.782563,491.782563 0,0 1,-91.863480,115.258942"
+              stroke="#ffc800" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;MARK_GALEOTTI&quot; id_&quot;HYBRID_WAR&quot;"
+              d="M -360.924683,374.836761 A 967.580731,967.580731 0,0 1,432.391968,-450.847229"
+              stroke="#7f7fff" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;ADAPTIVE_APPROACH_TO_FORCE&quot; id_&quot;GERASIMOV&quot;"
+              d="M -281.590576,-189.458786 A 225.217174,225.217174 0,0 1,-329.074738,60.061398"
+              stroke="#de5fde" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;CENTER&quot; id_&quot;GENERAL_STAFF&quot;"
+              d="M 174.022217,449.592957 A 435.662875,435.662875 0,0 1,-258.670654,186.002197"
+              stroke="#0000ff" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;DOMESTIC_RUSSIAN_MEDIA&quot; id_&quot;RUSSIA&quot;"
+              d="M 352.822754,433.339264 A 337.195141,337.195141 0,0 1,-35.124664,453.248901"
+              stroke="#bebebe" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;JAKOB_HEDENSKOG,_GUDRUN_PERSSON,_CAROLINA_VENDIL_PALLIN&quot; id_&quot;COLOR_REVOLUTIONS&quot;"
+              d="M -377.989960,-285.342041 A 693.505171,693.505171 0,0 1,134.413223,349.870544"
+              stroke="#bebebe" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;ACADEMY_OF_MILITARY_SCIENCE&quot; id_&quot;GERASIMOV&quot;"
+              d="M 138.849472,-402.402832 A 563.266884,563.266884 0,0 1,-326.430725,65.431984"
+              stroke="#7f00ff" stroke-width="2.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;ACADEMY_OF_MILITARY_SCIENCE&quot; id_&quot;GENERAL_STAFF&quot;"
+              d="M 140.677353,-402.299683 A 594.675778,594.675778 0,0 1,-253.046448,173.462982"
+              stroke="#0000ff" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;DEBT&quot; id_&quot;RUSSIA&quot;"
+              d="M 24.584227,-328.753998 A 656.288782,656.288782 0,0 1,-36.941914,440.244263"
+              stroke="#bebebe" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;DOMESTIC_MILITARY_DANGER&quot; id_&quot;COLOR_REVOLUTIONS&quot;"
+              d="M -31.026167,315.229279 A 149.887028,149.887028 0,0 1,128.160736,352.417511"
+              stroke="#bebebe" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;INTERNATIONAL_SECURITY&quot; id_&quot;RUSSIA&quot;"
+              d="M 481.308411,184.828125 A 495.864035,495.864035 0,0 1,-33.629414,449.372192"
+              stroke="#dec35f" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;INSURGENCY&quot; id_&quot;RUSSIA&quot;"
+              d="M 421.185547,-392.631409 A 806.961994,806.961994 0,0 1,-34.433155,443.579956"
+              stroke="#dec35f" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;MILITARY_THOUGHT&quot; id_&quot;RUSSIA&quot;"
+              d="M -347.200104,426.204102 A 260.433644,260.433644 0,0 1,-51.303967,441.533203"
+              stroke="#bebebe" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;MILITARY_THOUGHT&quot; id_&quot;YURI_BALUYEVSKY&quot;"
+              d="M -348.083832,425.031952 A 324.250196,324.250196 0,0 1,23.277050,390.998505"
+              stroke="#de5fde" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;MILITARY_THOUGHT&quot; id_&quot;27_TSNII&quot;"
+              d="M -354.262695,421.712341 A 525.145039,525.145039 0,0 1,72.613792,-19.702242"
+              stroke="#5f5fde" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;MILITARY_THOUGHT&quot; id_&quot;GENERAL_STAFF_(GS)&quot;"
+              d="M -365.199707,428.802460 A 38.147391,38.147391 0,0 1,-384.989258,408.513397"
+              stroke="#5f5fde" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;WESTERN_ANALYTICAL_ENGAGEMENT&quot; id_&quot;RUSSIA&quot;"
+              d="M -316.377533,-9.160398 A 450.215894,450.215894 0,0 1,-42.674896,437.824860"
+              stroke="#bebebe" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;RUSSIAN_ELECTIONS_OF_2011-12&quot; id_&quot;ARAB_SPRING&quot;"
+              d="M -148.101746,-478.861298 A 511.979604,511.979604 0,0 1,-88.779213,116.449364"
+              stroke="#ffc800" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;ADAPTIVE_USE_OF_FORCE&quot; id_&quot;GERASIMOV&quot;"
+              d="M 80.092262,295.625000 A 402.579864,402.579864 0,0 1,-331.963898,75.965744"
+              stroke="#de5fde" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;US_DEBATE_ON_HYBRID_WAR&quot; id_&quot;GERASIMOV&quot;"
+              d="M -218.261627,446.510651 A 337.940838,337.940838 0,0 1,-339.386230,76.477173"
+              stroke="#de5fde" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;RUSSIAN_DEBATE_ON_WAR&quot; id_&quot;GERASIMOV&quot;"
+              d="M -42.052933,152.194550 A 262.010767,262.010767 0,0 1,-329.997833,74.714584"
+              stroke="#de5fde" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;RUSSIA&quot; id_&quot;TROLL_FACTORIES&quot;"
+              d="M -39.762192,438.516724 A 409.694808,409.694808 0,0 1,364.095703,187.542313"
+              stroke="#bebebe" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;RUSSIA&quot; id_&quot;GERASIMOV&quot;"
+              d="M -53.102074,444.985474 A 400.319732,400.319732 0,0 1,-336.068573,76.958084"
+              stroke="#de5fde" stroke-width="2.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;RUSSIA&quot; id_&quot;ANATOLY_MARUYEV&quot;"
+              d="M -48.602230,439.187958 A 195.919271,195.919271 0,0 1,-30.474724,221.138077"
+              stroke="#de5fde" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;RUSSIA&quot; id_&quot;U.S.&quot;|"
+              d="M -36.895760,440.284637 A 342.375754,342.375754 0,0 1,348.264954,354.136871"
+              stroke="#5f5fde" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;RUSSIA&quot; id_&quot;NUCLEAR_DETERRENCE_STRATEGIES&quot;"
+              d="M -52.218819,452.693909 A 360.707256,360.707256 0,0 1,-466.046509,403.989166"
+              stroke="#bebebe" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;RUSSIA&quot; id_&quot;VITALLY_IMPORTANT_OBJECTS&quot;"
+              d="M -50.295300,440.450714 A 370.354523,370.354523 0,0 1,-100.135681,15.095877"
+              stroke="#5fdede" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;RUSSIA&quot; id_&quot;COLOR_REVOLUTIONS&quot;"
+              d="M -38.714420,439.011841 A 165.699749,165.699749 0,0 1,124.958374,358.315155"
+              stroke="#bebebe" stroke-width="2.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;RUSSIA&quot; id_&quot;HE&quot;"
+              d="M -52.218384,442.886261 A 596.011990,596.011990 0,0 1,-339.274994,-194.576981"
+              stroke="#de5fde" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;RUSSIA&quot; id_&quot;SHOIGU&quot;"
+              d="M -48.448189,439.098511 A 545.545582,545.545582 0,0 1,26.163984,-195.072845"
+              stroke="#de5fde" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;RUSSIA&quot; id_&quot;FIRST_CHECHEN_WAR&quot;"
+              d="M -53.493038,447.332550 A 126.490232,126.490232 0,0 1,-161.243042,365.459595"
+              stroke="#dec35f" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;RUSSIA&quot; id_&quot;SPUTNIK&quot;"
+              d="M -47.124119,438.468903 A 665.928166,665.928166 0,0 1,158.347565,-317.115814"
+              stroke="#5f5fde" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;RUSSIA&quot; id_&quot;ARAB_SPRING&quot;"
+              d="M -50.535973,440.680969 A 272.201909,272.201909 0,0 1,-98.404213,133.969315"
+              stroke="#dec35f" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;RUSSIA&quot; id_&quot;INTERNET_RESEARCH_AGENCY&quot;"
+              d="M -52.624096,443.689819 A 619.750799,619.750799 0,0 1,-409.626190,-190.311829"
+              stroke="#5f5fde" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;RUSSIA&quot; id_&quot;PRESIDENT_OF_RUSSIA&quot;"
+              d="M -46.591156,438.279083 A 119.247088,119.247088 0,0 1,-10.670588,316.874176"
+              stroke="#de5fde" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;RUSSIA&quot; id_&quot;FINANCIAL_CRISIS&quot;"
+              d="M -46.636444,438.293884 A 693.371351,693.371351 0,0 1,208.202728,-336.849274"
+              stroke="#dec35f" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;RUSSIA&quot; id_&quot;SURKOV&quot;"
+              d="M -52.466286,452.225433 A 328.517011,328.517011 0,0 1,-425.133972,388.721405"
+              stroke="#de5fde" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;RUSSIA&quot; id_&quot;AGENCIES&quot;"
+              d="M -53.364765,446.130341 A 376.996089,376.996089 0,0 1,-358.224487,134.098663"
+              stroke="#5f5fde" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;RUSSIA&quot; id_&quot;GENERAL_STAFF&quot;"
+              d="M -53.154625,445.171997 A 290.368412,290.368412 0,0 1,-261.954803,186.745087"
+              stroke="#5f5fde" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;BUSH_ADMINISTRATION&quot; id_&quot;COLOR_REVOLUTIONS&quot;"
+              d="M -329.558044,451.389893 A 401.139409,401.139409 0,0 1,125.723480,355.747650"
+              stroke="#5f5fde" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;YURI_BALUYEVSKY&quot; id_&quot;COLOR_REVOLUTIONS&quot;"
+              d="M 37.873367,388.113159 A 90.968008,90.968008 0,0 1,125.148979,357.387421"
+              stroke="#de5fde" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;YURI_BALUYEVSKY&quot; id_&quot;GENERAL_STAFF&quot;"
+              d="M 21.871984,395.978882 A 305.916609,305.916609 0,0 1,-259.501526,186.303070"
+              stroke="#7f00ff" stroke-width="2.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;GENERAL_STAFF&quot; id_&quot;GERASIMOV&quot;"
+              d="M -271.771545,173.043457 A 110.258111,110.258111 0,0 1,-336.375061,76.960884"
+              stroke="#7f00ff" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;GENERAL_STAFF&quot; id_&quot;VOYENNAYA_MYSL&quot;"
+              d="M -256.940247,168.438980 A 569.105609,569.105609 0,0 1,369.900146,-58.987045"
+              stroke="#5f5fde" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;GENERAL_STAFF&quot; id_&quot;DEPUTY_DEFENSE_MINISTER&quot;"
+              d="M -255.310211,169.796127 A 627.607702,627.607702 0,0 1,475.045776,70.803467"
+              stroke="#7f00ff" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;GENERAL_STAFF&quot; id_&quot;KARTAPOLOV&quot;"
+              d="M -260.868530,166.891220 A 645.937525,645.937525 0,0 1,282.769379,-362.814789"
+              stroke="#7f00ff" stroke-width="4.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;GENERAL_STAFF&quot; id_&quot;MILITARY&quot;"
+              d="M -259.248779,167.298309 A 432.885216,432.885216 0,0 1,153.582352,-120.636147"
+              stroke="#0000ff" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;GENERAL_STAFF&quot; id_&quot;THEORISTS&quot;"
+              d="M -253.578140,172.218109 A 435.846337,435.846337 0,0 1,246.774414,253.296402"
+              stroke="#7f00ff" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;MCIS&quot; id_&quot;GERASIMOV&quot;"
+              d="M -19.076950,486.393280 A 444.937879,444.937879 0,0 1,-336.047913,76.957558"
+              stroke="#7f00ff" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;THEORISTS&quot; id_&quot;PUBLIC_SECURITY_DOCTRINES&quot;"
+              d="M 244.177765,263.163055 A 414.130767,414.130767 0,0 1,-206.916992,96.745361"
+              stroke="#7f7fff" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;SOCIAL_MEDIA&quot; id_&quot;KORYBKO&quot;"
+              d="M 150.089325,-133.012070 A 387.183975,387.183975 0,0 1,-279.416595,-3.987044"
+              stroke="#de5fde" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;WESTERN_COUNTRIES&quot; id_&quot;GERASIMOV&quot;"
+              d="M 422.022461,331.778687 A 676.055271,676.055271 0,0 1,-330.616333,75.179741"
+              stroke="#7f00ff" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;COLOR_REVOLUTIONS&quot; id_&quot;GERASIMOV&quot;"
+              d="M 124.867325,360.625641 A 462.311637,462.311637 0,0 1,-332.586212,76.240623"
+              stroke="#de5fde" stroke-width="4.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;COLOR_REVOLUTIONS&quot; id_&quot;ARAB_SPRING&quot;"
+              d="M 124.987968,358.136658 A 273.153701,273.153701 0,0 1,-92.407349,134.947113"
+              stroke="#dec35f" stroke-width="2.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;COLOR_REVOLUTIONS&quot; id_&quot;ZARUDNITSKY&quot;"
+              d="M 124.847061,359.438049 A 229.359300,229.359300 0,0 1,-79.094032,199.828400"
+              stroke="#de5fde" stroke-width="2.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;COLOR_REVOLUTIONS&quot; id_&quot;SURKOV&quot;"
+              d="M 127.007286,366.080719 A 472.812939,472.812939 0,0 1,-423.838684,387.170593"
+              stroke="#de5fde" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;COLOR_REVOLUTIONS&quot; id_&quot;HYBRID_WAR&quot;"
+              d="M 132.124237,350.236816 A 723.826265,723.826265 0,0 1,433.846924,-447.093170"
+              stroke="#5fdede" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;COLOR_REVOLUTIONS&quot; id_&quot;KORYBKO&quot;"
+              d="M 124.871086,359.049774 A 467.205894,467.205894 0,0 1,-286.627563,2.440082"
+              stroke="#de5fde" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;COLOR_REVOLUTIONS&quot; id_&quot;EUROMAIDAN_REVOLT&quot;"
+              d="M 125.305473,356.840057 A 739.399029,739.399029 0,0 1,-385.922363,-348.590424"
+              stroke="#dec35f" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;COLOR_REVOLUTIONS&quot; id_&quot;RUSSIAN_MILITARY_THEORISTS&quot;"
+              d="M 126.206047,354.812958 A 613.313116,613.313116 0,0 1,-158.255753,-306.478607"
+              stroke="#de5fde" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;LAWS_OF_WAR&quot; id_&quot;GERASIMOV&quot;"
+              d="M 317.988556,134.763657 A 554.860309,554.860309 0,0 1,-328.852966,73.620346"
+              stroke="#7f7fff" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;RUNET&quot; id_&quot;NIKOLAYCHUK&quot;"
+              d="M 318.956726,381.016449 A 956.609154,956.609154 0,0 1,-392.955170,-498.931213"
+              stroke="#7f00ff" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;UNCONVENTIONAL_WARFARE&quot; id_&quot;KORYBKO&quot;"
+              d="M -202.928848,164.425507 A 166.766173,166.766173 0,0 1,-290.041809,2.618293"
+              stroke="#7f7fff" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;GERASIMOV&quot; id_&quot;KARTAPOLOV&quot;"
+              d="M -333.032288,57.514587 A 635.472031,635.472031 0,0 1,282.682190,-364.524475"
+              stroke="#ff00ff" stroke-width="2.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;GERASIMOV&quot; id_&quot;HYBRID_WAR&quot;"
+              d="M -332.928162,57.551403 A 779.963958,779.963958 0,0 1,432.264618,-452.996887"
+              stroke="#7f7fff" stroke-width="2.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;GERASIMOV&quot; id_&quot;ARAB_SPRING&quot;"
+              d="M -327.042328,63.212482 A 207.753084,207.753084 0,0 1,-100.437637,117.511833"
+              stroke="#ff647f" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;GERASIMOV&quot; id_&quot;KORYBKO&quot;"
+              d="M -336.380341,56.961300 A 73.452273,73.452273 0,0 1,-297.951355,-3.170959"
+              stroke="#ff00ff" stroke-width="2.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;MILITARY-STRATEGIC_ANALYSIS_CENTER&quot; id_&quot;GENERAL_STAFF_(GS)&quot;"
+              d="M 450.746765,-486.646942 A 1022.826497,1022.826497 0,0 1,-377.728455,397.070953"
+              stroke="#0000ff" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;NIKOLAYCHUK&quot; id_&quot;HYBRID_WAR&quot;"
+              d="M -384.949799,-514.309753 A 697.941104,697.941104 0,0 1,434.628510,-458.980774"
+              stroke="#7f7fff" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;U.S.&quot;| id_&quot;ARAB_SPRING&quot;"
+              d="M 347.560638,359.656311 A 423.280369,423.280369 0,0 1,-89.411346,134.004761"
+              stroke="#7f647f" stroke-width="1.0" stroke-opacity="0.69803923"/>
+        <path stroke-linecap="round" fill="none"
+              class="id_&quot;THEORY_OF_WARFARE&quot; id_&quot;KORYBKO&quot;"
+              d="M -349.817780,-316.842377 A 269.612772,269.612772 0,0 1,-284.844513,-16.473740"
+              stroke="#7f7fff" stroke-width="1.0" stroke-opacity="0.69803923"/>
+    </g>
+    <g id="nodes">
+        <circle fill-opacity="1.0" fill="#bebebe" r="9.2" cx="-364.62054"
+                class="id_&quot;HYBRID_METHODS&quot;" cy="303.80707"
+                stroke="#858585" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#ff00ff" r="9.2" cx="-108.06938"
+                class="id_&quot;GAREYEV&quot;" cy="24.880999" stroke="#b200b2"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#ffc800" r="9.2" cx="404.66376"
+                class="id_&quot;NUCLEAR_WAR&quot;" cy="482.47656"
+                stroke="#b28c00" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#0000ff" r="9.2" cx="-421.7173"
+                class="id_&quot;UNITED_RUSSIA&quot;" cy="-334.00342"
+                stroke="#0000b2" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#bebebe" r="9.2" cx="175.44356"
+                class="id_&quot;ON_DEFENSE&quot;" cy="117.40285"
+                stroke="#858585" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#00ffff" r="9.2" cx="275.83862"
+                class="id_&quot;TARGETS_OF_SIGNIFICANT_VALUE&quot;"
+                cy="-1.9891177" stroke="#00b2b2" stroke-opacity="1.0"
+                stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#ffc800" r="9.2" cx="-398.56802"
+                class="id_&quot;GEORGIA&apos;S_ROSE_REVOLUTION&quot;"
+                cy="268.19318" stroke="#b28c00" stroke-opacity="1.0"
+                stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#0000ff" r="9.2" cx="-214.9865"
+                class="id_&quot;FOREIGN_MINISTRY&quot;" cy="327.9386"
+                stroke="#0000b2" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#0000ff" r="9.2" cx="-198.91039"
+                class="id_&quot;MILITARY_ACADEMY_OF_THE_GENERAL_STAFF&quot;"
+                cy="-62.74928" stroke="#0000b2" stroke-opacity="1.0"
+                stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#bebebe" r="9.2" cx="469.84302"
+                class="id_&quot;INVASION_OF_UKRAINE&quot;" cy="-185.74843"
+                stroke="#858585" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#ff00ff" r="9.2" cx="218.70119"
+                class="id_&quot;NIKOLAI_BORDUZHA&quot;" cy="-388.19672"
+                stroke="#b200b2" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#ffc800" r="9.2" cx="-60.19515"
+                class="id_&quot;OTSTAIVAYA_NATSIONALNYYE_INTERESY&quot;"
+                cy="-273.95306" stroke="#b28c00" stroke-opacity="1.0"
+                stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#ffc800" r="9.2" cx="128.84065"
+                class="id_&quot;INFORMATION_WAR&quot;" cy="177.45915"
+                stroke="#b28c00" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#ffc800" r="9.2" cx="-389.60614"
+                class="id_&quot;SECOND_CHECHEN_WAR&quot;" cy="-178.83626"
+                stroke="#b28c00" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#ffc800" r="9.2" cx="141.92055"
+                class="id_&quot;1993_MILITARY_DOCTRINE&quot;" cy="-57.96992"
+                stroke="#b28c00" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#ff00ff" r="9.2" cx="402.98157"
+                class="id_&quot;TIMOTHY_THOMAS&quot;" cy="-465.3745"
+                stroke="#b200b2" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#ffc800" r="9.2" cx="194.4983"
+                class="id_&quot;REGIONAL_SECURITY&quot;" cy="-219.17958"
+                stroke="#b28c00" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#bebebe" r="9.2" cx="-263.91187"
+                class="id_&quot;ARMED_FORCE&quot;" cy="-449.38257"
+                stroke="#858585" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#0000ff" r="9.2" cx="415.24023"
+                class="id_&quot;ACADEMY_OF_MILITARY_SCIENCES&quot;"
+                cy="-344.20593" stroke="#0000b2" stroke-opacity="1.0"
+                stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#bebebe" r="9.2" cx="133.04958"
+                class="id_&quot;CHANGING_NATURE_OF_WAR&quot;" cy="-318.201"
+                stroke="#858585" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#0000ff" r="9.2" cx="-54.08138"
+                class="id_&quot;POLITICAL_LEADERSHIP&quot;" cy="-29.008986"
+                stroke="#0000b2" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#bebebe" r="9.2" cx="225.16335"
+                class="id_&quot;INFORMATIONAL_SOVEREIGNTY&quot;" cy="-200.91682"
+                stroke="#858585" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#ffc800" r="9.2" cx="266.54443"
+                class="id_&quot;EUROMAIDAN_UPRISING&quot;" cy="405.27548"
+                stroke="#b28c00" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#bebebe" r="9.2" cx="-335.25317"
+                class="id_&quot;MILITARY_POWER&quot;" cy="-156.89705"
+                stroke="#858585" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#0000ff" r="9.2" cx="-175.28352"
+                class="id_&quot;WEST&quot;" cy="10.960071" stroke="#0000b2"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#0000ff" r="9.2" cx="479.14545"
+                class="id_&quot;RT&quot;" cy="-294.57977" stroke="#0000b2"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#bebebe" r="9.2" cx="-198.50941"
+                class="id_&quot;PROMINENT_FIGURES&quot;" cy="483.06064"
+                stroke="#858585" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#ff00ff" r="9.2" cx="-305.42224"
+                class="id_&quot;PERSSON&quot;" cy="-6.881604" stroke="#b200b2"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#ffc800" r="9.2" cx="-340.44604"
+                class="id_&quot;ELECTIONS_IN_RUSSIA_2011-12&quot;"
+                cy="-411.1032" stroke="#b28c00" stroke-opacity="1.0"
+                stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#ff00ff" r="9.2" cx="-362.19202"
+                class="id_&quot;MARK_GALEOTTI&quot;" cy="384.75613"
+                stroke="#b200b2" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#bebebe" r="9.2" cx="-285.78876"
+                class="id_&quot;ADAPTIVE_APPROACH_TO_FORCE&quot;"
+                cy="-198.53487" stroke="#858585" stroke-opacity="1.0"
+                stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#0000ff" r="9.2" cx="183.98622"
+                class="id_&quot;CENTER&quot;" cy="448.74518" stroke="#0000b2"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#bebebe" r="9.2" cx="343.66986"
+                class="id_&quot;THREATS_TO_INTERNATIONAL_SECURITY&quot;"
+                cy="202.47282" stroke="#858585" stroke-opacity="1.0"
+                stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#bebebe" r="9.2" cx="360.59882"
+                class="id_&quot;DOMESTIC_RUSSIAN_MEDIA&quot;" cy="427.05173"
+                stroke="#858585" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#bebebe" r="9.2" cx="-387.6648"
+                class="id_&quot;JAKOB_HEDENSKOG,_GUDRUN_PERSSON,_CAROLINA_VENDIL_PALLIN&quot;"
+                cy="-287.8714" stroke="#858585" stroke-opacity="1.0"
+                stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#0000ff" r="9.2" cx="140.32442"
+                class="id_&quot;ACADEMY_OF_MILITARY_SCIENCE&quot;"
+                cy="-412.29346" stroke="#0000b2" stroke-opacity="1.0"
+                stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#bebebe" r="9.2" cx="19.30592"
+                class="id_&quot;DEBT&quot;" cy="-337.2475" stroke="#858585"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#bebebe" r="9.2" cx="-40.310444"
+                class="id_&quot;DOMESTIC_MILITARY_DANGER&quot;" cy="318.9444"
+                stroke="#858585" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#ffc800" r="9.2" cx="-196.01689"
+                class="id_&quot;2000S&quot;" cy="-338.02686" stroke="#b28c00"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#ffc800" r="9.2" cx="485.77295"
+                class="id_&quot;INTERNATIONAL_SECURITY&quot;" cy="175.88005"
+                stroke="#b28c00" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#0000ff" r="9.2" cx="-258.31366"
+                class="id_&quot;INTERNATIONAL_COMMUNITY&quot;" cy="-411.25586"
+                stroke="#0000b2" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#ffc800" r="9.2" cx="419.8058"
+                class="id_&quot;INSURGENCY&quot;" cy="-402.53577"
+                stroke="#b28c00" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#bebebe" r="9.2" cx="-355.60538"
+                class="id_&quot;MILITARY_THOUGHT&quot;" cy="431.6218"
+                stroke="#858585" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#bebebe" r="9.2" cx="-325.63055"
+                class="id_&quot;WESTERN_ANALYTICAL_ENGAGEMENT&quot;"
+                cy="-12.95271" stroke="#858585" stroke-opacity="1.0"
+                stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#ffc800" r="9.2" cx="-154.7932"
+                class="id_&quot;RUSSIAN_ELECTIONS_OF_2011-12&quot;"
+                cy="-486.2926" stroke="#b28c00" stroke-opacity="1.0"
+                stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#bebebe" r="9.2" cx="89.99257"
+                class="id_&quot;ADAPTIVE_USE_OF_FORCE&quot;" cy="294.2165"
+                stroke="#858585" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#bebebe" r="9.2" cx="-210.15639"
+                class="id_&quot;US_DEBATE_ON_HYBRID_WAR&quot;" cy="452.3677"
+                stroke="#858585" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#bebebe" r="9.2" cx="-32.699482"
+                class="id_&quot;RUSSIAN_DEBATE_ON_WAR&quot;" cy="148.65718"
+                stroke="#858585" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#bebebe" r="9.2" cx="484.48914"
+                class="id_&quot;HIROSHIMA_AND_NAGASAKI&quot;" cy="-25.690931"
+                stroke="#858585" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#0000ff" r="9.2" cx="82.47273"
+                class="id_&quot;27_TSNII&quot;" cy="-21.375929" stroke="#0000b2"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#bebebe" r="9.2" cx="-43.50353"
+                class="id_&quot;RUSSIA&quot;" cy="447.79047" stroke="#858585"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#bebebe" r="9.2" cx="-473.38522"
+                class="id_&quot;NUCLEAR_DETERRENCE_STRATEGIES&quot;"
+                cy="397.1963" stroke="#858585" stroke-opacity="1.0"
+                stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#bebebe" r="9.2" cx="72.95827"
+                class="id_&quot;NUCLEAR_WEAPONS&quot;" cy="-296.27734"
+                stroke="#858585" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#0000ff" r="9.2" cx="-336.24683"
+                class="id_&quot;BUSH_ADMINISTRATION&quot;" cy="458.8236"
+                stroke="#0000b2" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#ff00ff" r="9.2" cx="31.871105"
+                class="id_&quot;YURI_BALUYEVSKY&quot;" cy="396.11145"
+                stroke="#b200b2" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#0000ff" r="9.2" cx="-262.48755"
+                class="id_&quot;GENERAL_STAFF&quot;" cy="176.7593"
+                stroke="#0000b2" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#0000ff" r="9.2" cx="-408.40332"
+                class="id_&quot;INTERNET_RESEARCH_AGENCY&quot;" cy="-200.23677"
+                stroke="#0000b2" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#0000ff" r="9.2" cx="173.13667"
+                class="id_&quot;COLLECTIVE_SECURITY_TREATY_ORGANIZATION&quot;"
+                cy="-51.190563" stroke="#0000b2" stroke-opacity="1.0"
+                stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#ff00ff" r="9.2" cx="-363.44812"
+                class="id_&quot;KIPP&quot;" cy="-440.617" stroke="#b200b2"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#bebebe" r="9.2" cx="419.36743"
+                class="id_&quot;NONMILITARY_FORCE&quot;" cy="264.4148"
+                stroke="#858585" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#0000ff" r="9.2" cx="-9.465686"
+                class="id_&quot;MCIS&quot;" cy="489.15436" stroke="#0000b2"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#ff00ff" r="9.2" cx="253.79384"
+                class="id_&quot;THEORISTS&quot;" cy="260.41873" stroke="#b200b2"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#ff00ff" r="9.2" cx="483.8177"
+                class="id_&quot;DEPUTY_DEFENSE_MINISTER&quot;" cy="75.60487"
+                stroke="#b200b2" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#ffc800" r="9.2" cx="-164.36082"
+                class="id_&quot;FIRST_CHECHEN_WAR&quot;" cy="355.95804"
+                stroke="#b28c00" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#bebebe" r="9.2" cx="156.12831"
+                class="id_&quot;SOCIAL_MEDIA&quot;" cy="-140.98268"
+                stroke="#858585" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#0000ff" r="9.2" cx="431.55328"
+                class="id_&quot;WESTERN_COUNTRIES&quot;" cy="328.7516"
+                stroke="#0000b2" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#bebebe" r="9.2" cx="134.83809"
+                class="id_&quot;COLOR_REVOLUTIONS&quot;" cy="359.8615"
+                stroke="#858585" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#ff00ff" r="9.2" cx="-337.17084"
+                class="id_&quot;HE&quot;" cy="-204.3531" stroke="#b200b2"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#0000ff" r="9.2" cx="166.1902"
+                class="id_&quot;SPUTNIK&quot;" cy="-323.32007" stroke="#0000b2"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#00ffff" r="9.2" cx="326.5644"
+                class="id_&quot;LAWS_OF_WAR&quot;" cy="129.6202"
+                stroke="#00b2b2" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#ff00ff" r="9.2" cx="-2.9047425"
+                class="id_&quot;PRESIDENT_OF_RUSSIA&quot;" cy="310.57404"
+                stroke="#b200b2" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#0000ff" r="9.2" cx="328.64014"
+                class="id_&quot;RUNET&quot;" cy="383.5127" stroke="#0000b2"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#00ffff" r="9.2" cx="-193.9835"
+                class="id_&quot;UNCONVENTIONAL_WARFARE&quot;" cy="168.8955"
+                stroke="#00b2b2" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#ff00ff" r="9.2" cx="32.99098"
+                class="id_&quot;SHOIGU&quot;" cy="-202.37984" stroke="#b200b2"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#ff00ff" r="9.2" cx="-336.31314"
+                class="id_&quot;GERASIMOV&quot;" cy="66.961075" stroke="#b200b2"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#bebebe" r="9.2" cx="379.49207"
+                class="id_&quot;VOYENNAYA_MYSL&quot;" cy="-56.159435"
+                stroke="#858585" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#ff00ff" r="9.2" cx="-432.12207"
+                class="id_&quot;SURKOV&quot;" cy="381.56833" stroke="#b200b2"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#0000ff" r="9.2" cx="451.8896"
+                class="id_&quot;MILITARY-STRATEGIC_ANALYSIS_CENTER&quot;"
+                cy="-496.58142" stroke="#0000b2" stroke-opacity="1.0"
+                stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#ffc800" r="9.2" cx="-58.83315"
+                class="id_&quot;LARGE-SCALE_AGGRESSIONS_AGAINST_RUSSIA&quot;"
+                cy="-186.1985" stroke="#b28c00" stroke-opacity="1.0"
+                stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#00ffff" r="9.2" cx="-212.44682"
+                class="id_&quot;PUBLIC_SECURITY_DOCTRINES&quot;" cy="88.41344"
+                stroke="#00b2b2" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#ff00ff" r="9.2" cx="-393.37457"
+                class="id_&quot;NIKOLAYCHUK&quot;" cy="-508.92242"
+                stroke="#b200b2" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#0000ff" r="9.2" cx="-387.5686"
+                class="id_&quot;GENERAL_STAFF_(GS)&quot;" cy="398.85178"
+                stroke="#0000b2" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#0000ff" r="9.2" cx="163.57973"
+                class="id_&quot;MILITARY&quot;" cy="-120.406876"
+                stroke="#0000b2" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#0000ff" r="9.2" cx="357.44073"
+                class="id_&quot;U.S.&quot;|" cy="358.11243" stroke="#0000b2"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#bebebe" r="9.2" cx="374.06738"
+                class="id_&quot;TROLL_FACTORIES&quot;" cy="188.2942"
+                stroke="#858585" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#00ffff" r="9.2" cx="266.62207"
+                class="id_&quot;MILITARY_SCIENCE&quot;" cy="-311.5727"
+                stroke="#00b2b2" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#0000ff" r="9.2" cx="-359.6549"
+                class="id_&quot;AGENCIES&quot;" cy="124.20149" stroke="#0000b2"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#00ffff" r="9.2" cx="-357.25076"
+                class="id_&quot;THEORY_OF_WARFARE&quot;" cy="-323.53198"
+                stroke="#00b2b2" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#00ffff" r="9.2" cx="-95.224625"
+                class="id_&quot;VITALLY_IMPORTANT_OBJECTS&quot;" cy="6.3848753"
+                stroke="#00b2b2" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#ff00ff" r="9.2" cx="292.67615"
+                class="id_&quot;KARTAPOLOV&quot;" cy="-364.17712"
+                stroke="#b200b2" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#ff00ff" r="9.2" cx="335.64886"
+                class="id_&quot;ALEKSANDR_DUGIN&quot;" cy="362.0919"
+                stroke="#b200b2" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#0000ff" r="9.2" cx="32.560497"
+                class="id_&quot;PUTIN&apos;S_REGIME&quot;" cy="-201.24385"
+                stroke="#0000b2" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#ff00ff" r="9.2" cx="-24.025501"
+                class="id_&quot;ANATOLY_MARUYEV&quot;" cy="213.49559"
+                stroke="#b200b2" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#0000ff" r="9.2" cx="-307.79703"
+                class="id_&quot;UN&quot;" cy="63.977253" stroke="#0000b2"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#00ffff" r="9.2" cx="126.996414"
+                class="id_&quot;ARMED_HOSTILITIES&quot;" cy="317.23856"
+                stroke="#00b2b2" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#ff00ff" r="9.2" cx="-81.90599"
+                class="id_&quot;ZARUDNITSKY&quot;" cy="190.23189"
+                stroke="#b200b2" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#ffc800" r="9.2" cx="-385.8261"
+                class="id_&quot;EUROMAIDAN_REVOLT&quot;" cy="-358.58997"
+                stroke="#b28c00" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#ffc800" r="9.2" cx="216.35963"
+                class="id_&quot;FINANCIAL_CRISIS&quot;" cy="-342.63416"
+                stroke="#b28c00" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#ff00ff" r="9.2" cx="240.58516"
+                class="id_&quot;ALEKSANDR_MIKHAILOV&quot;" cy="355.80518"
+                stroke="#b200b2" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#0000ff" r="9.2" cx="99.65175"
+                class="id_&quot;SOVIET_THEORISTS&quot;" cy="-482.90472"
+                stroke="#0000b2" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#ffc800" r="9.2" cx="-328.8049"
+                class="id_&quot;WORLD_WARS&quot;" cy="-428.72467"
+                stroke="#b28c00" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#ffc800" r="9.2" cx="-93.872574"
+                class="id_&quot;ARAB_SPRING&quot;" cy="125.05504"
+                stroke="#b28c00" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#ff00ff" r="9.2" cx="-288.84827"
+                class="id_&quot;KORYBKO&quot;" cy="-7.3102236" stroke="#b200b2"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#ff00ff" r="9.2" cx="-155.9846"
+                class="id_&quot;RUSSIAN_MILITARY_THEORISTS&quot;" cy="-316.2173"
+                stroke="#b200b2" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#00ffff" r="9.2" cx="442.25275"
+                class="id_&quot;HYBRID_WAR&quot;" cy="-452.51" stroke="#00b2b2"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+    </g>
+    <g id="node-labels">
+        <text font-size="10" x="-364.62054" y="305.65887" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;HYBRID_METHODS&quot;">
+            &quot;HYBRID METHODS&quot;
+        </text>
+        <text font-size="10" x="-108.06938" y="26.731585" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;GAREYEV&quot;">
+            &quot;GAREYEV&quot;
+        </text>
+        <text font-size="10" x="404.66376" y="484.32715" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;NUCLEAR_WAR&quot;">
+            &quot;NUCLEAR WAR&quot;
+        </text>
+        <text font-size="10" x="-421.7173" y="-332.15283" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;UNITED_RUSSIA&quot;">
+            &quot;UNITED RUSSIA&quot;
+        </text>
+        <text font-size="10" x="175.44356" y="119.254654" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;ON_DEFENSE&quot;">
+            &quot;ON DEFENSE&quot;
+        </text>
+        <text font-size="10" x="275.83862" y="-0.1373111" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial"
+              class="id_&quot;TARGETS_OF_SIGNIFICANT_VALUE&quot;">
+            &quot;TARGETS OF SIGNIFICANT VALUE&quot;
+        </text>
+        <text font-size="10" x="-398.56802" y="270.04498" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial"
+              class="id_&quot;GEORGIA&apos;S_ROSE_REVOLUTION&quot;">
+            &quot;GEORGIA&apos;S ROSE REVOLUTION&quot;
+        </text>
+        <text font-size="10" x="-214.9865" y="329.7904" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;FOREIGN_MINISTRY&quot;">
+            &quot;FOREIGN MINISTRY&quot;
+        </text>
+        <text font-size="10" x="-198.91039" y="-60.897472" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial"
+              class="id_&quot;MILITARY_ACADEMY_OF_THE_GENERAL_STAFF&quot;">
+            &quot;MILITARY ACADEMY OF THE GENERAL STAFF&quot;
+        </text>
+        <text font-size="10" x="469.84302" y="-183.89662" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;INVASION_OF_UKRAINE&quot;">
+            &quot;INVASION OF UKRAINE&quot;
+        </text>
+        <text font-size="10" x="218.70119" y="-386.3449" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;NIKOLAI_BORDUZHA&quot;">
+            &quot;NIKOLAI BORDUZHA&quot;
+        </text>
+        <text font-size="10" x="-60.19515" y="-272.10126" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial"
+              class="id_&quot;OTSTAIVAYA_NATSIONALNYYE_INTERESY&quot;">
+            &quot;OTSTAIVAYA NATSIONALNYYE INTERESY&quot;
+        </text>
+        <text font-size="10" x="128.84065" y="179.31096" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;INFORMATION_WAR&quot;">
+            &quot;INFORMATION WAR&quot;
+        </text>
+        <text font-size="10" x="-389.60614" y="-176.98445" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;SECOND_CHECHEN_WAR&quot;">
+            &quot;SECOND CHECHEN WAR&quot;
+        </text>
+        <text font-size="10" x="141.92055" y="-56.116894" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;1993_MILITARY_DOCTRINE&quot;">
+            &quot;1993 MILITARY DOCTRINE&quot;
+        </text>
+        <text font-size="10" x="402.98157" y="-463.5227" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;TIMOTHY_THOMAS&quot;">
+            &quot;TIMOTHY THOMAS&quot;
+        </text>
+        <text font-size="10" x="194.4983" y="-217.32777" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;REGIONAL_SECURITY&quot;">
+            &quot;REGIONAL SECURITY&quot;
+        </text>
+        <text font-size="10" x="-263.91187" y="-447.53076" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;ARMED_FORCE&quot;">
+            &quot;ARMED FORCE&quot;
+        </text>
+        <text font-size="10" x="415.24023" y="-342.35413" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial"
+              class="id_&quot;ACADEMY_OF_MILITARY_SCIENCES&quot;">
+            &quot;ACADEMY OF MILITARY SCIENCES&quot;
+        </text>
+        <text font-size="10" x="133.04958" y="-316.34918" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;CHANGING_NATURE_OF_WAR&quot;">
+            &quot;CHANGING NATURE OF WAR&quot;
+        </text>
+        <text font-size="10" x="-54.08138" y="-27.157179" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;POLITICAL_LEADERSHIP&quot;">
+            &quot;POLITICAL LEADERSHIP&quot;
+        </text>
+        <text font-size="10" x="225.16335" y="-199.06502" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial"
+              class="id_&quot;INFORMATIONAL_SOVEREIGNTY&quot;">
+            &quot;INFORMATIONAL SOVEREIGNTY&quot;
+        </text>
+        <text font-size="10" x="266.54443" y="407.1273" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;EUROMAIDAN_UPRISING&quot;">
+            &quot;EUROMAIDAN UPRISING&quot;
+        </text>
+        <text font-size="10" x="-335.25317" y="-155.04524" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;MILITARY_POWER&quot;">
+            &quot;MILITARY POWER&quot;
+        </text>
+        <text font-size="10" x="-175.28352" y="12.810657" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;WEST&quot;">
+            &quot;WEST&quot;
+        </text>
+        <text font-size="10" x="479.14545" y="-292.79022" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;RT&quot;">
+            &quot;RT&quot;
+        </text>
+        <text font-size="10" x="-198.50941" y="484.91245" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;PROMINENT_FIGURES&quot;">
+            &quot;PROMINENT FIGURES&quot;
+        </text>
+        <text font-size="10" x="-305.42224" y="-5.0297976" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;PERSSON&quot;">
+            &quot;PERSSON&quot;
+        </text>
+        <text font-size="10" x="-340.44604" y="-409.2514" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial"
+              class="id_&quot;ELECTIONS_IN_RUSSIA_2011-12&quot;">
+            &quot;ELECTIONS IN RUSSIA 2011-12&quot;
+        </text>
+        <text font-size="10" x="-362.19202" y="386.60794" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;MARK_GALEOTTI&quot;">
+            &quot;MARK GALEOTTI&quot;
+        </text>
+        <text font-size="10" x="-285.78876" y="-196.68306" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial"
+              class="id_&quot;ADAPTIVE_APPROACH_TO_FORCE&quot;">
+            &quot;ADAPTIVE APPROACH TO FORCE&quot;
+        </text>
+        <text font-size="10" x="183.98622" y="450.59576" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;CENTER&quot;">
+            &quot;CENTER&quot;
+        </text>
+        <text font-size="10" x="343.66986" y="204.32463" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial"
+              class="id_&quot;THREATS_TO_INTERNATIONAL_SECURITY&quot;">
+            &quot;THREATS TO INTERNATIONAL SECURITY&quot;
+        </text>
+        <text font-size="10" x="360.59882" y="428.90353" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;DOMESTIC_RUSSIAN_MEDIA&quot;">
+            &quot;DOMESTIC RUSSIAN MEDIA&quot;
+        </text>
+        <text font-size="10" x="-387.6648" y="-285.6961" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial"
+              class="id_&quot;JAKOB_HEDENSKOG,_GUDRUN_PERSSON,_CAROLINA_VENDIL_PALLIN&quot;">
+            &quot;JAKOB HEDENSKOG, GUDRUN PERSSON, CAROLINA VENDIL PALLIN&quot;
+        </text>
+        <text font-size="10" x="140.32442" y="-410.44165" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial"
+              class="id_&quot;ACADEMY_OF_MILITARY_SCIENCE&quot;">
+            &quot;ACADEMY OF MILITARY SCIENCE&quot;
+        </text>
+        <text font-size="10" x="19.30592" y="-335.45795" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;DEBT&quot;">
+            &quot;DEBT&quot;
+        </text>
+        <text font-size="10" x="-40.310444" y="320.7962" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial"
+              class="id_&quot;DOMESTIC_MILITARY_DANGER&quot;">
+            &quot;DOMESTIC MILITARY DANGER&quot;
+        </text>
+        <text font-size="10" x="-196.01689" y="-336.17627" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;2000S&quot;">
+            &quot;2000S&quot;
+        </text>
+        <text font-size="10" x="485.77295" y="177.73186" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;INTERNATIONAL_SECURITY&quot;">
+            &quot;INTERNATIONAL SECURITY&quot;
+        </text>
+        <text font-size="10" x="-258.31366" y="-409.40405" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;INTERNATIONAL_COMMUNITY&quot;">
+            &quot;INTERNATIONAL COMMUNITY&quot;
+        </text>
+        <text font-size="10" x="419.8058" y="-400.68518" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;INSURGENCY&quot;">
+            &quot;INSURGENCY&quot;
+        </text>
+        <text font-size="10" x="-355.60538" y="433.4736" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;MILITARY_THOUGHT&quot;">
+            &quot;MILITARY THOUGHT&quot;
+        </text>
+        <text font-size="10" x="-325.63055" y="-11.102124" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial"
+              class="id_&quot;WESTERN_ANALYTICAL_ENGAGEMENT&quot;">
+            &quot;WESTERN ANALYTICAL ENGAGEMENT&quot;
+        </text>
+        <text font-size="10" x="-154.7932" y="-484.4408" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial"
+              class="id_&quot;RUSSIAN_ELECTIONS_OF_2011-12&quot;">
+            &quot;RUSSIAN ELECTIONS OF 2011-12&quot;
+        </text>
+        <text font-size="10" x="89.99257" y="296.0683" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;ADAPTIVE_USE_OF_FORCE&quot;">
+            &quot;ADAPTIVE USE OF FORCE&quot;
+        </text>
+        <text font-size="10" x="-210.15639" y="454.2195" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;US_DEBATE_ON_HYBRID_WAR&quot;">
+            &quot;US DEBATE ON HYBRID WAR&quot;
+        </text>
+        <text font-size="10" x="-32.699482" y="150.50899" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;RUSSIAN_DEBATE_ON_WAR&quot;">
+            &quot;RUSSIAN DEBATE ON WAR&quot;
+        </text>
+        <text font-size="10" x="484.48914" y="-23.839125" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;HIROSHIMA_AND_NAGASAKI&quot;">
+            &quot;HIROSHIMA AND NAGASAKI&quot;
+        </text>
+        <text font-size="10" x="82.47273" y="-19.525343" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;27_TSNII&quot;">
+            &quot;27 TSNII&quot;
+        </text>
+        <text font-size="10" x="-43.50353" y="449.64105" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;RUSSIA&quot;">
+            &quot;RUSSIA&quot;
+        </text>
+        <text font-size="10" x="-473.38522" y="399.04688" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial"
+              class="id_&quot;NUCLEAR_DETERRENCE_STRATEGIES&quot;">
+            &quot;NUCLEAR DETERRENCE STRATEGIES&quot;
+        </text>
+        <text font-size="10" x="72.95827" y="-294.42554" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;NUCLEAR_WEAPONS&quot;">
+            &quot;NUCLEAR WEAPONS&quot;
+        </text>
+        <text font-size="10" x="-336.24683" y="460.6754" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;BUSH_ADMINISTRATION&quot;">
+            &quot;BUSH ADMINISTRATION&quot;
+        </text>
+        <text font-size="10" x="31.871105" y="397.96204" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;YURI_BALUYEVSKY&quot;">
+            &quot;YURI BALUYEVSKY&quot;
+        </text>
+        <text font-size="10" x="-262.48755" y="178.60988" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;GENERAL_STAFF&quot;">
+            &quot;GENERAL STAFF&quot;
+        </text>
+        <text font-size="10" x="-408.40332" y="-198.38618" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial"
+              class="id_&quot;INTERNET_RESEARCH_AGENCY&quot;">
+            &quot;INTERNET RESEARCH AGENCY&quot;
+        </text>
+        <text font-size="10" x="173.13667" y="-49.338757" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial"
+              class="id_&quot;COLLECTIVE_SECURITY_TREATY_ORGANIZATION&quot;">
+            &quot;COLLECTIVE SECURITY TREATY ORGANIZATION&quot;
+        </text>
+        <text font-size="10" x="-363.44812" y="-438.82745" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;KIPP&quot;">
+            &quot;KIPP&quot;
+        </text>
+        <text font-size="10" x="419.36743" y="266.2666" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;NONMILITARY_FORCE&quot;">
+            &quot;NONMILITARY FORCE&quot;
+        </text>
+        <text font-size="10" x="-9.465686" y="491.00494" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;MCIS&quot;">
+            &quot;MCIS&quot;
+        </text>
+        <text font-size="10" x="253.79384" y="262.27054" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;THEORISTS&quot;">
+            &quot;THEORISTS&quot;
+        </text>
+        <text font-size="10" x="483.8177" y="77.45546" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;DEPUTY_DEFENSE_MINISTER&quot;">
+            &quot;DEPUTY DEFENSE MINISTER&quot;
+        </text>
+        <text font-size="10" x="-164.36082" y="357.80862" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;FIRST_CHECHEN_WAR&quot;">
+            &quot;FIRST CHECHEN WAR&quot;
+        </text>
+        <text font-size="10" x="156.12831" y="-139.13087" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;SOCIAL_MEDIA&quot;">
+            &quot;SOCIAL MEDIA&quot;
+        </text>
+        <text font-size="10" x="431.55328" y="330.6034" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;WESTERN_COUNTRIES&quot;">
+            &quot;WESTERN COUNTRIES&quot;
+        </text>
+        <text font-size="10" x="134.83809" y="361.71332" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;COLOR_REVOLUTIONS&quot;">
+            &quot;COLOR REVOLUTIONS&quot;
+        </text>
+        <text font-size="10" x="-337.17084" y="-202.56355" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;HE&quot;">
+            &quot;HE&quot;
+        </text>
+        <text font-size="10" x="166.1902" y="-321.46948" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;SPUTNIK&quot;">
+            &quot;SPUTNIK&quot;
+        </text>
+        <text font-size="10" x="326.5644" y="131.472" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;LAWS_OF_WAR&quot;">
+            &quot;LAWS OF WAR&quot;
+        </text>
+        <text font-size="10" x="-2.9047425" y="312.42584" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;PRESIDENT_OF_RUSSIA&quot;">
+            &quot;PRESIDENT OF RUSSIA&quot;
+        </text>
+        <text font-size="10" x="328.64014" y="385.33276" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;RUNET&quot;">
+            &quot;RUNET&quot;
+        </text>
+        <text font-size="10" x="-193.9835" y="170.7473" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;UNCONVENTIONAL_WARFARE&quot;">
+            &quot;UNCONVENTIONAL WARFARE&quot;
+        </text>
+        <text font-size="10" x="32.99098" y="-200.52803" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;SHOIGU&quot;">
+            &quot;SHOIGU&quot;
+        </text>
+        <text font-size="10" x="-336.31314" y="68.81288" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;GERASIMOV&quot;">
+            &quot;GERASIMOV&quot;
+        </text>
+        <text font-size="10" x="379.49207" y="-54.30763" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;VOYENNAYA_MYSL&quot;">
+            &quot;VOYENNAYA MYSL&quot;
+        </text>
+        <text font-size="10" x="-432.12207" y="383.42014" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;SURKOV&quot;">
+            &quot;SURKOV&quot;
+        </text>
+        <text font-size="10" x="451.8896" y="-494.73083" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial"
+              class="id_&quot;MILITARY-STRATEGIC_ANALYSIS_CENTER&quot;">
+            &quot;MILITARY-STRATEGIC ANALYSIS CENTER&quot;
+        </text>
+        <text font-size="10" x="-58.83315" y="-184.3467" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial"
+              class="id_&quot;LARGE-SCALE_AGGRESSIONS_AGAINST_RUSSIA&quot;">
+            &quot;LARGE-SCALE AGGRESSIONS AGAINST RUSSIA&quot;
+        </text>
+        <text font-size="10" x="-212.44682" y="90.26524" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial"
+              class="id_&quot;PUBLIC_SECURITY_DOCTRINES&quot;">
+            &quot;PUBLIC SECURITY DOCTRINES&quot;
+        </text>
+        <text font-size="10" x="-393.37457" y="-507.07062" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;NIKOLAYCHUK&quot;">
+            &quot;NIKOLAYCHUK&quot;
+        </text>
+        <text font-size="10" x="-387.5686" y="401.19797" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;GENERAL_STAFF_(GS)&quot;">
+            &quot;GENERAL STAFF (GS)&quot;
+        </text>
+        <text font-size="10" x="163.57973" y="-118.617325" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;MILITARY&quot;">
+            &quot;MILITARY&quot;
+        </text>
+        <text font-size="10" x="357.44073" y="360.45862" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;U.S.&quot;|">
+            &quot;U.S.&quot;|
+        </text>
+        <text font-size="10" x="374.06738" y="190.14601" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;TROLL_FACTORIES&quot;">
+            &quot;TROLL FACTORIES&quot;
+        </text>
+        <text font-size="10" x="266.62207" y="-309.7221" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;MILITARY_SCIENCE&quot;">
+            &quot;MILITARY SCIENCE&quot;
+        </text>
+        <text font-size="10" x="-359.6549" y="126.05208" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;AGENCIES&quot;">
+            &quot;AGENCIES&quot;
+        </text>
+        <text font-size="10" x="-357.25076" y="-321.68018" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;THEORY_OF_WARFARE&quot;">
+            &quot;THEORY OF WARFARE&quot;
+        </text>
+        <text font-size="10" x="-95.224625" y="8.236682" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial"
+              class="id_&quot;VITALLY_IMPORTANT_OBJECTS&quot;">
+            &quot;VITALLY IMPORTANT OBJECTS&quot;
+        </text>
+        <text font-size="10" x="292.67615" y="-362.32532" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;KARTAPOLOV&quot;">
+            &quot;KARTAPOLOV&quot;
+        </text>
+        <text font-size="10" x="335.64886" y="363.94247" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;ALEKSANDR_DUGIN&quot;">
+            &quot;ALEKSANDR DUGIN&quot;
+        </text>
+        <text font-size="10" x="32.560497" y="-199.39326" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;PUTIN&apos;S_REGIME&quot;">
+            &quot;PUTIN&apos;S REGIME&quot;
+        </text>
+        <text font-size="10" x="-24.025501" y="215.3474" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;ANATOLY_MARUYEV&quot;">
+            &quot;ANATOLY MARUYEV&quot;
+        </text>
+        <text font-size="10" x="-307.79703" y="65.79732" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;UN&quot;">
+            &quot;UN&quot;
+        </text>
+        <text font-size="10" x="126.996414" y="319.09036" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;ARMED_HOSTILITIES&quot;">
+            &quot;ARMED HOSTILITIES&quot;
+        </text>
+        <text font-size="10" x="-81.90599" y="192.08247" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;ZARUDNITSKY&quot;">
+            &quot;ZARUDNITSKY&quot;
+        </text>
+        <text font-size="10" x="-385.8261" y="-356.73816" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;EUROMAIDAN_REVOLT&quot;">
+            &quot;EUROMAIDAN REVOLT&quot;
+        </text>
+        <text font-size="10" x="216.35963" y="-340.78357" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;FINANCIAL_CRISIS&quot;">
+            &quot;FINANCIAL CRISIS&quot;
+        </text>
+        <text font-size="10" x="240.58516" y="357.65698" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;ALEKSANDR_MIKHAILOV&quot;">
+            &quot;ALEKSANDR MIKHAILOV&quot;
+        </text>
+        <text font-size="10" x="99.65175" y="-481.05292" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;SOVIET_THEORISTS&quot;">
+            &quot;SOVIET THEORISTS&quot;
+        </text>
+        <text font-size="10" x="-328.8049" y="-426.87286" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;WORLD_WARS&quot;">
+            &quot;WORLD WARS&quot;
+        </text>
+        <text font-size="10" x="-93.872574" y="126.905624" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;ARAB_SPRING&quot;">
+            &quot;ARAB SPRING&quot;
+        </text>
+        <text font-size="10" x="-288.84827" y="-5.458417" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;KORYBKO&quot;">
+            &quot;KORYBKO&quot;
+        </text>
+        <text font-size="10" x="-155.9846" y="-314.36548" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial"
+              class="id_&quot;RUSSIAN_MILITARY_THEORISTS&quot;">
+            &quot;RUSSIAN MILITARY THEORISTS&quot;
+        </text>
+        <text font-size="10" x="442.25275" y="-450.72046" fill="#ffffff"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_&quot;HYBRID_WAR&quot;">
+            &quot;HYBRID WAR&quot;
+        </text>
+    </g>
+</svg>
