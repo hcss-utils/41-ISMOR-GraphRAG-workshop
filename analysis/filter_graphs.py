@@ -1,9 +1,7 @@
 import os
 
-import matplotlib.pyplot as plt
 import networkx as nx
 from networkx.algorithms.community import greedy_modularity_communities
-
 
 # Get the directory where the script is located
 current_dir = os.path.dirname(os.path.abspath(__file__))
