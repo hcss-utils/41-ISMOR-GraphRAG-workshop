@@ -11,45 +11,45 @@
         <path stroke-linecap="round" fill="none"
               class="id_&quot;GERASIMOV&quot; id_&quot;RUSSIAN_ARMED_FORCES&quot;"
               d="M -319.925385,484.890900 A 756.901571,756.901571 0,0 1,345.578125,-109.357544"
-              stroke="#000000" stroke-width="1.0" stroke-opacity="0.69803923"/>
+              stroke="#FFFFFF" stroke-width="1.0" stroke-opacity="0.69803923"/>
         <path stroke-linecap="round" fill="none"
               class="id_&quot;GERASIMOV&quot; id_&quot;GENERAL_STAFF&quot;"
               d="M -322.420166,484.692017 A 780.084757,780.084757 0,0 1,190.339783,-279.195068"
-              stroke="#000000" stroke-width="1.0" stroke-opacity="0.69803923"/>
+              stroke="#FFFFFF" stroke-width="1.0" stroke-opacity="0.69803923"/>
         <path stroke-linecap="round" fill="none"
               class="id_&quot;RUSSIAN_ARMED_FORCES&quot; id_&quot;SYRIA&quot;"
               d="M 350.878113,-101.427200 A 545.690439,545.690439 0,0 1,-223.712158,177.514252"
-              stroke="#000000" stroke-width="1.0" stroke-opacity="0.69803923"/>
+              stroke="#FFFFFF" stroke-width="1.0" stroke-opacity="0.69803923"/>
         <path stroke-linecap="round" fill="none"
               class="id_&quot;RUSSIAN_ARMED_FORCES&quot; id_&quot;UKRAINE&quot;"
               d="M 348.453156,-103.216797 A 606.340308,606.340308 0,0 1,-355.225830,2.055992"
-              stroke="#000000" stroke-width="1.0" stroke-opacity="0.69803923"/>
+              stroke="#FFFFFF" stroke-width="1.0" stroke-opacity="0.69803923"/>
         <path stroke-linecap="round" fill="none"
               class="id_&quot;GREENPEACE&quot; id_&quot;ARCTIC&quot;"
               d="M 387.338074,-147.239670 A 355.718929,355.718929 0,0 1,-22.163940,-115.950897"
-              stroke="#000000" stroke-width="1.0" stroke-opacity="0.69803923"/>
+              stroke="#FFFFFF" stroke-width="1.0" stroke-opacity="0.69803923"/>
     </g>
     <g id="nodes">
-        <circle fill-opacity="1.0" fill="#000000" r="9.2" cx="-321.96112"
-                class="id_&quot;GERASIMOV&quot;" cy="494.6815" stroke="#000000"
+        <circle fill-opacity="1.0" fill="#FFFFFF" r="9.2" cx="-321.96112"
+                class="id_&quot;GERASIMOV&quot;" cy="494.6815" stroke="#FFFFFF"
                 stroke-opacity="1.0" stroke-width="1.5999999"/>
-        <circle fill-opacity="1.0" fill="#000000" r="9.2" cx="355.53583"
+        <circle fill-opacity="1.0" fill="#FFFFFF" r="9.2" cx="355.53583"
                 class="id_&quot;RUSSIAN_ARMED_FORCES&quot;" cy="-110.27625"
-                stroke="#000000" stroke-opacity="1.0" stroke-width="1.5999999"/>
-        <circle fill-opacity="1.0" fill="#000000" r="9.2" cx="199.75885"
+                stroke="#FFFFFF" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#FFFFFF" r="9.2" cx="199.75885"
                 class="id_&quot;GENERAL_STAFF&quot;" cy="-282.55383"
-                stroke="#000000" stroke-opacity="1.0" stroke-width="1.5999999"/>
-        <circle fill-opacity="1.0" fill="#000000" r="9.2" cx="394.94965"
+                stroke="#FFFFFF" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#FFFFFF" r="9.2" cx="394.94965"
                 class="id_&quot;GREENPEACE&quot;" cy="-153.72536"
-                stroke="#000000" stroke-opacity="1.0" stroke-width="1.5999999"/>
-        <circle fill-opacity="1.0" fill="#000000" r="9.2" cx="-233.5463"
-                class="id_&quot;SYRIA&quot;" cy="175.70045" stroke="#000000"
+                stroke="#FFFFFF" stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#FFFFFF" r="9.2" cx="-233.5463"
+                class="id_&quot;SYRIA&quot;" cy="175.70045" stroke="#FFFFFF"
                 stroke-opacity="1.0" stroke-width="1.5999999"/>
-        <circle fill-opacity="1.0" fill="#000000" r="9.2" cx="-364.0644"
-                class="id_&quot;UKRAINE&quot;" cy="-2.6215909" stroke="#000000"
+        <circle fill-opacity="1.0" fill="#FFFFFF" r="9.2" cx="-364.0644"
+                class="id_&quot;UKRAINE&quot;" cy="-2.6215909" stroke="#FFFFFF"
                 stroke-opacity="1.0" stroke-width="1.5999999"/>
-        <circle fill-opacity="1.0" fill="#000000" r="9.2" cx="-30.67249"
-                class="id_&quot;ARCTIC&quot;" cy="-121.2049" stroke="#000000"
+        <circle fill-opacity="1.0" fill="#FFFFFF" r="9.2" cx="-30.67249"
+                class="id_&quot;ARCTIC&quot;" cy="-121.2049" stroke="#FFFFFF"
                 stroke-opacity="1.0" stroke-width="1.5999999"/>
     </g>
     <g id="node-labels">
