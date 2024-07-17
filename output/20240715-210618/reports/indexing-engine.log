@@ -1,0 +1,816 @@
+21:06:18,24 graphrag.config.read_dotenv INFO Loading pipeline .env file
+21:06:18,29 graphrag.index.cli INFO using default configuration: {
+    "llm": {
+        "api_key": "REDACTED, length 9",
+        "type": "openai_chat",
+        "model": "gemma2",
+        "max_tokens": 4000,
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "request_timeout": 1200.0,
+        "api_base": "http://localhost:11434/v1",
+        "api_version": null,
+        "proxy": null,
+        "cognitive_services_endpoint": null,
+        "deployment_name": null,
+        "model_supports_json": true,
+        "tokens_per_minute": 0,
+        "requests_per_minute": 0,
+        "max_retries": 10,
+        "max_retry_wait": 10.0,
+        "sleep_on_rate_limit_recommendation": true,
+        "concurrent_requests": 25
+    },
+    "parallelization": {
+        "stagger": 0.3,
+        "num_threads": 50
+    },
+    "async_mode": "threaded",
+    "root_dir": "./ragtest",
+    "reporting": {
+        "type": "file",
+        "base_dir": "output/${timestamp}/reports",
+        "storage_account_blob_url": null
+    },
+    "storage": {
+        "type": "file",
+        "base_dir": "output/${timestamp}/artifacts",
+        "storage_account_blob_url": null
+    },
+    "cache": {
+        "type": "file",
+        "base_dir": "cache",
+        "storage_account_blob_url": null
+    },
+    "input": {
+        "type": "file",
+        "file_type": "text",
+        "base_dir": "input",
+        "storage_account_blob_url": null,
+        "encoding": "utf-8",
+        "file_pattern": ".*\\.txt$",
+        "file_filter": null,
+        "source_column": null,
+        "timestamp_column": null,
+        "timestamp_format": null,
+        "text_column": "text",
+        "title_column": null,
+        "document_attribute_columns": []
+    },
+    "embed_graph": {
+        "enabled": false,
+        "num_walks": 10,
+        "walk_length": 40,
+        "window_size": 2,
+        "iterations": 3,
+        "random_seed": 597832,
+        "strategy": null
+    },
+    "embeddings": {
+        "llm": {
+            "api_key": "REDACTED, length 9",
+            "type": "openai_embedding",
+            "model": "nomic_embed_text",
+            "max_tokens": 4000,
+            "temperature": 0,
+            "top_p": 1,
+            "request_timeout": 180.0,
+            "api_base": "http://localhost:11434/api",
+            "api_version": null,
+            "proxy": null,
+            "cognitive_services_endpoint": null,
+            "deployment_name": null,
+            "model_supports_json": null,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "max_retries": 10,
+            "max_retry_wait": 10.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 25
+        },
+        "parallelization": {
+            "stagger": 0.3,
+            "num_threads": 50
+        },
+        "async_mode": "threaded",
+        "batch_size": 16,
+        "batch_max_tokens": 8191,
+        "target": "required",
+        "skip": [],
+        "vector_store": null,
+        "strategy": null
+    },
+    "chunks": {
+        "size": 300,
+        "overlap": 100,
+        "group_by_columns": [
+            "id"
+        ],
+        "strategy": null
+    },
+    "snapshots": {
+        "graphml": true,
+        "raw_entities": true,
+        "top_level_nodes": true
+    },
+    "entity_extraction": {
+        "llm": {
+            "api_key": "REDACTED, length 9",
+            "type": "openai_chat",
+            "model": "gemma2",
+            "max_tokens": 4000,
+            "temperature": 0.0,
+            "top_p": 1.0,
+            "request_timeout": 1200.0,
+            "api_base": "http://localhost:11434/v1",
+            "api_version": null,
+            "proxy": null,
+            "cognitive_services_endpoint": null,
+            "deployment_name": null,
+            "model_supports_json": true,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "max_retries": 10,
+            "max_retry_wait": 10.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 25
+        },
+        "parallelization": {
+            "stagger": 0.3,
+            "num_threads": 50
+        },
+        "async_mode": "threaded",
+        "prompt": "prompts/entity_extraction.txt",
+        "entity_types": [
+            "organization",
+            "person",
+            "geo",
+            "event"
+        ],
+        "max_gleanings": 0,
+        "strategy": null
+    },
+    "summarize_descriptions": {
+        "llm": {
+            "api_key": "REDACTED, length 9",
+            "type": "openai_chat",
+            "model": "gemma2",
+            "max_tokens": 4000,
+            "temperature": 0.0,
+            "top_p": 1.0,
+            "request_timeout": 1200.0,
+            "api_base": "http://localhost:11434/v1",
+            "api_version": null,
+            "proxy": null,
+            "cognitive_services_endpoint": null,
+            "deployment_name": null,
+            "model_supports_json": true,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "max_retries": 10,
+            "max_retry_wait": 10.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 25
+        },
+        "parallelization": {
+            "stagger": 0.3,
+            "num_threads": 50
+        },
+        "async_mode": "threaded",
+        "prompt": "prompts/summarize_descriptions.txt",
+        "max_length": 500,
+        "strategy": null
+    },
+    "community_reports": {
+        "llm": {
+            "api_key": "REDACTED, length 9",
+            "type": "openai_chat",
+            "model": "gemma2",
+            "max_tokens": 4000,
+            "temperature": 0.0,
+            "top_p": 1.0,
+            "request_timeout": 1200.0,
+            "api_base": "http://localhost:11434/v1",
+            "api_version": null,
+            "proxy": null,
+            "cognitive_services_endpoint": null,
+            "deployment_name": null,
+            "model_supports_json": true,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "max_retries": 10,
+            "max_retry_wait": 10.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 25
+        },
+        "parallelization": {
+            "stagger": 0.3,
+            "num_threads": 50
+        },
+        "async_mode": "threaded",
+        "prompt": null,
+        "max_length": 2000,
+        "max_input_length": 8000,
+        "strategy": null
+    },
+    "claim_extraction": {
+        "llm": {
+            "api_key": "REDACTED, length 9",
+            "type": "openai_chat",
+            "model": "gemma2",
+            "max_tokens": 4000,
+            "temperature": 0.0,
+            "top_p": 1.0,
+            "request_timeout": 1200.0,
+            "api_base": "http://localhost:11434/v1",
+            "api_version": null,
+            "proxy": null,
+            "cognitive_services_endpoint": null,
+            "deployment_name": null,
+            "model_supports_json": true,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "max_retries": 10,
+            "max_retry_wait": 10.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 25
+        },
+        "parallelization": {
+            "stagger": 0.3,
+            "num_threads": 50
+        },
+        "async_mode": "threaded",
+        "enabled": true,
+        "prompt": "prompts/claim_extraction.txt",
+        "description": "Any claims or facts that could be relevant to information discovery.",
+        "max_gleanings": 0,
+        "strategy": null
+    },
+    "cluster_graph": {
+        "max_cluster_size": 10,
+        "strategy": null
+    },
+    "umap": {
+        "enabled": false
+    },
+    "local_search": {
+        "text_unit_prop": 0.5,
+        "community_prop": 0.1,
+        "conversation_history_max_turns": 5,
+        "top_k_entities": 10,
+        "top_k_relationships": 10,
+        "max_tokens": 5000,
+        "llm_max_tokens": 2000
+    },
+    "global_search": {
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "max_tokens": 5000,
+        "data_max_tokens": 12000,
+        "map_max_tokens": 1000,
+        "reduce_max_tokens": 2000,
+        "concurrency": 32
+    },
+    "encoding_model": "cl100k_base",
+    "skip_workflows": []
+}
+21:06:18,31 graphrag.index.create_pipeline_config INFO skipping workflows 
+21:06:18,52 graphrag.index.run INFO Running pipeline
+21:06:18,53 graphrag.index.storage.file_pipeline_storage INFO Creating file storage at ragtest/output/20240715-210618/artifacts
+21:06:18,53 graphrag.index.input.load_input INFO loading input from root_dir=input
+21:06:18,53 graphrag.index.input.load_input INFO using file storage for input
+21:06:18,54 graphrag.index.storage.file_pipeline_storage INFO search ragtest/input for files matching .*\.txt$
+21:06:18,61 graphrag.index.input.text INFO found text files from input, found [('2_Kofman_2020_DRM_2019_U_022455_1Rev_147.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_46.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_392.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_40.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_266.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_61.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_254.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_237.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_48.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_134.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_200.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_193.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_3.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_11.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_238.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_125.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_118.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_265.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_248.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_236.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_26.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_211.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_41.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_218.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_235.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_361.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_1.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_359.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_99.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_132.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_397.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_163.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_228.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_207.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_176.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_4.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_366.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_23.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_25.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_180.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_64.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_31.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_388.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_334.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_221.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_31.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_10.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_126.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_82.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_65.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_337.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_94.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_19.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_347.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_36.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_108.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_7.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_37.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_45.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_155.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_133.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_59.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_38.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_339.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_107.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_54.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_182.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_61.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_63.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_56.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_9.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_52.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_90.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_139.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_142.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_121.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_15.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_34.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_389.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_257.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_45.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_395.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_186.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_69.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_36.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_154.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_340.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_63.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_381.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_60.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_175.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_284.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_127.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_379.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_32.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_93.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_348.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_51.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_364.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_335.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_219.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_47.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_72.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_343.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_194.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_345.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_229.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_390.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_261.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_77.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_153.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_213.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_167.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_172.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_250.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_209.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_22.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_350.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_162.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_118.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_113.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_102.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_25.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_38.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_140.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_121.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_29.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_24.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_59.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_112.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_79.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_360.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_131.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_0.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_223.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_44.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_134.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_68.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_3.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_109.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_20.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_129.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_101.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_5.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_256.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_114.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_208.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_70.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_84.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_88.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_222.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_117.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_356.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_129.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_4.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_338.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_174.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_142.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_375.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_55.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_227.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_184.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_40.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_139.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_30.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_145.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_47.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_12.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_165.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_372.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_1.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_16.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_385.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_13.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_259.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_362.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_57.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_160.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_62.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_83.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_158.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_33.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_43.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_147.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_6.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_60.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_41.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_260.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_21.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_408.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_2.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_124.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_145.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_135.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_71.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_230.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_56.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_146.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_205.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_124.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_391.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_166.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_270.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_53.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_126.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_8.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_376.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_387.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_264.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_224.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_196.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_164.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_212.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_140.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_119.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_149.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_20.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_58.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_346.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_67.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_137.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_115.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_148.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_382.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_353.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_30.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_95.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_8.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_39.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_377.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_92.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_117.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_143.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_26.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_170.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_351.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_62.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_66.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_19.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_6.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_210.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_29.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_201.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_358.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_383.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_141.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_161.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_188.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_152.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_7.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_239.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_155.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_232.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_268.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_98.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_130.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_49.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_144.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_157.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_192.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_371.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_169.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_105.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_46.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_28.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_246.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_342.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_380.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_135.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_187.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_120.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_217.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_159.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_21.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_215.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_86.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_15.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_32.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_114.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_181.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_116.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_66.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_409.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_115.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_91.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_136.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_27.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_75.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_89.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_73.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_393.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_39.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_42.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_119.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_365.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_225.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_370.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_226.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_151.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_171.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_35.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_199.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_81.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_373.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_97.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_2.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_43.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_251.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_233.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_173.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_14.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_80.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_363.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_48.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_214.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_5.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_153.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_202.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_78.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_355.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_131.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_220.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_23.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_16.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_12.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_127.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_344.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_35.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_11.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_9.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_58.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_141.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_255.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_100.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_96.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_53.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_204.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_10.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_378.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_178.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_136.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_122.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_50.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_64.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_168.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_405.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_130.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_242.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_206.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_148.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_76.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_154.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_143.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_65.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_190.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_244.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_394.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_240.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_85.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_14.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_151.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_243.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_22.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_247.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_42.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_150.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_50.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_354.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_51.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_267.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_384.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_156.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_44.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_245.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_87.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_396.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_111.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_374.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_216.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_185.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_149.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_357.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_128.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_203.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_386.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_183.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_367.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_191.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_28.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_67.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_113.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_17.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_336.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_159.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_55.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_258.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_158.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_125.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_128.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_263.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_349.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_249.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_146.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_138.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_241.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_157.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_160.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_156.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_24.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_253.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_57.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_34.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_369.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_27.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_18.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_150.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_120.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_122.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_68.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_123.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_104.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_49.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_103.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_144.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_33.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_189.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_197.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_17.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_106.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_18.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_0.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_137.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_198.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_110.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_138.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_179.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_341.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_133.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_177.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_195.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_52.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_37.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_13.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_234.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_152.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_368.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_352.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_132.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_252.txt', {}), ('2_Kofman_2020_DRM_2019_U_022455_1Rev_123.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_74.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_231.txt', {}), ('1_Jonsson_2019_The_Russian_Understanding_of_Wa_262.txt', {}), ('0_Adamsky_2018_From_Moscow_with_Coercion_Russian_Deterrence_Theo_54.txt', {})]
+21:06:18,313 graphrag.index.workflows.load INFO Workflow Run Order: ['create_base_text_units', 'create_base_extracted_entities', 'create_final_covariates', 'create_summarized_entities', 'join_text_units_to_covariate_ids', 'create_base_entity_graph', 'create_final_entities', 'create_final_nodes', 'create_final_communities', 'join_text_units_to_entity_ids', 'create_final_relationships', 'join_text_units_to_relationship_ids', 'create_final_community_reports', 'create_final_text_units', 'create_base_documents', 'create_final_documents']
+21:06:18,314 graphrag.index.run INFO Final # of rows loaded: 454
+21:06:18,646 graphrag.index.run INFO Running workflow: create_base_text_units...
+21:06:18,646 graphrag.index.run INFO dependencies for create_base_text_units: []
+21:06:18,652 datashaper.workflow.workflow INFO executing verb orderby
+21:06:18,656 datashaper.workflow.workflow INFO executing verb zip
+21:06:18,661 datashaper.workflow.workflow INFO executing verb aggregate_override
+21:06:18,675 datashaper.workflow.workflow INFO executing verb chunk
+21:06:20,209 datashaper.workflow.workflow INFO executing verb select
+21:06:20,218 datashaper.workflow.workflow INFO executing verb unroll
+21:06:20,234 datashaper.workflow.workflow INFO executing verb rename
+21:06:20,245 datashaper.workflow.workflow INFO executing verb genid
+21:06:20,279 datashaper.workflow.workflow INFO executing verb unzip
+21:06:20,290 datashaper.workflow.workflow INFO executing verb copy
+21:06:20,299 datashaper.workflow.workflow INFO executing verb filter
+21:06:20,335 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_base_text_units.parquet
+21:06:20,792 graphrag.index.run INFO Running workflow: create_base_extracted_entities...
+21:06:20,792 graphrag.index.run INFO dependencies for create_base_extracted_entities: ['create_base_text_units']
+21:06:20,792 graphrag.index.run INFO read table from storage: create_base_text_units.parquet
+21:06:20,829 datashaper.workflow.workflow INFO executing verb entity_extract
+21:06:20,898 graphrag.llm.openai.create_openai_client INFO Creating OpenAI client base_url=http://localhost:11434/v1
+21:06:20,977 graphrag.index.llm.load_llm INFO create TPM/RPM limiter for gemma2: TPM=0, RPM=0
+21:06:20,977 graphrag.index.llm.load_llm INFO create concurrency limiter for gemma2: 25
+21:06:22,914 datashaper.workflow.workflow INFO executing verb snapshot
+21:06:23,1 datashaper.workflow.workflow INFO executing verb merge_graphs
+21:06:23,551 datashaper.workflow.workflow INFO executing verb snapshot_rows
+21:06:23,560 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_base_extracted_entities.parquet
+21:06:24,13 graphrag.index.run INFO Running workflow: create_final_covariates...
+21:06:24,14 graphrag.index.run INFO dependencies for create_final_covariates: ['create_base_text_units']
+21:06:24,14 graphrag.index.run INFO read table from storage: create_base_text_units.parquet
+21:06:24,53 datashaper.workflow.workflow INFO executing verb extract_covariates
+21:07:15,302 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:07:15,312 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 49.78600000000006. input_tokens=1214, output_tokens=103
+21:07:38,492 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:07:38,494 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 73.24800000000005. input_tokens=1214, output_tokens=291
+21:07:58,970 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:07:58,973 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 93.70900000000006. input_tokens=1215, output_tokens=160
+21:08:05,169 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:08:05,177 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 99.95600000000013. input_tokens=1413, output_tokens=418
+21:08:23,66 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:08:23,70 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 117.76499999999987. input_tokens=1415, output_tokens=715
+21:08:34,355 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:08:34,361 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 129.048. input_tokens=1215, output_tokens=70
+21:08:36,28 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:08:36,32 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 130.51700000000005. input_tokens=1415, output_tokens=784
+21:08:45,108 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:08:45,111 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 139.53700000000003. input_tokens=1215, output_tokens=338
+21:08:58,594 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:08:58,596 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 153.1099999999999. input_tokens=1214, output_tokens=111
+21:09:08,205 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:09:08,208 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 162.70399999999995. input_tokens=1215, output_tokens=231
+21:09:24,404 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:09:24,407 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 178.99300000000017. input_tokens=1415, output_tokens=202
+21:09:30,757 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:09:30,759 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 185.20799999999986. input_tokens=1214, output_tokens=198
+21:09:34,285 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:09:34,287 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 188.91899999999987. input_tokens=1214, output_tokens=74
+21:09:36,116 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:09:36,125 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 190.86699999999996. input_tokens=1415, output_tokens=412
+21:09:41,80 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:09:41,82 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 195.79500000000007. input_tokens=1415, output_tokens=32
+21:09:53,702 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:09:53,716 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 208.3670000000002. input_tokens=1414, output_tokens=761
+21:10:10,245 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:10:10,251 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 174.93799999999987. input_tokens=1215, output_tokens=250
+21:10:38,978 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:10:38,981 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 253.38999999999987. input_tokens=1415, output_tokens=489
+21:10:40,414 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:10:40,416 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 255.14300000000003. input_tokens=1415, output_tokens=410
+21:10:47,883 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:10:47,886 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 262.52600000000007. input_tokens=1414, output_tokens=385
+21:11:00,70 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:11:00,72 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 274.7919999999999. input_tokens=1215, output_tokens=150
+21:11:17,592 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:11:17,596 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 292.1009999999999. input_tokens=1415, output_tokens=502
+21:11:36,503 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:11:36,505 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 311.1600000000001. input_tokens=1214, output_tokens=376
+21:11:40,513 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:11:40,515 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 315.22. input_tokens=1215, output_tokens=293
+21:12:05,56 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:12:05,59 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 339.4939999999999. input_tokens=1415, output_tokens=368
+21:12:10,121 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:12:10,125 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 344.58799999999997. input_tokens=1415, output_tokens=720
+21:12:37,624 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:12:37,626 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 254.548. input_tokens=1213, output_tokens=184
+21:12:52,522 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:12:52,525 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 287.337. input_tokens=1414, output_tokens=436
+21:13:07,974 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:13:07,976 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 273.6120000000001. input_tokens=1415, output_tokens=265
+21:13:15,476 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:13:15,478 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 270.35699999999997. input_tokens=1415, output_tokens=68
+21:13:28,155 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:13:28,159 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 292.12300000000005. input_tokens=1215, output_tokens=271
+21:13:32,454 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:13:32,457 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 333.4770000000001. input_tokens=1215, output_tokens=789
+21:13:37,59 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:13:37,61 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 278.46399999999994. input_tokens=1215, output_tokens=124
+21:14:33,187 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:14:33,190 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 308.7819999999999. input_tokens=1214, output_tokens=364
+21:14:36,573 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:14:36,575 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 328.366. input_tokens=1415, output_tokens=352
+21:14:44,842 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:14:44,857 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 426.347. input_tokens=1415, output_tokens=1205
+21:14:57,551 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:14:57,553 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 323.2650000000001. input_tokens=1215, output_tokens=117
+21:15:10,66 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:15:10,68 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 333.9409999999998. input_tokens=1414, output_tokens=156
+21:15:16,363 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:15:16,366 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 335.27199999999993. input_tokens=1215, output_tokens=156
+21:15:35,818 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:15:35,820 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 342.1020000000001. input_tokens=1414, output_tokens=188
+21:15:38,143 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:15:38,145 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 327.894. input_tokens=1215, output_tokens=157
+21:15:39,586 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:15:39,591 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 368.8220000000001. input_tokens=1415, output_tokens=638
+21:15:58,507 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:15:58,509 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 318.09199999999987. input_tokens=1215, output_tokens=136
+21:16:12,869 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:16:12,871 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 312.7950000000001. input_tokens=1215, output_tokens=258
+21:16:33,512 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:16:33,514 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 345.626. input_tokens=1415, output_tokens=401
+21:16:35,962 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:16:35,964 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 295.44500000000016. input_tokens=1415, output_tokens=8
+21:16:52,151 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:16:52,155 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 287.0939999999998. input_tokens=1214, output_tokens=125
+21:16:54,272 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:16:54,275 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 336.67499999999995. input_tokens=1414, output_tokens=426
+21:17:07,986 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:17:07,989 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 331.481. input_tokens=1215, output_tokens=411
+21:17:09,768 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:17:09,772 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 257.2460000000001. input_tokens=1414, output_tokens=6
+21:17:18,483 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:17:18,485 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 308.3589999999999. input_tokens=1414, output_tokens=185
+21:17:21,889 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:17:21,897 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 284.269. input_tokens=1213, output_tokens=182
+21:17:34,371 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:17:34,375 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 415.39099999999985. input_tokens=1415, output_tokens=940
+21:17:45,637 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:17:45,643 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 277.66499999999996. input_tokens=1214, output_tokens=244
+21:18:01,273 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:18:01,276 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 273.115. input_tokens=1215, output_tokens=284
+21:18:08,405 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:18:08,408 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 271.346. input_tokens=1214, output_tokens=174
+21:18:36,518 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:18:36,522 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 321.04200000000014. input_tokens=1415, output_tokens=576
+21:18:42,641 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:18:42,644 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 246.06799999999998. input_tokens=1215, output_tokens=232
+21:18:59,92 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:18:59,94 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 241.539. input_tokens=1215, output_tokens=146
+21:19:22,753 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:19:22,756 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 277.8979999999997. input_tokens=1415, output_tokens=335
+21:19:24,297 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:19:24,300 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 291.1080000000002. input_tokens=1415, output_tokens=614
+21:19:53,862 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:19:53,866 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 381.4060000000002. input_tokens=1414, output_tokens=934
+21:19:58,441 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:19:58,443 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 262.62199999999984. input_tokens=1215, output_tokens=181
+21:20:18,275 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:20:18,278 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 308.2080000000001. input_tokens=1310, output_tokens=629
+21:20:46,951 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:20:46,954 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 307.3580000000002. input_tokens=1213, output_tokens=365
+21:20:53,373 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:20:53,376 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 294.86500000000024. input_tokens=1415, output_tokens=289
+21:21:07,331 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:21:07,333 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 294.46000000000004. input_tokens=1214, output_tokens=150
+21:21:11,462 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:21:11,465 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 333.318. input_tokens=1413, output_tokens=557
+21:21:16,560 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:21:16,562 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 264.4069999999999. input_tokens=1415, output_tokens=6
+21:21:43,209 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:21:43,212 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 309.6959999999999. input_tokens=1414, output_tokens=365
+21:21:44,353 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:21:44,360 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 387.99099999999976. input_tokens=1415, output_tokens=949
+21:21:48,189 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:21:48,190 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 280.1970000000001. input_tokens=1415, output_tokens=6
+21:22:04,595 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:22:04,597 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 310.3219999999999. input_tokens=1214, output_tokens=337
+21:22:06,445 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:22:06,451 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 330.4849999999999. input_tokens=1214, output_tokens=397
+21:22:24,10 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:22:24,12 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 314.23800000000006. input_tokens=1215, output_tokens=300
+21:22:31,472 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:22:31,475 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 309.57399999999984. input_tokens=1213, output_tokens=210
+21:23:10,681 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:23:10,684 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 352.1959999999999. input_tokens=1414, output_tokens=619
+21:23:15,279 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:23:15,282 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 340.9060000000002. input_tokens=1415, output_tokens=496
+21:23:34,292 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:23:34,297 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 297.7689999999998. input_tokens=1415, output_tokens=145
+21:23:44,351 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:23:44,353 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 301.7069999999999. input_tokens=1215, output_tokens=84
+21:23:46,653 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:23:46,655 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 361.0100000000002. input_tokens=1215, output_tokens=635
+21:24:08,133 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:24:08,139 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 366.85799999999995. input_tokens=1415, output_tokens=692
+21:24:31,718 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:24:31,721 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 383.3109999999999. input_tokens=1214, output_tokens=537
+21:24:36,404 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:24:36,407 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 313.6460000000002. input_tokens=1215, output_tokens=354
+21:24:38,62 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:24:38,64 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 279.61900000000014. input_tokens=1414, output_tokens=6
+21:24:39,244 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:24:39,246 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 260.9680000000003. input_tokens=1215, output_tokens=6
+21:24:51,873 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:24:51,876 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 352.7800000000002. input_tokens=1415, output_tokens=483
+21:25:06,624 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:25:06,626 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 253.24800000000005. input_tokens=1214, output_tokens=112
+21:25:23,585 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:25:23,593 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 256.25899999999956. input_tokens=1415, output_tokens=149
+21:25:24,797 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:25:24,799 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 253.33300000000008. input_tokens=1215, output_tokens=6
+21:25:29,265 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:25:29,268 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 335.40099999999984. input_tokens=1215, output_tokens=422
+21:25:40,506 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:25:40,508 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 293.55300000000034. input_tokens=1415, output_tokens=499
+21:25:43,166 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:25:43,167 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 266.60400000000027. input_tokens=1415, output_tokens=122
+21:25:44,295 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:25:44,298 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 236.10699999999997. input_tokens=1214, output_tokens=5
+21:26:08,219 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:26:08,223 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 403.9210000000003. input_tokens=1415, output_tokens=879
+21:26:28,779 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:26:28,781 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 285.567. input_tokens=1215, output_tokens=417
+21:26:36,34 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:26:36,37 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 271.4350000000004. input_tokens=1415, output_tokens=365
+21:26:37,914 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:26:37,917 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 293.5519999999997. input_tokens=1415, output_tokens=396
+21:26:44,786 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:26:44,788 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 278.33500000000004. input_tokens=1214, output_tokens=236
+21:27:02,264 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:27:02,270 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 231.58100000000013. input_tokens=1415, output_tokens=186
+21:27:03,966 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:27:03,968 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 228.68600000000015. input_tokens=1215, output_tokens=139
+21:27:30,748 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:27:30,750 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 226.39600000000019. input_tokens=1214, output_tokens=208
+21:27:32,876 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:27:32,886 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 308.8649999999998. input_tokens=1414, output_tokens=478
+21:27:33,985 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:27:33,987 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 205.8480000000004. input_tokens=1214, output_tokens=5
+21:28:13,606 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:28:13,609 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 342.1329999999998. input_tokens=1214, output_tokens=639
+21:28:14,862 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:28:14,863 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 218.45600000000013. input_tokens=1215, output_tokens=6
+21:28:23,744 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:28:23,746 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 277.09000000000015. input_tokens=1415, output_tokens=348
+21:28:24,656 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:28:24,672 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 232.9369999999999. input_tokens=1415, output_tokens=390
+21:28:33,308 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:28:33,310 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 234.0630000000001. input_tokens=1215, output_tokens=78
+21:28:36,91 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:28:36,94 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 301.7950000000001. input_tokens=1415, output_tokens=645
+21:28:59,995 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:28:59,998 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 261.933. input_tokens=1414, output_tokens=332
+21:29:24,229 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:29:24,233 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 257.6010000000001. input_tokens=1215, output_tokens=377
+21:29:25,584 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:29:25,586 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 240.7869999999998. input_tokens=1215, output_tokens=187
+21:29:43,112 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:29:43,114 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 242.60500000000002. input_tokens=1215, output_tokens=162
+21:29:46,868 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:29:46,872 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 263.27700000000004. input_tokens=1415, output_tokens=500
+21:30:24,726 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:30:24,731 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 332.85400000000027. input_tokens=1415, output_tokens=896
+21:30:30,343 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:30:30,346 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 262.12000000000035. input_tokens=1413, output_tokens=6
+21:31:04,447 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:31:04,451 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 335.1819999999998. input_tokens=1415, output_tokens=723
+21:31:08,687 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:31:08,690 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 279.90700000000015. input_tokens=1215, output_tokens=262
+21:31:20,16 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:31:20,19 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 335.7180000000003. input_tokens=1214, output_tokens=633
+21:31:26,796 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:31:26,798 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 288.8800000000001. input_tokens=1215, output_tokens=125
+21:31:56,826 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:31:56,829 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 294.55499999999984. input_tokens=1215, output_tokens=214
+21:32:08,954 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:32:08,957 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 332.9159999999997. input_tokens=1414, output_tokens=377
+21:32:27,360 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:32:27,362 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 323.3919999999998. input_tokens=1415, output_tokens=155
+21:32:38,989 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:32:38,992 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 308.2370000000001. input_tokens=1214, output_tokens=152
+21:32:54,820 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:32:54,823 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 370.0329999999999. input_tokens=1415, output_tokens=531
+21:33:04,923 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:33:04,926 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 332.038. input_tokens=1414, output_tokens=142
+21:33:14,910 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:33:14,914 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 300.0499999999997. input_tokens=1215, output_tokens=73
+21:33:34,339 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:33:34,341 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 320.73099999999977. input_tokens=1415, output_tokens=146
+21:33:39,73 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:33:39,75 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 365.08799999999974. input_tokens=1213, output_tokens=327
+21:34:14,991 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:34:15,3 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 511.83200000000033. input_tokens=1415, output_tokens=1567
+21:34:33,943 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:34:33,948 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 370.1999999999998. input_tokens=1413, output_tokens=395
+21:34:55,232 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:34:55,236 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 390.56100000000015. input_tokens=1214, output_tokens=501
+21:35:07,594 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:35:07,597 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 391.5010000000002. input_tokens=1215, output_tokens=289
+21:35:31,296 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:35:31,301 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 365.71299999999974. input_tokens=1415, output_tokens=147
+21:35:33,151 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:35:33,153 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 419.84100000000035. input_tokens=1414, output_tokens=640
+21:35:45,348 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:35:45,355 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 405.35699999999997. input_tokens=1415, output_tokens=439
+21:36:07,100 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:36:07,108 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 383.98199999999997. input_tokens=1215, output_tokens=235
+21:36:10,911 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:36:10,915 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 346.183. input_tokens=1214, output_tokens=184
+21:36:17,539 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:36:17,548 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 413.31500000000005. input_tokens=1215, output_tokens=502
+21:36:48,131 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:36:48,135 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 421.26200000000017. input_tokens=1413, output_tokens=503
+21:36:55,805 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:36:55,809 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 335.788. input_tokens=1214, output_tokens=66
+21:37:02,552 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:37:02,555 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 392.20700000000033. input_tokens=1415, output_tokens=440
+21:37:03,778 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:37:03,782 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 355.0909999999999. input_tokens=1415, output_tokens=407
+21:37:18,198 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:37:18,201 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 373.74800000000005. input_tokens=1215, output_tokens=494
+21:37:37,319 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:37:37,321 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 340.4899999999998. input_tokens=1214, output_tokens=267
+21:37:41,251 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:37:41,254 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 313.8899999999999. input_tokens=1215, output_tokens=172
+21:37:55,292 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:37:55,297 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 346.33799999999974. input_tokens=1415, output_tokens=405
+21:38:32,682 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:38:32,686 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 425.884. input_tokens=1414, output_tokens=727
+21:38:42,680 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:38:42,683 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 327.76800000000003. input_tokens=1215, output_tokens=62
+21:38:55,394 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:38:55,397 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 350.4699999999998. input_tokens=1415, output_tokens=430
+21:39:01,799 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:39:01,801 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 366.97599999999966. input_tokens=1214, output_tokens=592
+21:39:03,618 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:39:03,635 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 288.6180000000004. input_tokens=1415, output_tokens=5
+21:39:04,463 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:39:04,465 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 330.1239999999998. input_tokens=1415, output_tokens=151
+21:39:24,27 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:39:24,30 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 344.9539999999997. input_tokens=1215, output_tokens=214
+21:39:26,625 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:39:26,630 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 407.634. input_tokens=1414, output_tokens=761
+21:39:33,922 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:39:33,924 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 299.9739999999997. input_tokens=1215, output_tokens=197
+21:39:54,290 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:39:54,294 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 261.13899999999967. input_tokens=1215, output_tokens=163
+21:40:00,97 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:40:00,100 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 292.49599999999964. input_tokens=1214, output_tokens=241
+21:40:01,282 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:40:01,285 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 234.17599999999993. input_tokens=1215, output_tokens=6
+21:40:02,906 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:40:02,909 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 257.5519999999997. input_tokens=1415, output_tokens=66
+21:40:03,334 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:40:03,336 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 232.42000000000007. input_tokens=1415, output_tokens=6
+21:40:22,831 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:40:22,836 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 327.59799999999996. input_tokens=1415, output_tokens=532
+21:40:27,268 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:40:27,271 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 249.721. input_tokens=1214, output_tokens=163
+21:40:42,364 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:40:42,369 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 311.067. input_tokens=1415, output_tokens=527
+21:40:46,290 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:40:46,294 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 230.48500000000013. input_tokens=1215, output_tokens=144
+21:41:03,136 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:41:03,138 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 239.34400000000005. input_tokens=1215, output_tokens=161
+21:41:15,408 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:41:15,411 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 252.85300000000007. input_tokens=1415, output_tokens=368
+21:41:17,407 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:41:17,409 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 239.20600000000013. input_tokens=1414, output_tokens=236
+21:41:18,37 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:41:18,39 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 220.7170000000001. input_tokens=1214, output_tokens=123
+21:41:57,941 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:41:57,947 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "Process" with 0 retries took 309.8069999999998. input_tokens=1415, output_tokens=1181
+21:41:57,988 datashaper.workflow.workflow INFO executing verb window
+21:41:58,18 datashaper.workflow.workflow INFO executing verb genid
+21:41:58,36 datashaper.workflow.workflow INFO executing verb convert
+21:41:58,73 datashaper.workflow.workflow INFO executing verb rename
+21:41:58,92 datashaper.workflow.workflow INFO executing verb select
+21:41:58,98 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_final_covariates.parquet
+21:41:58,633 graphrag.index.run INFO Running workflow: create_summarized_entities...
+21:41:58,633 graphrag.index.run INFO dependencies for create_summarized_entities: ['create_base_extracted_entities']
+21:41:58,634 graphrag.index.run INFO read table from storage: create_base_extracted_entities.parquet
+21:41:58,686 datashaper.workflow.workflow INFO executing verb summarize_descriptions
+21:42:00,559 datashaper.workflow.workflow INFO executing verb snapshot_rows
+21:42:00,569 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_summarized_entities.parquet
+21:42:01,61 graphrag.index.run INFO Running workflow: join_text_units_to_covariate_ids...
+21:42:01,61 graphrag.index.run INFO dependencies for join_text_units_to_covariate_ids: ['create_final_covariates']
+21:42:01,61 graphrag.index.run INFO read table from storage: create_final_covariates.parquet
+21:42:01,115 datashaper.workflow.workflow INFO executing verb select
+21:42:01,132 datashaper.workflow.workflow INFO executing verb aggregate_override
+21:42:01,194 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table join_text_units_to_covariate_ids.parquet
+21:42:01,692 graphrag.index.run INFO Running workflow: create_base_entity_graph...
+21:42:01,692 graphrag.index.run INFO dependencies for create_base_entity_graph: ['create_summarized_entities']
+21:42:01,693 graphrag.index.run INFO read table from storage: create_summarized_entities.parquet
+21:42:01,736 datashaper.workflow.workflow INFO executing verb cluster_graph
+21:42:02,784 datashaper.workflow.workflow INFO executing verb snapshot_rows
+21:42:02,812 datashaper.workflow.workflow INFO executing verb snapshot_rows
+21:42:02,841 datashaper.workflow.workflow INFO executing verb select
+21:42:02,850 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_base_entity_graph.parquet
+21:42:03,450 graphrag.index.run INFO Running workflow: create_final_entities...
+21:42:03,450 graphrag.index.run INFO dependencies for create_final_entities: ['create_base_entity_graph']
+21:42:03,461 graphrag.index.run INFO read table from storage: create_base_entity_graph.parquet
+21:42:03,531 datashaper.workflow.workflow INFO executing verb unpack_graph
+21:42:03,938 datashaper.workflow.workflow INFO executing verb rename
+21:42:03,962 datashaper.workflow.workflow INFO executing verb select
+21:42:03,986 datashaper.workflow.workflow INFO executing verb dedupe
+21:42:04,17 datashaper.workflow.workflow INFO executing verb rename
+21:42:04,41 datashaper.workflow.workflow INFO executing verb filter
+21:42:04,133 datashaper.workflow.workflow INFO executing verb text_split
+21:42:04,197 datashaper.workflow.workflow INFO executing verb drop
+21:42:04,223 datashaper.workflow.workflow INFO executing verb merge
+21:42:04,879 datashaper.workflow.workflow INFO executing verb text_embed
+21:42:04,884 graphrag.llm.openai.create_openai_client INFO Creating OpenAI client base_url=http://localhost:11434/api
+21:42:04,967 graphrag.index.llm.load_llm INFO create TPM/RPM limiter for nomic_embed_text: TPM=0, RPM=0
+21:42:04,968 graphrag.index.llm.load_llm INFO create concurrency limiter for nomic_embed_text: 25
+21:42:05,220 graphrag.index.verbs.text.embed.strategies.openai INFO embedding 1511 inputs via 1511 snippets using 95 batches. max_batch_size=16, max_tokens=8191
+21:42:06,184 datashaper.workflow.workflow INFO executing verb drop
+21:42:06,201 datashaper.workflow.workflow INFO executing verb filter
+21:42:06,248 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_final_entities.parquet
+21:42:06,820 graphrag.index.run INFO Running workflow: create_final_nodes...
+21:42:06,825 graphrag.index.run INFO dependencies for create_final_nodes: ['create_base_entity_graph']
+21:42:06,835 graphrag.index.run INFO read table from storage: create_base_entity_graph.parquet
+21:42:06,888 datashaper.workflow.workflow INFO executing verb layout_graph
+21:42:08,174 datashaper.workflow.workflow INFO executing verb unpack_graph
+21:42:08,829 datashaper.workflow.workflow INFO executing verb unpack_graph
+21:42:09,150 datashaper.workflow.workflow INFO executing verb filter
+21:42:09,274 datashaper.workflow.workflow INFO executing verb drop
+21:42:09,295 datashaper.workflow.workflow INFO executing verb select
+21:42:09,315 datashaper.workflow.workflow INFO executing verb snapshot
+21:42:09,338 datashaper.workflow.workflow INFO executing verb rename
+21:42:09,358 datashaper.workflow.workflow INFO executing verb convert
+21:42:09,453 datashaper.workflow.workflow INFO executing verb join
+21:42:09,497 datashaper.workflow.workflow INFO executing verb rename
+21:42:09,500 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_final_nodes.parquet
+21:42:09,946 graphrag.index.run INFO Running workflow: create_final_communities...
+21:42:09,951 graphrag.index.run INFO dependencies for create_final_communities: ['create_base_entity_graph']
+21:42:09,962 graphrag.index.run INFO read table from storage: create_base_entity_graph.parquet
+21:42:10,23 datashaper.workflow.workflow INFO executing verb unpack_graph
+21:42:10,295 datashaper.workflow.workflow INFO executing verb unpack_graph
+21:42:10,536 datashaper.workflow.workflow INFO executing verb aggregate_override
+21:42:10,579 datashaper.workflow.workflow INFO executing verb join
+21:42:10,620 datashaper.workflow.workflow INFO executing verb join
+21:42:10,658 datashaper.workflow.workflow INFO executing verb concat
+21:42:10,683 datashaper.workflow.workflow INFO executing verb filter
+21:42:11,549 datashaper.workflow.workflow INFO executing verb aggregate_override
+21:42:11,600 datashaper.workflow.workflow INFO executing verb join
+21:42:11,633 datashaper.workflow.workflow INFO executing verb filter
+21:42:11,689 datashaper.workflow.workflow INFO executing verb fill
+21:42:11,722 datashaper.workflow.workflow INFO executing verb merge
+21:42:11,784 datashaper.workflow.workflow INFO executing verb copy
+21:42:11,810 datashaper.workflow.workflow INFO executing verb select
+21:42:11,812 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_final_communities.parquet
+21:42:12,258 graphrag.index.run INFO Running workflow: join_text_units_to_entity_ids...
+21:42:12,258 graphrag.index.run INFO dependencies for join_text_units_to_entity_ids: ['create_final_entities']
+21:42:12,269 graphrag.index.run INFO read table from storage: create_final_entities.parquet
+21:42:12,404 datashaper.workflow.workflow INFO executing verb select
+21:42:12,432 datashaper.workflow.workflow INFO executing verb unroll
+21:42:12,462 datashaper.workflow.workflow INFO executing verb aggregate_override
+21:42:12,499 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table join_text_units_to_entity_ids.parquet
+21:42:12,949 graphrag.index.run INFO Running workflow: create_final_relationships...
+21:42:12,949 graphrag.index.run INFO dependencies for create_final_relationships: ['create_base_entity_graph', 'create_final_nodes']
+21:42:12,950 graphrag.index.run INFO read table from storage: create_base_entity_graph.parquet
+21:42:12,970 graphrag.index.run INFO read table from storage: create_final_nodes.parquet
+21:42:13,40 datashaper.workflow.workflow INFO executing verb unpack_graph
+21:42:13,363 datashaper.workflow.workflow INFO executing verb filter
+21:42:13,521 datashaper.workflow.workflow INFO executing verb rename
+21:42:13,567 datashaper.workflow.workflow INFO executing verb filter
+21:42:13,707 datashaper.workflow.workflow INFO executing verb drop
+21:42:13,750 datashaper.workflow.workflow INFO executing verb compute_edge_combined_degree
+21:42:13,795 datashaper.workflow.workflow INFO executing verb convert
+21:42:13,864 datashaper.workflow.workflow INFO executing verb convert
+21:42:13,867 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_final_relationships.parquet
+21:42:14,311 graphrag.index.run INFO Running workflow: join_text_units_to_relationship_ids...
+21:42:14,312 graphrag.index.run INFO dependencies for join_text_units_to_relationship_ids: ['create_final_relationships']
+21:42:14,312 graphrag.index.run INFO read table from storage: create_final_relationships.parquet
+21:42:14,424 datashaper.workflow.workflow INFO executing verb select
+21:42:14,459 datashaper.workflow.workflow INFO executing verb unroll
+21:42:14,495 datashaper.workflow.workflow INFO executing verb aggregate_override
+21:42:14,541 datashaper.workflow.workflow INFO executing verb select
+21:42:14,544 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table join_text_units_to_relationship_ids.parquet
+21:42:14,998 graphrag.index.run INFO Running workflow: create_final_community_reports...
+21:42:14,998 graphrag.index.run INFO dependencies for create_final_community_reports: ['create_final_covariates', 'create_final_relationships', 'create_final_nodes']
+21:42:14,998 graphrag.index.run INFO read table from storage: create_final_covariates.parquet
+21:42:15,10 graphrag.index.run INFO read table from storage: create_final_relationships.parquet
+21:42:15,16 graphrag.index.run INFO read table from storage: create_final_nodes.parquet
+21:42:15,89 datashaper.workflow.workflow INFO executing verb prepare_community_reports_nodes
+21:42:15,175 datashaper.workflow.workflow INFO executing verb prepare_community_reports_edges
+21:42:15,218 datashaper.workflow.workflow INFO executing verb prepare_community_reports_claims
+21:42:15,291 datashaper.workflow.workflow INFO executing verb restore_community_hierarchy
+21:42:15,351 datashaper.workflow.workflow INFO executing verb prepare_community_reports
+21:42:15,353 graphrag.index.verbs.graph.report.prepare_community_reports INFO Number of nodes at level=2 => 1511
+21:42:15,688 graphrag.index.verbs.graph.report.prepare_community_reports INFO Number of nodes at level=1 => 1511
+21:42:16,224 graphrag.index.verbs.graph.report.prepare_community_reports INFO Number of nodes at level=0 => 1511
+21:42:16,654 datashaper.workflow.workflow INFO executing verb create_community_reports
+21:43:08,612 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:43:08,616 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 51.79200000000037. input_tokens=2546, output_tokens=588
+21:43:12,892 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:43:12,897 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 55.79300000000012. input_tokens=2763, output_tokens=673
+21:44:02,728 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+21:44:02,732 graphrag.llm.base.rate_limiting_llm INFO perf - llm.chat "create_community_report" with 0 retries took 49.771999999999935. input_tokens=9841, output_tokens=744
+21:44:02,856 datashaper.workflow.workflow INFO executing verb window
+21:44:02,860 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_final_community_reports.parquet
+21:44:03,460 graphrag.index.run INFO Running workflow: create_final_text_units...
+21:44:03,461 graphrag.index.run INFO dependencies for create_final_text_units: ['join_text_units_to_entity_ids', 'join_text_units_to_relationship_ids', 'join_text_units_to_covariate_ids', 'create_base_text_units']
+21:44:03,461 graphrag.index.run INFO read table from storage: join_text_units_to_entity_ids.parquet
+21:44:03,489 graphrag.index.run INFO read table from storage: join_text_units_to_relationship_ids.parquet
+21:44:03,513 graphrag.index.run INFO read table from storage: join_text_units_to_covariate_ids.parquet
+21:44:03,523 graphrag.index.run INFO read table from storage: create_base_text_units.parquet
+21:44:03,643 datashaper.workflow.workflow INFO executing verb select
+21:44:03,696 datashaper.workflow.workflow INFO executing verb rename
+21:44:03,750 datashaper.workflow.workflow INFO executing verb join
+21:44:03,816 datashaper.workflow.workflow INFO executing verb join
+21:44:03,885 datashaper.workflow.workflow INFO executing verb join
+21:44:03,952 datashaper.workflow.workflow INFO executing verb aggregate_override
+21:44:04,16 datashaper.workflow.workflow INFO executing verb select
+21:44:04,19 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_final_text_units.parquet
+21:44:04,621 graphrag.index.run INFO Running workflow: create_base_documents...
+21:44:04,621 graphrag.index.run INFO dependencies for create_base_documents: ['create_final_text_units']
+21:44:04,621 graphrag.index.run INFO read table from storage: create_final_text_units.parquet
+21:44:04,793 datashaper.workflow.workflow INFO executing verb unroll
+21:44:04,857 datashaper.workflow.workflow INFO executing verb select
+21:44:04,914 datashaper.workflow.workflow INFO executing verb rename
+21:44:04,992 datashaper.workflow.workflow INFO executing verb join
+21:44:05,69 datashaper.workflow.workflow INFO executing verb aggregate_override
+21:44:05,139 datashaper.workflow.workflow INFO executing verb join
+21:44:05,204 datashaper.workflow.workflow INFO executing verb rename
+21:44:05,281 datashaper.workflow.workflow INFO executing verb convert
+21:44:05,491 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_base_documents.parquet
+21:44:06,94 graphrag.index.run INFO Running workflow: create_final_documents...
+21:44:06,94 graphrag.index.run INFO dependencies for create_final_documents: ['create_base_documents']
+21:44:06,100 graphrag.index.run INFO read table from storage: create_base_documents.parquet
+21:44:06,278 datashaper.workflow.workflow INFO executing verb rename
+21:44:06,281 graphrag.index.emit.parquet_table_emitter INFO emitting parquet table create_final_documents.parquet
